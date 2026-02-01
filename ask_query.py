@@ -1,13 +1,12 @@
+import store.env_loader
+import os
 from typing import Any
 from Enums.explanation_mode_enum import ExplanationMode
 from langchain_core.documents import Document
-from dotenv import load_dotenv
-import os
 
 from store.openai_client import get_openai_client
 model = os.getenv("model", "gpt-4o")
 client = get_openai_client()
-load_dotenv()
 
 
 def documents_to_json(documents: list[Document]) -> list[dict]:

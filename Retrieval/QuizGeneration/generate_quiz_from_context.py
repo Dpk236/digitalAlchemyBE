@@ -1,7 +1,6 @@
-from store.openai_client import get_openai_client
-from dotenv import load_dotenv
+import store.env_loader
 import os
-load_dotenv()
+from store.openai_client import get_openai_client
 
 model = os.getenv("model", "gpt-4o")
 def generate_quiz_from_context(query: str, context: str):

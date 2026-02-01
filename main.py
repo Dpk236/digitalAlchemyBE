@@ -1,3 +1,4 @@
+import store.env_loader
 from Context.socket_context import socket_context
 from utility.extract_json_from_llm import save_quiz_locally
 from LLMQueries.get_quiz import get_quiz

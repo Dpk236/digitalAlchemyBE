@@ -1,10 +1,12 @@
+import sys
+import os
+from pathlib import Path
+# Add parent directory to path to find store module
+sys.path.append(str(Path(__file__).parent.parent))
+import store.env_loader
 import requests
 import json
 import base64
-import os
-from dotenv import load_dotenv
-
-load_dotenv()
 
 # Azure Configuration
 AZURE_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT") + "openai/deployments/" + os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME") + "/chat/completions?api-version=" + os.getenv("AZURE_OPENAI_API_VERSION")

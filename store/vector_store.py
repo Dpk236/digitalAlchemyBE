@@ -1,3 +1,4 @@
+import store.env_loader
 from Services.Embedding.sentence_transform_embeddings import SentenceTransformerEmbeddings
 from langchain_openai import OpenAIEmbeddings
 from langchain_qdrant import QdrantVectorStore

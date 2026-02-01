@@ -2,6 +2,10 @@ import os
 import json
 import fitz
 import sys
+from pathlib import Path
+# Add parent directory to path to find store module
+sys.path.append(str(Path(__file__).parent.parent))
+import store.env_loader
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from langchain_core.documents import Document
 from langchain_qdrant import QdrantVectorStore

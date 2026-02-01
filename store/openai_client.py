@@ -1,8 +1,6 @@
-from openai import OpenAI, AzureOpenAI
-from dotenv import load_dotenv
+import store.env_loader
 import os
-
-load_dotenv()
+from openai import OpenAI, AzureOpenAI
 
 def get_openai_client():
     if os.getenv("AZURE_OPENAI_API_KEY"):
