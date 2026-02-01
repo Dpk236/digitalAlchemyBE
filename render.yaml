@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: askdoubt-backend
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -k eventlet -w 1 main:app
+    envVars:
+      - key: ASYNC_MODE
+        value: eventlet
+      - key: PYTHON_VERSION
+        value: 3.10.12
+      - key: AZURE_OPENAI_API_KEY
+        sync: false
+      - key: AZURE_OPENAI_ENDPOINT
+        value: https://hackthon26.cognitiveservices.azure.com/
+      - key: AZURE_OPENAI_DEPLOYMENT_NAME
+        value: gpt-4.1
+      - key: AZURE_OPENAI_API_VERSION
+        value: 2025-01-01-preview
+      - key: model
+        value: gpt-4.1
+      - key: QDRANT_URL
+        sync: false
+      - key: QDRANT_API_KEY
+        sync: false
+Line 1: 651

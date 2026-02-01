@@ -1,0 +1,362 @@
+{
+  "language": "en",
+  "language_probability": 0.9998337030410767,
+  "duration": 323.7564375,
+  "title": "Projectile Motion",
+  "video_id": "projectile_motion",
+  "subject": "Physics",
+  "chapter": "Projectile Motion",
+  "segments": [
+  {
+    "id": 0,
+    "start": 0.11,
+    "end": 22.49,
+    "text": "Let me tell you what is the projectile. If a body is thrown vertically, then it will come down vertically. If it is thrown horizontally, it will go in a horizontal motion. But it is thrown at some angle with the horizontal like this. So, it will go in a parabolic path. It will go in a",
+    "duration": 22.38,
+    "source_segment_ids": [
+      1,
+      2,
+      3
+    ],
+    "was_merged": true,
+    "merge_reason": "incomplete_dangling_preposition: down; incomplete_dangling_preposition: at"
+  },
+  {
+    "id": 1,
+    "start": 22.49,
+    "end": 57.99,
+    "text": "parabolic path and that motion is called projectile motion and the object is called projectile. Here, the definition is given. A body thrown at some angle with the horizontal near the earth. Later on, we will see what is the relevance of this. Why it should be near the earth because we are considering G as constant which is only possible near the earth surface only. If we go beyond the earth surface, then G will not be constant. So, in this projectile motion",
+    "duration": 35.5,
+    "source_segment_ids": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap; tiny_gap; incomplete_dangling_dependency: prep; incomplete_dangling_conjunction: If"
+  },
+  {
+    "id": 2,
+    "start": 57.99,
+    "end": 70.59,
+    "text": "we will consider short range is only like 1 kilometer and 2 kilometer not more than that. For this, we are writing the near the earth. So, G will be constant. So, a body is thrown",
+    "duration": 12.600000000000001,
+    "source_segment_ids": [
+      9,
+      10
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap"
+  },
+  {
+    "id": 3,
+    "start": 70.59,
+    "end": 76.75,
+    "text": "at some angle to the horizontal such that it moves in a two-dimension motion. What is two-dimension",
+    "duration": 6.159999999999997,
+    "source_segment_ids": [
+      11
+    ],
+    "was_merged": false,
+    "merge_reason": null
+  },
+  {
+    "id": 4,
+    "start": 76.75,
+    "end": 98.37,
+    "text": "motion? It is moving along x-axis or along horizontal. It is also moving in a vertical plane. So, if body is moving like this, so it is going up and down and it is also moving along the horizontal direction. And this is the under the action of the gravity is called projectile. Projectile motion is a plane",
+    "duration": 21.620000000000005,
+    "source_segment_ids": [
+      12,
+      13,
+      14
+    ],
+    "was_merged": true,
+    "merge_reason": "incomplete_dangling_dependency: prep; continuation_and"
+  },
+  {
+    "id": 5,
+    "start": 98.37,
+    "end": 105.67,
+    "text": "motion affected by the acceleration due to gravity. How we analyze the projectile motion? Let us say,",
+    "duration": 7.299999999999997,
+    "source_segment_ids": [
+      15
+    ],
+    "was_merged": false,
+    "merge_reason": null
+  },
+  {
+    "id": 6,
+    "start": 105.67,
+    "end": 114.61,
+    "text": "initially in this figure you can see, this is a horizontal direction. We are representing with x-axis,",
+    "duration": 8.939999999999998,
+    "source_segment_ids": [
+      "16_0",
+      "16_1"
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap"
+  },
+  {
+    "id": 7,
+    "start": 114.61,
+    "end": 122.77,
+    "text": "vertical direction we are representing with y-axis. Initial velocity at some, let us say this is V0,",
+    "duration": 8.159999999999997,
+    "source_segment_ids": [
+      "17_0",
+      "17_1"
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap"
+  },
+  {
+    "id": 8,
+    "start": 122.77,
+    "end": 129.37,
+    "text": "this is at some angle theta. So, what we can do, we can resolve this vector into two components,",
+    "duration": 6.6000000000000085,
+    "source_segment_ids": [
+      18
+    ],
+    "was_merged": false,
+    "merge_reason": null
+  },
+  {
+    "id": 9,
+    "start": 129.37,
+    "end": 137.03,
+    "text": "one is along x-axis, one is along y-axis. We will resolve this vector along x-axis and we will get,",
+    "duration": 7.659999999999997,
+    "source_segment_ids": [
+      19
+    ],
+    "was_merged": false,
+    "merge_reason": null
+  },
+  {
+    "id": 10,
+    "start": 137.03,
+    "end": 147.83,
+    "text": "this is V0 cos theta. And if we resolve along y-axis, we will get V0 sin theta. So, this will be nothing",
+    "duration": 10.800000000000011,
+    "source_segment_ids": [
+      "20_0",
+      "20_1",
+      "20_2"
+    ],
+    "was_merged": true,
+    "merge_reason": "continuation_and; tiny_gap"
+  },
+  {
+    "id": 11,
+    "start": 147.83,
+    "end": 155.65,
+    "text": "but Vx, velocity along x-axis, initial velocity. And this is initial velocity along y-axis. And we know",
+    "duration": 7.819999999999993,
+    "source_segment_ids": [
+      21
+    ],
+    "was_merged": false,
+    "merge_reason": null
+  },
+  {
+    "id": 12,
+    "start": 155.65,
+    "end": 163.07,
+    "text": "what about the acceleration. Acceleration is downward direction having the magnitude. So, we can write",
+    "duration": 7.4199999999999875,
+    "source_segment_ids": [
+      22
+    ],
+    "was_merged": false,
+    "merge_reason": null
+  },
+  {
+    "id": 13,
+    "start": 163.07,
+    "end": 171.09,
+    "text": "acceleration of the particle as, as it is in direction of minus j. It is minus y, we can write",
+    "duration": 8.02000000000001,
+    "source_segment_ids": [
+      "23_0",
+      "23_1"
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap"
+  },
+  {
+    "id": 14,
+    "start": 171.09,
+    "end": 175.458,
+    "text": "minus j. So, it will be g times minus j",
+    "duration": 4.367999999999995,
+    "source_segment_ids": [
+      "24_0"
+    ],
+    "was_merged": false,
+    "merge_reason": null
+  },
+  {
+    "id": 15,
+    "start": 175.57,
+    "end": 181.73,
+    "text": "or we can say a will be minus g j only. So, this is the",
+    "duration": 6.159999999999997,
+    "source_segment_ids": [
+      "24_1",
+      "24_2"
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap"
+  },
+  {
+    "id": 16,
+    "start": 181.73,
+    "end": 199.97,
+    "text": "acceleration of the particle. And the velocity of the particle we can write, initial velocity is V cos theta along x-axis, then i cap, y-axis, then V sin theta along y-axis, it is j cap. This is the initial",
+    "duration": 18.24000000000001,
+    "source_segment_ids": [
+      25,
+      "26_0",
+      "26_1"
+    ],
+    "was_merged": true,
+    "merge_reason": "incomplete_dangling_preposition: cos; tiny_gap"
+  },
+  {
+    "id": 17,
+    "start": 199.97,
+    "end": 213.83,
+    "text": "velocity. And acceleration, 0 along x-axis and minus g along g. So, we will deal x-axis separately and y-axis",
+    "duration": 13.860000000000014,
+    "source_segment_ids": [
+      "27_0",
+      "27_1",
+      "27_2"
+    ],
+    "was_merged": true,
+    "merge_reason": "continuation_and; tiny_gap"
+  },
+  {
+    "id": 18,
+    "start": 213.83,
+    "end": 221.25,
+    "text": "separately. Then, this height, we know this is vertical motion. This height is vertical motion,",
+    "duration": 7.4199999999999875,
+    "source_segment_ids": [
+      28
+    ],
+    "was_merged": false,
+    "merge_reason": null
+  },
+  {
+    "id": 19,
+    "start": 221.25,
+    "end": 235.77,
+    "text": "we call it maximum height. As at this, the velocity of the particle in y direction becomes 0. And the particle will be moving along x-axis only. And as you can see from this expression,",
+    "duration": 14.52000000000001,
+    "source_segment_ids": [
+      29,
+      30
+    ],
+    "was_merged": true,
+    "merge_reason": "continuation_and"
+  },
+  {
+    "id": 20,
+    "start": 236.01,
+    "end": 244.85,
+    "text": "there is no acceleration in the x-axis. You can say acceleration along x-axis is 0. So, we can say",
+    "duration": 8.840000000000003,
+    "source_segment_ids": [
+      "31_0",
+      "31_1",
+      "31_2"
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap; tiny_gap"
+  },
+  {
+    "id": 21,
+    "start": 244.85,
+    "end": 269.89,
+    "text": "velocity along x-axis will be constant and will be equals to the initial velocity along x-axis. So, if we observe this motion in the horizontal direction, you will see it will be moving with constant speed along the horizontal direction. But the vertical velocity or the speed will be changing",
+    "duration": 25.039999999999992,
+    "source_segment_ids": [
+      32,
+      33,
+      34
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap; incomplete_dangling_preposition: with"
+  },
+  {
+    "id": 22,
+    "start": 269.89,
+    "end": 279.45,
+    "text": "because we have the acceleration. So, at this point, at the topmost point, we can say the topmost",
+    "duration": 9.560000000000002,
+    "source_segment_ids": [
+      "35_0",
+      "35_1"
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap"
+  },
+  {
+    "id": 23,
+    "start": 279.45,
+    "end": 286.19,
+    "text": "point will be where the vertical component of the velocity will be 0. It will be moving in the",
+    "duration": 6.740000000000009,
+    "source_segment_ids": [
+      36
+    ],
+    "was_merged": false,
+    "merge_reason": null
+  },
+  {
+    "id": 24,
+    "start": 286.19,
+    "end": 312.21,
+    "text": "horizontal direction. And its horizontal component of the velocity is always constant. And that is V cos theta. We will also find this h and this particle, this O to A distance, it is called range. A distance from the point of projection, O is called as point of projection. The distance from the",
+    "duration": 26.019999999999982,
+    "source_segment_ids": [
+      37,
+      "38_0",
+      "38_1",
+      39
+    ],
+    "was_merged": true,
+    "merge_reason": "incomplete_no_terminal_punctuation; tiny_gap; tiny_gap"
+  },
+  {
+    "id": 25,
+    "start": 312.21,
+    "end": 319.39,
+    "text": "point of projection to the point at which the particle lands. And we will also find the time,",
+    "duration": 7.180000000000007,
+    "source_segment_ids": [
+      40
+    ],
+    "was_merged": false,
+    "merge_reason": null
+  },
+  {
+    "id": 26,
+    "start": 319.39,
+    "end": 323.75,
+    "text": "duration for which the particle is in air.",
+    "duration": 4.360000000000014,
+    "source_segment_ids": [
+      41
+    ],
+    "was_merged": false,
+    "merge_reason": null
+  }
+]}

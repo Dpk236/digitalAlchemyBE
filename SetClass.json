@@ -1,0 +1,807 @@
+[
+  {
+    "start": 0.68,
+    "end": 30.68,
+    "text": "... Hi, friends! Are you finding the concept of sets in mathematics difficult because there are so many terms and notations, right? Don't worry, because in this video, I'm going to make sets really easy for you. So the concept of sets is going to be permanently set in your mind. So keep your pen and paper ready, and let's get started. Before we begin, I'd like to let you know that we have full courses on our website, manochacademy.com, and our Android app. Links are"
+  },
+  {
+    "start": 30.68,
+    "end": 60.78,
+    "text": "given below, so do check it out and share it with your friends. All right, let's dive into sets now. I'm sure you've heard the word set in your everyday life. You've heard things like a paint set, a geometry set, tea set, or jewelry set, right? Now, let's talk about what does set mean in mathematics. Set is defined as a collection of well-defined objects. Note the term here, well-defined. Now, what"
+  },
+  {
+    "start": 60.78,
+    "end": 72.46,
+    "text": "does well-defined mean? Well-defined means that you can decide whether an object belongs to the collection that you're talking about or not. So"
+  },
+  {
+    "start": 72.46,
+    "end": 102.76,
+    "text": "you can say with surety that this object is in part of my set or not part of my set. So let's understand this definition with some very simple examples. Let's start with example number one. Collection of students in your class whose height is above one fifty centimeters. So is this a set or not? What do you guys think? Here, we are talking about the collection of students in your class whose height is above one fifty centimeters. So this is well defined because you can measure all the students' height"
+  },
+  {
+    "start": 102.76,
+    "end": 132.94,
+    "text": "and decide those students who are above one fifty centimeters, they belong to the set, they're part of the set, and those who are less than one fifty centimeters are not part of this set, right? So we can say, yes, this is a set. How about the next one? Is the collection of tall students of your class a set or not? What do you guys think? Here, the answer is going to be no. Why? Because how do you define who is tall and who is not, right? Because"
+  },
+  {
+    "start": 132.94,
+    "end": 163.12,
+    "text": "for somebody who's shorter than me, I might seem tall. Somebody who's taller than me, I might seem short. So this term, tall students here, is not well defined. We say it is ambiguous, right? We are not sure whether to put this student in the tall set or not. So definitely, this is not a set. Similarly, if I tell you, you know, let's say a collection of all the naughty students in your class, is that a set or not? Again,"
+  },
+  {
+    "start": 163.12,
+    "end": 193.12,
+    "text": "naughty is not well defined, right? You may say, uh, \"This person is naughty, but my best friend, he's not naughty.\" So this is up to debate. Again, this is not a set. Let's try the third example. Collection of all odd natural numbers less than ten. What do you think? Is this a set or not? So think about the example. What are all the odd numbers which are less than ten? This we can define it clearly. We know the numbers are one, three, five, seven, and"
+  },
+  {
+    "start": 193.12,
+    "end": 223.16,
+    "text": "nine. There is no confusion, right? This is very clear that these are going to be the numbers. So we can say, yes, this is a set. All the odd numbers less than ten. How about the next example? Collection of good books in the library. Is this a set? See, here, we are not talking about all the books. That could be a set. We are saying good books. Again, you can see this is not well defined because you may like a book, your friend may not"
+  },
+  {
+    "start": 223.16,
+    "end": 253.22,
+    "text": "like it, right? Let's say you like Harry Potter book, but somebody may say, \"I don't like that one,\" or, \"I like this detective book.\" Somebody may not like it. He may say, \"This is not a good book.\" So again, this is not well defined. This is not a set. One more example, roots of quadratic equation, X square minus five X plus six equal to zero. Is this a set or not? So here it's not very evident directly, right? We'll have to do some thinking here. Uh, let's see how to solve this"
+  },
+  {
+    "start": 253.22,
+    "end": 283.22,
+    "text": "equation so that we are sure that if it's well defined or not. If you guys solve this quadratic equation by doing middle term breaking, you guys can try that on pen and paper, what will you get? So this is going to factorize as X minus two times X minus three equal to zero. So therefore, the values of X is two and three. Two and three are called the roots, right? The solution of the quadratic equation. So this is clear, it is well defined. These are the two roots of this equation. So we can say this is definitely a set. So in"
+  },
+  {
+    "start": 283.22,
+    "end": 314.14,
+    "text": "summary, remember, set is a collection of well-defined objects. If you're sure of these objects are part of the set and what are not, it is a set. If there is ambiguity, there's confusion, then it is not a set. Now, let's look at the notation of a set. That is, how do we represent or write down a set? Sets are always denoted by capital letters. So remember, if you're denoting a set, you can use any capital letter like A, B, C, X, Y, Z, whatever you want,"
+  },
+  {
+    "start": 314.14,
+    "end": 344.14,
+    "text": "but please use a capital letter. Sets are always represented within curly brackets, so do not use some casual brackets like this. Always use curly braces, curly brackets. So let's look at some examples. If we talk about the set of vowels of the English alphabet, how will we represent it? So you can use any letter. You can use A, capital A, capital B. Since it is vowels, I'm going to use capital V, and then you write an equal to, you"
+  },
+  {
+    "start": 344.14,
+    "end": 374.18,
+    "text": "open up the curly braces, and then you write down the set. So I'm going to write it A, E, I, O, U. These are the vowels of the English alphabet. This is how we denote the set. Let's try another example. Set of whole numbers less than five.... So here I'll use, let's say, capital A to represent the set. Whole numbers less than five. Think about it carefully. What are whole numbers? Whole numbers are starting from zero. Natural numbers or"
+  },
+  {
+    "start": 374.18,
+    "end": 404.82,
+    "text": "counting numbers, they start from one, so don't forget zero here, otherwise you'll get a zero for this one. So zero, one, two, three, four. Should I include five? No, less than five, so the set ends here. So remember to put the curly braces and denote the set with a capital letter, like the example shown here. Now let's talk about the elements or members of a set. Remember, we had represented the set of vowels like this: V equal to A, E, I, O, U."
+  },
+  {
+    "start": 404.82,
+    "end": 435.6,
+    "text": "Here, A, E, I, O, U, all these are called elements of the set, or they are also known as members of the set. Just like you have members of a club, these are the members or the elements of the set. And always the elements, as you can see in the notation, they are separated by commas. So don't forget to put the commas there. Now, what can the elements be here? Here there were vowels, letters."
+  },
+  {
+    "start": 435.6,
+    "end": 465.66,
+    "text": "They could be numbers. So they can be anything. They can be objects, names of students, numbers, letters, pretty much anything. And remember, elements need not be of the same type. So set doesn't have to have only numbers or only letters. It can be a mixed bag like this. For example, in this set, you can see there is letters A, B, but there are also numbers one, two, three. This is absolutely fine. Don't think it is wrong. Set can have mixed things like this,"
+  },
+  {
+    "start": 465.66,
+    "end": 495.72,
+    "text": "and remember to separate the elements or members with commas and put them within curly brackets. As we discussed, there are lots of notation in sets. So let's look at the next one, which is belongs to notation represented by this funny-looking E. So this is not an E, this is a Greek symbol known as epsilon. So how will you write it? It is like almost writing a C and then putting a line in the middle, okay? And this means belongs to. Now, what is"
+  },
+  {
+    "start": 495.72,
+    "end": 526.22,
+    "text": "this belongs to? If you take a look at this, uh, set of vowels, A, E, I, O, U, I can say that A belongs to the set V, E belongs to the set V. So how do we represent it? We say, since A is an element of the set, we write it as A belongs to V, right? And we read this epsilon symbol as A, it is belongs to, so A belongs to the set of vowels. Now, what about, uh, does C belong to the set or D?"
+  },
+  {
+    "start": 526.22,
+    "end": 556.24,
+    "text": "No, that's a consonant. That's not a vowel. So we write, C is not an element, right? Or does not belong to V. So you write epsilon, and then you put a line over that, a strike over that. So C does not belong to V, and this you will read it as does not belong to. Now, another notation that is used, because we have all these elements, so you don't have to write each one like A belongs to V, E belongs to V, I belongs to V. You can write with this common notation, A, E,"
+  },
+  {
+    "start": 556.24,
+    "end": 586.42,
+    "text": "I, O, U belong to V, where epsilon here means belongs to. And remember to represent this symbol, just write a C here and draw a line for that. It represents belongs to, or it is an element of the set. Now let's try a question on this belongs to notation. For set C equal to two, four, six, you need to answer if the following are true or false. So two and this epsilon symbol C. What does this mean?"
+  },
+  {
+    "start": 586.42,
+    "end": 605.34,
+    "text": "Does two belong to C? Yes, because two is an element. It's a member of C. So I am going to write true. What about the next one? Does four belong to C? Again, the answer is true, because four is a part of the set C. How"
+  },
+  {
+    "start": 605.34,
+    "end": 635.64,
+    "text": "about this one? Eight does not belong to C, because remember, we have put a strike over there, and you can see that eight is not part of it. So this one is also true, because eight is not an element of C, right? How about the last one? Four belongs to C. That one is already we have discussed, it's true. So what is the difference between the second question and the fourth one? The difference is the curly brackets. And what does curly braces mean?"
+  },
+  {
+    "start": 635.64,
+    "end": 665.7,
+    "text": "Curly bracket means this is a set. So please be careful here. When you write this, you are saying the set four, right, set which contains four, does it belong to C? What do you think? The answer is no. This is false because it only has four, it doesn't have a set in it. So this answer will be false. When would it have been true? If the set C was something like this,"
+  },
+  {
+    "start": 665.7,
+    "end": 696.58,
+    "text": "two... If it had the set four and six, then it would have been true. So yes, you can, you can put a set within a set. This is absolutely allowed. Sets can also contain sets, then it would have been true. But here it is not true, because this does not have this set four in it. This is a very important point, so please keep it in mind. Now let's discuss some important points on the notation of a set."
+  },
+  {
+    "start": 696.64,
+    "end": 726.71,
+    "text": "When you are writing a set, the order of the elements can be changed, so order doesn't matter. You can write the set one, two, three as two, three, one, three, two, one. These are all the same. So remember, the order of the elements of a set does not matter. Elements of the set should not be repeated, so we should not repeat them. For example, you have written A, B, B, C, D, D, D. Here, can you"
+  },
+  {
+    "start": 726.71,
+    "end": 758.09,
+    "text": "see?... the letters B are repeated twice, D is repeated three times. You should not write the set like that. It should be written only once. So A, B, C, D. So remember, the elements of the set should be unique. For example, can you tell me the set of letters in the word mathematics? Come on, try it out. So here, how will we write? Again, remember, we'll use the curly brackets to represent the set. What are the letters here? M, A,"
+  },
+  {
+    "start": 758.15,
+    "end": 788.21,
+    "text": "T, H. We have E here, and then should I write this M again? No, we shouldn't repeat it, so I'm not going to write this M again. A has already been used, so we'll not write that. T is also being used. I hasn't been used, so we'll write I, C, and S. So remember to do these carefully and not repeat your elements. Now, if the"
+  },
+  {
+    "start": 788.21,
+    "end": 819.01,
+    "text": "number of elements in a set are very large, how will you represent this? Like, let's say we have to write a set of whole numbers that's like zero, one, two, three, four, five, all the way till infinity, right? So we don't write all of them. What we do here, we just write a few of them like this: zero, one, two, three, to represent the whole numbers, and then you end it with a dot, dot, dot, which means so on. So remember these important points when you are writing a set. Now, let's try some questions on the notation of a set."
+  },
+  {
+    "start": 819.01,
+    "end": 849.05,
+    "text": "So this one we had discussed the example, where a set of whole numbers can be represented as zero, one, two, three, dot, dot, dot, and so on. How do you represent set of even numbers between ten and hundred? So between ten and hundred, what are the even numbers? Again, first, you put the curly braces for the set. Is... Ten is an even number, but this is an important point in mathematics. When they say between, then you don't include ten and hundred, so don't include the first and"
+  },
+  {
+    "start": 849.05,
+    "end": 879.17,
+    "text": "last number. So we should start from the number twelve. Twelve, fourteen, sixteen, these even numbers, and now again, we can use the dot dot, dot because there are many of them, and we will go not all the way up to hundred, but up to ninety-eight. So that's our answer. Clear? But if you were given the question, set of even numbers from ten to hundred. Here, note we are saying from. Previous question was between. When we use the word from, that means"
+  },
+  {
+    "start": 879.17,
+    "end": 909.53,
+    "text": "ten and hundred, both are going to be included. Okay? So it's going to be ten, twelve, fourteen, sixteen, all the way up to ninety-eight and hundred included here. So please remember this important difference between, you don't include the first and last number, from first and last number, both are included. Let's try the next question. Set of integers greater"
+  },
+  {
+    "start": 909.53,
+    "end": 939.53,
+    "text": "than minus two. What will the answer be here? Set of integers greater than minus two. Minus two is a negative integer, so we go to the next one, which is going to be minus one. Minus one is greater than minus two, then zero, one, two, three, four, and so on. So again, we can use the dot dot, dot notation because this will never end, so we represent it like"
+  },
+  {
+    "start": 939.53,
+    "end": 969.65,
+    "text": "this. Clear? What is cardinal number of a set? Cardinal number of a set is the number of elements present in the set. We call that the cardinal number. For example, let's say you have this set here, zero, twenty, thirty. A is zero, twenty, thirty. Then what is the cardinal number, can you tell me? Very simple, we just have to count the number of elements here. One, two, three. There are three elements, so we are going to say cardinal number is"
+  },
+  {
+    "start": 969.65,
+    "end": 999.69,
+    "text": "three, and this is dun- denoted in sets as N bracket, the name of the set. Okay, you write small n, you put this normal brackets and the name of the set. So we say nA equal to three. nA denotes the cardinal number of your set. Now, can you guys tell me if set B is A, A, B, C, D, then can you tell me what is the cardinal number of this set B, which I'm denoting by nB? Again, remember,"
+  },
+  {
+    "start": 999.69,
+    "end": 1029.71,
+    "text": "we have to count the elements. How many elements are there? One, two, three, four, five. Is five the correct answer? No. Remember, we cannot repeat elements. They should be unique. So I'm going to delete one A here. Actually, we should write it down again, but I'm being lazy. I'm just deleting that A. So actually set B is A, B, C, D. There are four elements in it, so the right answer here is going to be n of B, cardinal number of B is four. Hope you're understanding the"
+  },
+  {
+    "start": 1029.71,
+    "end": 1059.85,
+    "text": "concept of sets and how to represent them. Well, there is more than one way that you can represent sets. Sets can be represented by using a description method, a roster method, or tabular method, which we have been doing till now, and there is also a rule method or set builder method. So I'm going to explain all these three kind of methods with some very simple examples. Let's start with the description method first. Description method is very easy. You just write the description of the set within curly braces. What is description?"
+  },
+  {
+    "start": 1059.85,
+    "end": 1089.87,
+    "text": "Describing the set in a simple sentence. So remember, you just write the description within your curly brackets. For example, set of natural numbers, if I want to represent it using description method, don't forget, we'll open the curly brackets and then just write natural numbers. So you can just write a short sentence or these two words here. That is the description method. If I want to represent set of even integers less than ten, again, I'll just put that"
+  },
+  {
+    "start": 1089.87,
+    "end": 1120.1,
+    "text": "simple sentence down here. Even integers less than ten within the curly brackets. That's it, so simple!... Can you guys try this for me? Set of days in a week. How will you write it? Very easy. Just open the curly brackets for the set and write days in the week. Now, you might be thinking why we have not written Monday, Tuesday, Wednesday, Thursday. That is the roster form or the next form we'll be studying. Here, we are just describing the set in a very simple way without writing"
+  },
+  {
+    "start": 1120.1,
+    "end": 1150.34,
+    "text": "down each and every element. Can you see? In the description, we are just giving the description or a simple sentence for what the set represents. In description method, we describe the set in a simple sentence. In the next method, which is the roster method, or also known as tabular form, so these mean the same thing. What do we do here? We have been doing this till now. We basically write the elements within the curly brackets and separate the elements by commas. For example,"
+  },
+  {
+    "start": 1150.34,
+    "end": 1180.82,
+    "text": "set of even whole numbers less than ten. So we can write, uh, this is set capital A equals within curly brackets, zero comma, two comma, four comma, six comma, eight. So this is called the roster method, and you might have realized we have been using that, only I didn't give it the name roster method. That's what we have been using. This is the most popular method for sets, right? Especially for the simple examples. Now, if you look at set of integers, now, number of integers is infinite,"
+  },
+  {
+    "start": 1180.82,
+    "end": 1210.88,
+    "text": "so obviously here we use the dot dot dot notation. Uh, so we have the dot dot dot, minus three, minus two, minus one, one, two, three, uh, zero, one, two, three, and so on. Because integers, remember, they can be positive or negative, and they include zero. So this is integers in roster method or tabular form. Similarly, set of whole numbers. Whole numbers, please don't forget that zero. So it starts with zero, one, two, three, all the positive integers and zero, and then we put the dot dot dot. And"
+  },
+  {
+    "start": 1210.88,
+    "end": 1241.04,
+    "text": "similarly, set of natural numbers. And here you can write any, uh, label here, A, B, C, but usually it's good to write N because natural numbers in mathematics are represented by capital N. So N, one, two, three, dot, dot, dot, and so on. So as you can see, roster method is very easy. Uh, just make sure you don't miss out the important elements. So we have looked at the description and roster method. Now let's talk about the third and last method, which is the rule method, or also known as the set builder"
+  },
+  {
+    "start": 1241.04,
+    "end": 1271.26,
+    "text": "form. Here, what do we do? We write a statement or a formula, or you can call it a rule, to represent the elements of the set. Again, don't forget your curly brackets for a set, right? So for example, if I have to say the set of whole numbers less than ten, how will I represent it? So look at this carefully, because this one is a little difficult at first. We write set A, right, capital A, equals, and then you put this X colon"
+  },
+  {
+    "start": 1271.26,
+    "end": 1301.44,
+    "text": "X. You can use any variable, X, Y, A, B, C. Typically, we use X like we use X in algebra. So we write X colon X. What does this colon mean? Such that. So X, such that X... Do you guys remember this notation? Belongs to W. W here represents whole numbers and X less than ten. So can you see? We have taken this whole sentence, the description method, and converted it into X, such that"
+  },
+  {
+    "start": 1301.44,
+    "end": 1331.52,
+    "text": "X belongs to whole numbers and X is less than ten. Now, you can put a colon for such that, or you can put a, this kind of a line. Okay? So please remember, this colon or the line is representing the word such that. So again, here I can write the sets similarly, X, right, the variable X, such that X is an element of, uh, whole numbers, belongs to whole numbers and"
+  },
+  {
+    "start": 1331.52,
+    "end": 1362.54,
+    "text": "X less than ten. Now you can write an and or put a comma, that doesn't matter, but don't forget this line or the colon in the set builder method. Similarly, if you want to represent the set, let's say, A is having minus two, minus one, zero, one, two, three. So these few integers, how will you represent it? Clearly, these are integers because negative and positive numbers are there. So again, we'll put X colon X, so X such that X and X belongs to capital Z. What does this capital Z represent? Integers."
+  },
+  {
+    "start": 1362.54,
+    "end": 1393.08,
+    "text": "But if I didn't write anything, this would mean all integers, so I have to give some, you know, restriction that the integers should be between minus two and three. So we have written comma, or you can write the word and, and here we have written X greater than equal to minus two and X less than equal to three. Clear? So main thing in this rule method or set builder form is writing that X colon X or X, this vertical line X, and then clearly explaining your rule. Here the rule is X"
+  },
+  {
+    "start": 1393.08,
+    "end": 1423.08,
+    "text": "belongs to integers, and this is the range of X. Clear? Similarly, if you look at this example, here we have been given the set builder form. Let's say I have to write the roster method, right? I want to write down what are the elements in the set. So if I write B equals Y colon Y, which means Y such that Y equal to two N, where N belongs to natural numbers and N is less than equal to three. So these are standard maths notations, right? Capital N means natural"
+  },
+  {
+    "start": 1423.08,
+    "end": 1453.18,
+    "text": "numbers. So can you guys tell me what will be the answer here? So the rule says Y, such that Y equal to two N. But what is N over here? N is basically natural numbers less than equal to three. So basically, N is one, two, three. So will that be the answer? No. Y is two times N, so you have to multiply it. So Y will be two times N, so one times two is two. One times two, two. Two times two, four. Three"
+  },
+  {
+    "start": 1453.18,
+    "end": 1483.23,
+    "text": "times two, six. So what will my answer be? My answer is going to be these numbers, and in roster method, obviously, I'll put it within curly brackets, two comma, four comma, six.... So see, we can convert from one form to the other. If you are given roster form or description method, you can change it to set-builder form. If you are given set-builder form, you can change it to the other form. But the set-builder form, you just be a little careful. Don't forget that colon or that vertical line. Clearly write it like this. Uh, make"
+  },
+  {
+    "start": 1483.23,
+    "end": 1513.34,
+    "text": "sure, you know, you write it belongs to which set of numbers. You write your \"and\" rule over there, and you'll find it really easy. Let's practice some questions on the rule method or set-builder form. So, for example, you are given a set A is one, eight, twenty-seven, sixty-four, and so on. How will you represent it in set-builder form? We can say, X such that, remember that colon means such that, X such that X is a cube of natural numbers. Because you guys can see over here, these"
+  },
+  {
+    "start": 1513.34,
+    "end": 1543.41,
+    "text": "numbers are basically one, two cube, three cube, four cube, and one is nothing but one cube, and so on. So this question is like a puzzle. You have to detect what is the pattern here. You can see these are all perfect cubes. So we write X such that X is a cube of a natural number. Or you can write it like this. Uh, this looks, uh, you know, a little more fancy and mathematical. We can say A equal to"
+  },
+  {
+    "start": 1543.41,
+    "end": 1573.49,
+    "text": "X, such that X is N cubed. You can use another variable where N belongs to natural numbers. Okay, so you don't have to use only one variable. We can always use this kind of notation like we had seen in the earlier example, X such that X is N cubed, so that's your formula, X equal to N cube. N is element of natural numbers. Clear? Now, why don't you guys try this one? You have been given some numbers like this: one, two, four, seven, fourteen, and twenty-eight. The"
+  },
+  {
+    "start": 1573.49,
+    "end": 1603.55,
+    "text": "trick here is to find the pattern. Now, can you see, is there some pattern over here, or how are these numbers associated? But we can see that there's no magic formula. It's not like square or cube, and you can see it's ending at twenty-eight. So if you look at the set of these numbers, what are they really? So clearly, these are factors of twenty-eight. How do we represent it in set-builder form? Let's write it down. So we are going to say equal to, open the curly brackets, X"
+  },
+  {
+    "start": 1603.55,
+    "end": 1634.57,
+    "text": "such that X, and we can say since these are all natural numbers, there's no negative number or zero, so we can say X such that X belongs to natural numbers, and X is a factor of twenty-eight. So you can write a description also in the set-builder form, because there's no clear-cut formula here. That's absolutely fine. Now let's try the next question. C is half, two-third, three-fourth, four-fifth, five by six."
+  },
+  {
+    "start": 1634.57,
+    "end": 1664.87,
+    "text": "Again, in these kind of questions, try to look at what is the pattern. Can you see? The numerator is increasing every time. Even the denominator is increasing of these fractions. How is the numerator and denominator related? You can see the denominator is numerator plus one. Can you see? One plus one, two; two plus one, three; three plus one, four; four plus one, five; and so on. So that's our magic formula. We can ma- uh, make a formula here and represent all those fractions. Why don't you try it out?"
+  },
+  {
+    "start": 1664.87,
+    "end": 1694.95,
+    "text": "So what we can do here, we can say in set-builder form, this is going to look something like this: X, such that X equals... Every element is what? A fraction, and you can see denominator is one plus the numerator. So if I represent numerator by N, denominator is going to be N plus one. And what is N? N belongs to natural numbers, and you can see it is going from one to five. So we"
+  },
+  {
+    "start": 1694.95,
+    "end": 1725.05,
+    "text": "should give the range here, and N greater than equal to one, less than equal to five. There you go. We are done! You put the numbers between one to five in this magic formula, N by N plus one, and you will get all these five elements of the set C. So simple. So remember, in set-builder form, you just have to write, uh, this kind of, you know, colon notation, or you can even use this line kind of symbol to represent such that, X such"
+  },
+  {
+    "start": 1725.05,
+    "end": 1755.51,
+    "text": "that X. Write down your formula, or even you can use a description method, and you will easily get your answer. Based on the number of elements, sets can be divided into two types: finite set and infinite set. First, let's take a look at finite sets. What is a finite set? Finite set is a set that contains a limited or definite number of elements in it. For example, if we take set A, having these letters,"
+  },
+  {
+    "start": 1755.51,
+    "end": 1785.55,
+    "text": "A, B, C, D, you can see it is a finite set because it is having a limited number of elements. How many elements are there? Four elements, right? And how will you represent N of A? Remember, N of A is cardinal number of the set, so it is the number of elements, which is a finite number, and the answer is going to be four here. Now let's look at set B. This is written in set-builder form. X such that X belongs"
+  },
+  {
+    "start": 1785.55,
+    "end": 1815.83,
+    "text": "to W, W means whole numbers, and X is less than five. So what are the elements of set B? Set B basically contains the numbers zero, one, two, three, and four, whole numbers less than five. So how many elements are there in this set? As you can see, there are finite number of elements, which is one, two, three, four, five elements. So set B as having five elements and the cardinal number is"
+  },
+  {
+    "start": 1815.83,
+    "end": 1845.89,
+    "text": "five here. These are examples of finite sets, having a finite number of elements. Now let's look at infinite sets. They are like the opposite of a finite set. Infinite set contain unlimited number of elements.... So it is having infinite number of elements, not finite, and that is why it is called an infinite set. What are some examples? If you take the set of natural numbers, natural numbers means all the counting numbers"
+  },
+  {
+    "start": 1845.89,
+    "end": 1876.15,
+    "text": "one, two, three, four, five, six, and we can go on and on. So set of natural numbers, N, is an infinite set. How about the set of integers? Integers again, can be positive or negative, and you have zero as well. So all these numbers are forming again, an infinite set, because you can go endlessly on the negative side or the positive side. Set of odd integers, again, an infinite set, right? Because we can go on and on. One, two, three, uh, one, three, five,"
+  },
+  {
+    "start": 1876.15,
+    "end": 1906.19,
+    "text": "seven, nine on the positive side. Minus one, minus three, minus five, minus seven, minus nine, and we can go on and on, on the negative side. Again, you can see this is an infinite set, and that is why we are using this dot, dot, dot notation. Means, goes on and on. What about set of all the points on a straight line? So if you draw a straight line, so if you draw a straight line like this,  how many points are on this straight line? We can"
+  },
+  {
+    "start": 1906.19,
+    "end": 1936.29,
+    "text": "keep putting on so many dots because dot doesn't have any dimension, right? It is so small. So on this straight line, we can say there is an endless number, infinite number of dots. Points, right? So definitely, again, it is an infinite set. How about set of real numbers? Real numbers, you know, they are represented once again on the number line. Again, an infinite set. So all these are examples of infinite set. Now, an interesting question for you."
+  },
+  {
+    "start": 1936.29,
+    "end": 1966.33,
+    "text": "Can you tell me what is the cardinal number of an infinite set? Remember, cardinal number means number of elements in that set. So how many elements are there? Unending. Infinite. But usually we write the answer as cardinal number is not defined, so don't write the answer as cardinal number is infinite. Say, cardinal number of an infinite set, it is not defined. So the correct answer is, please"
+  },
+  {
+    "start": 1966.33,
+    "end": 1996.77,
+    "text": "remember, it is undefined or not defined because there is an unlimited number of elements here. So in these examples, we use the roster form to represent these infinite sets, like natural numbers we represented, integers or odd integers. But how will you represent the set of real numbers if I tell you represent it in a roster form? Can you do that? Of course, real numbers includes all natural numbers or integers, but you know there are numbers in between also, right?"
+  },
+  {
+    "start": 1996.77,
+    "end": 2026.92,
+    "text": "Like you can have one point one, one point two, one point three, and so on, one point three one, one point three two. So s- there are certain sets, like set of real numbers, where it is not possible to represent it in roster form, right? Because it will have infinite number of elements and there is unending possibility like one point one, one point one one, one point one two. You can just go on and on. So these, there are certain sets like this which cannot be represented..."
+  },
+  {
+    "start": 2028.67,
+    "end": 2037.01,
+    "text": "cannot be represented by the roster form."
+  },
+  {
+    "start": 2037.01,
+    "end": 2042.25,
+    "text": "By roster form."
+  },
+  {
+    "start": 2042.25,
+    "end": 2072.87,
+    "text": "So hope the concept of finite and infinite sets is clear to you. Now let's look at singleton set, or what is also known as the unit set. A set that contains only one element. That is why it is called unit set. Only one element or the singleton set. For example, let's take a look at this set. It just has the number minus three, so only one element there, and that is why it is called a singleton set."
+  },
+  {
+    "start": 2072.87,
+    "end": 2102.89,
+    "text": "What if I tell you the next set, if you re- take a look, X such that X is the capital of India. What is the capital of India? Right, New Delhi. So we know New Delhi is the capital of India. Does India have any other capital? Long time back, there was like a summer capital and a winter capital. Nothing like that now, just one capital. So therefore it is a singleton or unit set. Only one element in it. What about this one? X, such that three"
+  },
+  {
+    "start": 2102.89,
+    "end": 2133.25,
+    "text": "X minus one equal to eleven. So you can see we have a linear equation there. Even without solving, we know linear equation will give us one solution, but let's confirm. If you try to solve this equation, three X minus one equal to eleven or three X equal to twelve. If you take this minus one, that side X is twelve divided by three, which means the answer is four. So you can see X has only one solution, unique solution. These sets have a unique element in it."
+  },
+  {
+    "start": 2133.25,
+    "end": 2163.41,
+    "text": "So that is why once again, it is a singleton set, because this is just representing the number four. How about the next example? X, such that X belongs to whole numbers and X square is equal to four. Can you guys try to solve this one for me? So if we solve X square equal to four, we know that X is going to be square root of four. Now, what is square root of four, guys? Square root of four is two, but remember, it can be"
+  },
+  {
+    "start": 2163.41,
+    "end": 2193.63,
+    "text": "plus or minus two, because two square is four, minus two square is also four. So the answer is actually two possibilities. X could be plus two or minus two. But if you look at this, uh, set given to us, look at it carefully. X belongs to whole numbers. Whole numbers means zero, one, two, three, four, and so on. So therefore, I should only consider the positive value of X and not the negative value, because it is not including integers,"
+  },
+  {
+    "start": 2193.63,
+    "end": 2224.46,
+    "text": "only whole numbers. So therefore, once again...... This set has a single answer, single element in it, which is the number two. So as you can see, all these examples are sets having one element in it, also known as singleton set. Now, can you guys tell me what is the cardinal number of singleton set? Very simple. Cardinal number means the number of elements in the set, and obviously it has only one element."
+  },
+  {
+    "start": 2224.46,
+    "end": 2254.84,
+    "text": "So this answer is very easy. It is going to be one. That's it. The set has only one element in it. Now let's talk about empty set or null set. What is an empty or null set? Just by the name you can understand it's empty. It contains nothing. So basically, empty set does not contain any element inside it. Another name for empty or null set is, it is also known as a void set."
+  },
+  {
+    "start": 2254.84,
+    "end": 2284.98,
+    "text": "The word void means nothing. Now, how do you represent an empty set? We represent it with this symbol, which is called, it's called a phi symbol. It's basically like a zero and you put a slash. So you write it like this, a zero and you put a slash across it. Or you can represent it with empty curly brackets, because curly brackets are used for sets, and to show that the set is empty, we just open the curly bracket and close it, and there's nothing inside it."
+  },
+  {
+    "start": 2284.98,
+    "end": 2315.24,
+    "text": "What are some examples of empty sets? Let's take a look. If you look at this example, this is the description method. Whole numbers less than zero. Can you tell me any whole numbers less than zero? No, right? Because all the whole numbers start from zero. It's zero, one, two, three, four, five, and so on. So this is definitely an empty set. What about the next one? X such that two x minus one equal to ten, x is an element or belongs to"
+  },
+  {
+    "start": 2315.24,
+    "end": 2345.34,
+    "text": "natural numbers. This is the set builder notation that we have discussed. So can you solve this equation and see what is the value of x that you get? So let's try it out. Two x minus one equal to ten. Now, if you solve this equation, what will you get? You take the one over there, so two x equal to eleven or x equal to eleven by two. This is not giving me a natural number. There's a fraction over there. So since the condition is that"
+  },
+  {
+    "start": 2345.34,
+    "end": 2375.58,
+    "text": "x must belong to natural numbers, once again, this is going to be an empty set. If x belongs to real numbers, then it would, uh, x equal to eleven by two would be allowed. It would not be a empty set. It would have actually been a singleton set. It has one solution, right? What about the next one? X such that x belongs to real numbers and x square equal to minus one. Once again, to find out, you know, don't jump to conclusions. Solve this and see what you are getting. So if you have"
+  },
+  {
+    "start": 2375.58,
+    "end": 2405.94,
+    "text": "x square equal to minus one, what is the value of x? X is going to be square root of minus one. Do you guys know what is square root of minus one? It is an imaginary number. In mathematics, we denote it as with the letter i. So it is an imaginary number. It is not a real number, and that is why, once again, this is going to be an empty set. So these were some examples of empty sets,"
+  },
+  {
+    "start": 2405.94,
+    "end": 2436.16,
+    "text": "set which contains nothing in it. Now, what about this? Are zero and this, uh, you know, null representation within the set, are these empty sets? What do you think? Yes or no? The answer is no, because this set contains one element, zero. And even this, you know, uh, null symbol, this phi symbol, that is also a symbol. We can say it's a Greek letter."
+  },
+  {
+    "start": 2436.16,
+    "end": 2466.18,
+    "text": "So maybe we are writing... Maybe you guys know how to write these Greek letters. So you have put the Greek letter in the set. So definitely these are not empty sets. In fact, they contain one element. They are the unit set or the singleton set. So since they are having one element each in it, these are not empty sets. Answer is going to be no. Now, can you guys tell me what is the cardinal number of the empty set? What do you guys think? Cardinal number"
+  },
+  {
+    "start": 2466.18,
+    "end": 2496.28,
+    "text": "of empty set. Remember, what is the meaning of cardinal number? The number of elements in the set. And how many elements does an empty set have? Zero, simple. So this answer is very simple. Empty set will have zero elements in it. That's our answer. Now, let's look at the last question here. Empty set is a finite set or infinite set? What do you guys think? Empty set, is it finite or infinite? Clearly,"
+  },
+  {
+    "start": 2496.28,
+    "end": 2526.44,
+    "text": "it is finite because it is not having an, you know, un, uh, unlimited number or infinite number of elements. In fact, it has zero elements. So the correct answer here is going to be, it is a finite set. So these are all the important points of an empty set or null set. And remember how it is represented? It is represented by phi or empty brackets. Please do not put the set notation. Do not put the curly brackets. That is a very common mistake because we are in the mindset"
+  },
+  {
+    "start": 2526.44,
+    "end": 2556.54,
+    "text": "of sets. So what we do, we write this symbol and then we put a curly bracket around it. That's wrong. That is not an empty set. So that is a big confusion, keep it in mind. This is how you represent the empty set. I like this one. You know, just simple curly brackets, or you can write the null symbol. That's it. Now let's discuss the universal set. When you hear the name universal set, it reminds you of the universe, right? So universe, we think of everything, right? The entire world,"
+  },
+  {
+    "start": 2556.54,
+    "end": 2586.77,
+    "text": "solar system, everything is in the universe. Same thing for universal set, which-... It is a set that contains all the elements under consideration in your given problem. That is called the universal set. Now, how do we represent the universal set? With the letter U, capital U, or with this kind of funny-looking E with a tail. Okay, so I'll just draw it for you and show you. So you should write U or"
+  },
+  {
+    "start": 2586.77,
+    "end": 2616.83,
+    "text": "you use this kind of symbol, and then U, it has a, a kind of a, a curve at the end. So it looks like a fancy E with a curve at the end. This is the representation of a universal set. But for universal set, the choice, it is not a unique set, so it can be... You can have a different universal set. Your friend may think of a different one. Uh, um, somebody might think of a different universal set. Let's discuss that with an example. So let's say, if I say"
+  },
+  {
+    "start": 2616.83,
+    "end": 2647.11,
+    "text": "for the set V, which is the first three vowels of the English alphabet. What are the first three vowels? The first three vowels are A, E, I. Okay? Now, this is my set V. Now, what can I make the universal set as? Because we know A, E, I are vowels of the English alphabet. So maybe if I want to say that all the elements which contain A, E, I, one option you might be thinking is all the letters of the English alphabet, so everything from"
+  },
+  {
+    "start": 2647.11,
+    "end": 2677.45,
+    "text": "A to Z. So this is one option of the universal set, right? And clearly, you can see this vowel V, this set V, A, E, I, is part of the universal set. So important thing is that the set should be contained in the universal set, or universal set is containing all these elements which you are considering. But what is another example of the universal set? It can be the set of vowels also, because you chose only A, E, I,"
+  },
+  {
+    "start": 2677.45,
+    "end": 2707.57,
+    "text": "so you didn't choose O and U. So if I add that, I can make a new universal set, and this also contains all the elements in our set V. So you can see that universal sets can be different. Or maybe I can say, you know, A, E, I, O, U, and maybe B, C, D, something like that. That's also a universal set because it has A, E, I in it. So the choice is not unique. Let's look at another example. If you say, for the set A, where X such"
+  },
+  {
+    "start": 2707.57,
+    "end": 2737.61,
+    "text": "that X belongs to natural numbers, and the range is X is greater than five, X is less than ten. So can you guys tell me what is set A over here? Set A is basically the numbers six, seven, eight, and nine. See, natural numbers greater than five, less than ten. Now, what will be the universal set? One universal set could be all numbers from one to ten. Okay?"
+  },
+  {
+    "start": 2737.61,
+    "end": 2767.63,
+    "text": "So this can be a universal set, numbers one to ten, and all the elements of A are contained in it. Because universal set contains all the elements, right, which are under consideration. Or if you take another set, which is the set of all natural numbers, I can take a nice big one. This is an infinite set. It contains all the natural numbers in it, and therefore it will have six, seven, eight, nine, clear, also in it. So clearly, with these examples, you"
+  },
+  {
+    "start": 2767.63,
+    "end": 2797.67,
+    "text": "can see that the choice of universal set is not unique. It can be whatever you want it to be, okay? But the important thing is it should contain all the elements in the set that you're considering. So it's like a, a kind of a super set, which contains all these guys in it. Now let's talk about equal sets. Equal sets is really simple. Two sets are said to be equal if they have the same elements"
+  },
+  {
+    "start": 2797.67,
+    "end": 2828.05,
+    "text": "inside it, okay? So very simple, that two sets are equal sets if they have exactly the same elements. And so we write it as A equal to B. So let's say, you know, set A has the elements one, two, three. Set B also has the same elements, one, two, three. Then it's quite obvious that the two sets are equal, and this is how we represent it. But let's say set A was one, two, three, and set B was only two and three, then obviously you will say"
+  },
+  {
+    "start": 2828.05,
+    "end": 2858.79,
+    "text": "that they are not equal. So we write it as A not equal to B, so you put this slash. Very easy. Now, why don't you try this question? If A is equal to A, B, C and B equals B, A, C, A, B, is A equal to B, or is A not equal to B? What do you guys think? So we can see here, set A is basically A, B, and C. It contains these three elements. What does B contain?"
+  },
+  {
+    "start": 2858.79,
+    "end": 2888.89,
+    "text": "B contains B, A, C, but you can see A and B are duplicated. We should not put duplicate elements. And ideally, I should write this in order so that it's easier, but, uh, we know that order doesn't matter. So they're basically the same thing. So can you guys see that A and B, these two sets, are having exactly the same elements in it? Because remember, in a set, you should not take the duplicates."
+  },
+  {
+    "start": 2888.89,
+    "end": 2919.25,
+    "text": "The duplicates should be removed. The elements should be unique here. And you can see the two sets are having exactly the same elements, A, B, C. So the correct answer is going to be A is going to be equal to B. So that is the concept of equal sets. They should have exactly the same elements in it. Now, let's look at equivalent sets. We talked about equal sets. This is slightly different, equivalent sets. Two sets are said to be equivalent if they have the same"
+  },
+  {
+    "start": 2919.25,
+    "end": 2949.35,
+    "text": "number of elements in it. Not the same elements, the same number of elements. So let's look at the definition. Two finite sets are called equivalent sets-... if they have the same number of elements in it, as you can see here. Now, what is the number of elements of a set called? Cardinal number, and remember, we denote it with N, a bracket, the name of the set. So basically, we can say NA equal to NB. The two cardinal numbers or the number of elements are"
+  },
+  {
+    "start": 2949.35,
+    "end": 2979.49,
+    "text": "same. Then we say the two sets are equivalent, and it is denoted like this, with this kind of a double arrow sign. A is equivalent to B. So you should read this notation as A is equivalent to B. Okay? Now, if you look at this example, A is A, B, C, D, and B is two, five, nine, seven. Are they equivalent? What do you guys think? So see, how many elements does A have? As you can see, it has four elements: A, B, C,"
+  },
+  {
+    "start": 2979.49,
+    "end": 3009.51,
+    "text": "D, one, two, three, four. So NA equals four. How many elements does B have? Again, the number of elements, the cardinal number here is one, two, three, four. Since the two sets have equal number of elements, which is four, therefore, we can definitely say A is equivalent to B. Now, let me ask you another interesting question. Let's say set A is the set of natural numbers and set B is the set of real numbers. Are they equivalent or not? Nat- the set of natural numbers"
+  },
+  {
+    "start": 3009.51,
+    "end": 3039.65,
+    "text": "is an infinite set. Set of real numbers is also an infinite set, but are they equivalent? The answer is no, because that is why in the definition it said two finite sets. It should not be like having unlimited number of elements, because you can't compare the number of, uh, natural numbers and the real numbers, right? So note, only if they are finite, like here. Finite means having a finite number of elements, then we say the sets are equivalent. So we talked about equal and equivalent sets. Now let's"
+  },
+  {
+    "start": 3039.65,
+    "end": 3069.83,
+    "text": "compare the difference between these two. Here's a question: If two finite sets, A and B, are equal, are A and B equivalent? What do you guys think? So in these kind of questions, just think of a simple example. Let's say set A has one, two, three in it, and set B, since they are equal, it will have the same elements: one, two, and three, right? So clearly, A is equal to B. But"
+  },
+  {
+    "start": 3069.83,
+    "end": 3099.91,
+    "text": "are they equivalent? For equivalent, remember, we have to see the number of elements. A is having three elements. B is also having three elements. So NA equal to NB equal to three. So the answer is going to be yes, A and B are equivalent because they have the same number of elements. Now, what about the second question? The second question says, if two finite sets, A and B, are equivalent, are A and B equal? What do you guys think? So again, let's"
+  },
+  {
+    "start": 3099.91,
+    "end": 3130.51,
+    "text": "think of an example. If we consider two equivalent sets, let's say A has one, two, three in it, and set B has, let's say, the letters P, Q, R. I have to take the same number of elements because they are equivalent, so both sets are having three elements. But obviously, these two sets are not equal, right? One is one, two, three, and the other one is P, Q, R. So clearly, we can say here, A is not equal to B. So it is not necessary"
+  },
+  {
+    "start": 3130.51,
+    "end": 3160.53,
+    "text": "that if you have equivalent sets, they have to be equal. So the answer is no. So in summary, you should remember, if two sets are equal, then obviously they are equivalent because same number of elements. But if they are equivalent, it is not necessary that they have to be equal. Only if the elements are same, they have to be equal, as we saw in the example over here. Is that clear? Now let's look at subsets. The word \"sub\" means something which is smaller, right? So subset is"
+  },
+  {
+    "start": 3160.53,
+    "end": 3190.66,
+    "text": "like a smaller set of a set. Keep that in mind. Let's look at the definition. If all the elements, let's say if all the elements of set A also belong to set B, then what can we say? Set A is said to be a subset of set B. Why? Because everything which is there in A is also in B. So B says like, \"Hey, I'm the big guy. I have everything you have, so you are my subset.\""
+  },
+  {
+    "start": 3190.66,
+    "end": 3220.85,
+    "text": "Clear? So A is going to be the subset of B. Same way here, it can be the opposite also. If all the elements of set B, so everything which is there in B, are also present in A, then we can say set B is said to be the subset of set A. So then A tells B that, \"Hey, everything you have, I also have, so you are my subset.\" A would say, \"Okay, fine,  I'm your subset.\" Right? So that is the whole idea. Let's understand with a simple"
+  },
+  {
+    "start": 3220.85,
+    "end": 3251.25,
+    "text": "example. Let's say we take a set A as three comma four, and set B contains two comma three comma four comma five. These are the elements, right? So can you see that B is clearly the largest set here? A is the smaller set, right? And B contains everything that is there in A. Three com... Three and four are both present here in B. So clearly, we can say that set A is a subset, right? It is already there in B,"
+  },
+  {
+    "start": 3251.25,
+    "end": 3281.51,
+    "text": "so set A is clearly a subset of set B. Now, how do we represent it? Because this whole set is all about notation, so please remember, we say that... So here, we don't use greater than, less than notation. We don't say that A is less than B. So actually, sort of here it is, right? Because it has everything inside it. We, we don't say that. We use this notation. So it's like a, you know, an invert, uh, a tilted U."
+  },
+  {
+    "start": 3281.51,
+    "end": 3312.1,
+    "text": "So you write like a U, and then you put a line below that, because not only A can be less than B, it can be less than equal to.... So that is also called a subset. If they are identical, right? That because it will contain everything which is there in B. So let's say if A was also two, three, four, five, then hey, B contains everything that is there in A. So that is why. But in sets, we do not use this, so I'm going to erase this notation, but it will help you remember. It is just like the less than, greater than, but we say we use this notation,"
+  },
+  {
+    "start": 3312.1,
+    "end": 3342.2,
+    "text": "this kind of a, you can call it a, a squished C. So a C which you have flattened out. So it's like a flattened C and a line. So this is our notation for subsets. Similarly, if you look at this example, do you guys agree that natural numbers is a subset of whole numbers? Why? Because natural numbers are counting numbers one, two, three, four, five, six, and so on. Whole numbers contains all natural numbers and zero. So everything that is there in natural numbers is also in whole numbers, plus whole"
+  },
+  {
+    "start": 3342.2,
+    "end": 3372.2,
+    "text": "number is an extra thing. So clearly, natural number is a subset because whole numbers tells it, \"Hey, I have everything that you have.\" That is how you represent the subset. Natural number is a subset of whole numbers. Now let's discuss some important points regarding subsets. One very interesting thing is every set is a subset of itself. Okay? So if you consider any set, let's say a set A has one elements one,"
+  },
+  {
+    "start": 3372.2,
+    "end": 3402.34,
+    "text": "two, and three. So if I consider that set one, two, three, right? I can say one, two, three is a subset of A, because all the elements, uh, one, two, three, are present in A. So basically, we can say that every set is actually a subset of itself. And using our subset notation, you know, this kind of flattened out C with the line below, A is a subset of A. So keep that in mind,"
+  },
+  {
+    "start": 3402.34,
+    "end": 3432.44,
+    "text": "because it's basically like A equals A, right? So A is a subset of A. Another interesting thing is, empty set. The null set is basically a subset of any set, every set, because null means nothing. So every set can say, \"Hey, I contain,  I contain all these things and nothing.\" Okay? So basically, you can say null is a subset of A, or we can also remember, represent null"
+  },
+  {
+    "start": 3432.44,
+    "end": 3463.36,
+    "text": "with empty, uh, curly brackets is a subset of any set, A, B, whatever you call it. So this is another important thing. Empty set is a subset of any set that you're considering. Now, one very interesting thing, if you take two sets and we can say that A is a subset of B, right? And B is a subset of A, then what does that mean? Because here what is B telling? B is telling that, \"Hey, A, I have everything you have.\""
+  },
+  {
+    "start": 3463.36,
+    "end": 3493.76,
+    "text": "Now, A also says, \"No, no, I also have everything you have.\" So if these two guys are fighting like that, saying, \"I have everything you have,\" and the other guy is also say, \"I have everything you have,\" that means they are equal. So this is a very interesting thing. If A is a subset of B and B is a subset of A, then, hey, the two guys are equal. We'll say, \"Stop fighting. Both of you are equal. Nobody is a subset of the other.\" Clear? Now, the opposite. If you say, if A is equal to B, then we can tell these two fighting guys"
+  },
+  {
+    "start": 3493.76,
+    "end": 3523.92,
+    "text": "that, \"Hey, you guys are equal.\" So we can say A is a subset of B, and B is a subset of A. It's conversely means it is the opposite, right? So you can see that both these two statements are sort of opposite of each other. A is subset of B, and B is subset of A, that means they're equal. Similarly, if they're equal, then A is a subset of B, and B is a subset of A. These are some very important points which sometimes we tend to forget. So please make a note of these. Now let's"
+  },
+  {
+    "start": 3523.92,
+    "end": 3553.94,
+    "text": "look at proper subsets. So what is the difference between a subset and a proper subset? Let's take a look. If you take a set A, it is said to be a proper subset of the set B if all the elements of set A are contained in set B. That was what we discussed in subset, right? But it is a proper subset if there exists at least one element in B which is not in A. So"
+  },
+  {
+    "start": 3553.94,
+    "end": 3584.16,
+    "text": "basically, this means that B contains something extra which is not there in A. Okay, so if you are taking two sets, A and B, B has everything that A has but something extra. Then we say that set A is a proper subset of set B. So did you see the difference here between a subset and a proper subset? In subset, they could have been equal, but here they're not equal because B has something extra in it. And we denote"
+  },
+  {
+    "start": 3584.16,
+    "end": 3614.24,
+    "text": "this as A, and again, you know, this, uh, sort of flattened C and don't put that underline. That equal to sign should not be there, just like we write less than equal to or greater than equal to. So that line will not be there, and we read this as A is a proper subset of B. And since B is greater, that's why, you know, this opening sign is towards B and that close sign is towards A. Clear? This is the notation. So let's"
+  },
+  {
+    "start": 3614.24,
+    "end": 3644.3,
+    "text": "take an example. If A contains three and four, the elements three and four, and B has three, four, six, seven. So clearly, B is having everything that A contains, three and four, plus it has something extra, six and seven. Even if it has one more element extra, if there is one more element extra, then we say that A is a proper subset of B. Clear? So now note that you will not"
+  },
+  {
+    "start": 3644.3,
+    "end": 3674.33,
+    "text": "put that line symbol, because clearly B has something extra in it. But if they are could be equal, then we put the line symbol.... Now let's try this question. Is the set of natural numbers denoted by N? Is it a proper subset of the set of whole numbers? What do you guys think? So whole numbers means what? It is all the natural numbers, and it has an extra thing, zero, because remember, whole numbers start with zero. So yes, the answer is N is a proper"
+  },
+  {
+    "start": 3674.33,
+    "end": 3704.59,
+    "text": "subset of the whole numbers. Natural numbers is a proper subset of the whole numbers, and we do not put the line over there. You just write this, this notation, this flattened out C. Clear? So the difference between subset and proper subset should be crystal clear to you now. That proper subset means having something extra. Subset means it could have something extra, or they could be equal. Now let's look at supersets. Superset is basically the"
+  },
+  {
+    "start": 3704.59,
+    "end": 3734.59,
+    "text": "opposite of subset, so that's the easy way you can remember. It is the opposite of subsets. So if we consider this example, that A is a subset of set B, then B is called the superset of A, because B says, \"Hey, A, I have everything that you have. So you are the subset, I am the superset.\" Clear? And how do we denote this? The notation is"
+  },
+  {
+    "start": 3734.59,
+    "end": 3764.93,
+    "text": "exactly the opposite of subset, right? So you just have to turn that C to the other side because B is a superset. So the, you know, this open part points towards B, and the closed part points towards A. And again, it could be, you know, they could be equal, so we put that line there. So this we read as B is a superset of A, or A is a subset of B. Is that clear? So this one is B is a superset of A. Now let's look at the example. If set A contains the elements"
+  },
+  {
+    "start": 3764.93,
+    "end": 3795.21,
+    "text": "one, three, six and B contains one, two, three, six, seven, ten. So that means it is having one, three, six, and all these elements extra. So clearly B is having everything that A has, plus something extra. So you guys agree with me that B is the superset, A is the subset here, and we denote this as B is the superset of the set A. So is this super clear to you now?"
+  },
+  {
+    "start": 3795.21,
+    "end": 3825.55,
+    "text": "Now, let's say I give you a set. How do we find the number of subsets or proper subsets of that set? There are actually formulas to calculate it. Let's take a look at the formulas. So let's say a set has n elements in it. Now, n could be zero, one, two, three, and so on. The formula says that the number of subsets is two to the power n. This means two times two times two, n times, where n is the number of elements. That is the number of subsets"
+  },
+  {
+    "start": 3825.55,
+    "end": 3855.85,
+    "text": "of the set. And the number of proper subsets that you can make are two to the power n minus one. Why minus one? Because you cannot include the set itself. So basically it's asking what kind of... how many se- uh, subsets or proper subsets you can make from a given set. Now let's see how we can derive these formulas with some simple examples. Let's say I take a set A containing a simple one element in it. So it's a singleton set,"
+  },
+  {
+    "start": 3855.85,
+    "end": 3886.27,
+    "text": "just having the letter A. So we'll start with this simple example. Now, can you make subsets of this set A? Remember what subset means. A should have the elements of the subset in it. Okay, so what are the subsets of A that are possible? One, of course, it is A itself, right? So just the, it has letter A because that is also part of A. And then don't forget the null, the null set. The empty set also remember we said, empty set is a subset of any set."
+  },
+  {
+    "start": 3886.27,
+    "end": 3916.45,
+    "text": "So how many subsets do we have here? Two, and you can see that it is the number of subsets is two to the power one, because A has one element, two to the power n is the formula. A has only one element in it, so two to the power one, two. You can see we have two subsets. Now, how many proper subsets are there of the set A? A itself cannot be a proper subset, because remember, it should have,"
+  },
+  {
+    "start": 3916.45,
+    "end": 3946.57,
+    "text": "your set A should have something extra. So A is not counted. It will be the null set. The null set is a proper subset because A has something extra in it. It has the letter A. So how many proper subsets are there? Only one. And if you substitute in the formula, two to the power one minus one. There you see. So that means the formula works for a simple set having only one element in it. Now let's try with a set having two elements in it, so that you can see how the formula is working."
+  },
+  {
+    "start": 3946.57,
+    "end": 3976.57,
+    "text": "So if I take set B having two elements in it, A, comma, B, what are the subsets of B? Can you guys tell me? So use this example. Whenever you are writing subsets, first write the null set because sometimes we forget this empty guy. Null set is always a subset of any set. Next, what will it be? I will just take the letter A, so I can form a subset. A is going to be a subset of the set B. Then I'll take the letter, just the letter B. That"
+  },
+  {
+    "start": 3976.57,
+    "end": 4007.11,
+    "text": "is also a subset. So basically I'm picking one by one. Now I'll pick all the elements because I picked A, I picked B. So basically you're selecting them one by one. And then another possible subset is A, comma, B. Clear? So how many subsets do we have here? One, two, three, four. Let's check with the formula. Two to the power n, which is two to the power two, and we have the correct answer, four. Can you see that? So basically the number of combinations"
+  },
+  {
+    "start": 4007.11,
+    "end": 4037.24,
+    "text": "are two, two multiplied by two, multiplied by two, n times. Because basically, how do you form a subset? You take an element or you don't take it, and there are n such elements. So every time you have a binary choice, right?... either you take it or don't take it. So the number of combinations basically becomes two times two times two, n times, which is two to the power n. So here you can see we have four subsets. Now, how many proper subsets will you have? So what are the proper subsets over here?"
+  },
+  {
+    "start": 4037.24,
+    "end": 4067.64,
+    "text": "Proper subsets we can see is going to be the null set, A and B. This is not a proper subset, right? Because this is, this is exactly equal to the set. Proper subset means B should have something extra, but this is equal, so it's not counted. So how many proper subsets we have here? Two to the power n minus one, which is two to the power two minus one. Four minus one is three, and that is exactly what we saw."
+  },
+  {
+    "start": 4067.64,
+    "end": 4098.08,
+    "text": "So you can see these formulas are working. Very simple formulas, because let's say you have been given a set with ten elements, twenty elements. You can't sit and write all the combinations. You are just going to use this simple formula, and in one second, you can calculate how many, uh, subsets will be there, two to the power n. And proper subset, don't forget that minus one, because you can't include the set itself in the proper subsets. So please remember these important formulae. We have talked about subsets and supersets. Now let's talk about power sets."
+  },
+  {
+    "start": 4098.08,
+    "end": 4128.1,
+    "text": "Power sets are like powerful sets. Why? Because power sets are the set of all the subsets of a given set. Let me explain this with a very simple example. Let's say you take a set B containing a, b. So what are going to be the subsets of B? Very simple. Remember, first you take the null set so that we don't forget the empty set. Then you take one element at a time. So we have taken A and B. Now what will we take? We have taken one"
+  },
+  {
+    "start": 4128.1,
+    "end": 4158.32,
+    "text": "element at a time, so now we'll take both the elements, a, b. So can you see? And as expected, we are having two to the power n, four subsets here. Okay, now what is the power set? It is basically a set of all these subsets. So if you take all these subsets and put it in a set like this, so it is basically like a, a set of sets, right? Can you see it is containing... The curly bracket means these are, all these elements are sets, and that's absolutely"
+  },
+  {
+    "start": 4158.32,
+    "end": 4188.42,
+    "text": "fine. A set can contain sets. So power set is basically the set of all the subsets here. So we can say it is like a set of sets or set of the subsets. What is the cardinal number of this power set? How many elements it has? One, two, three, four. The number of subsets, as simple as that. Now let's talk about intervals and how do we represent them. Just like when you go to watch a movie, there's an interval,"
+  },
+  {
+    "start": 4188.42,
+    "end": 4218.84,
+    "text": "right? The gap in between. Let's say the interval is from eight PM to eight fifteen PM. So you rush out and go and get some popcorn, and you want to be back by eight fifteen so that you don't miss a single scene of the movie. So interval basically has a range of time, right? Eight to eight fifteen. That's a movie interval. So obviously, we are not talking about movies here, we are talking about simple number intervals, and for this, you can remember the number line that you have done. So for example, if we say"
+  },
+  {
+    "start": 4218.84,
+    "end": 4249.84,
+    "text": "we have two numbers, let's say A and B, which belong to real numbers. Capital R denotes real numbers, which means any number on the number line. So then we can define a closed interval. I'll talk about what is the meaning of closed interval. I can define a closed interval, A to B. A, B means A to B, and for closed interval, please put these box brackets. Can you see? So we write it like this,"
+  },
+  {
+    "start": 4249.84,
+    "end": 4279.94,
+    "text": "the box, or we call it the square brackets. So please use that. What is the meaning of this interval? This interval is defining the numbers X, which are belonging to real numbers, right? And such that X is greater than equal to A and less than equal to B. So that is why it is called a closed interval, because it includes both A and B and all the numbers between it. So how will we represent it on the number line? It's going to be represented"
+  },
+  {
+    "start": 4279.94,
+    "end": 4309.96,
+    "text": "like this. You will use a solid dot at A, a solid dot at B, and then you will draw a line between A to B like this. This is the closed interval, A, B. So all the numbers which include A, B, and all the numbers in between. And you can see that this is clearly a subset of the real numbers, right? Because"
+  },
+  {
+    "start": 4309.96,
+    "end": 4340.18,
+    "text": "real numbers means anything that can be represented on the number line. So this is the closed interval. Now let's talk about the open interval. In open interval, what do we have? Again, let's say the numbers A to B, but this time we represent it with the normal bracket. Why? Because in this interval, all the numbers between A to B are included, but not A and B. So you can see X belongs to real numbers such that X is greater than A, but less"
+  },
+  {
+    "start": 4340.18,
+    "end": 4370.2,
+    "text": "than B. There is no equal to sign. So how would we represent this on the number line? You will be using a hollow circle, right? An empty circle like this. There, it was a closed circle or a closed dot. Here, you are going to be using a open circle because you are trying to indicate that, \"Hey, I don't include A, I don't include B, but I include all the numbers between A and B.\" So you will draw a solid line over there. Clear? So that"
+  },
+  {
+    "start": 4370.2,
+    "end": 4400.49,
+    "text": "is the representation of a open interval, not including the extreme numbers. Closed interval means including both of them, and that is why we use this regular bracket. So these are very simple things, but small notations which you should remember.... And then there are two more guys, right? Because, for example, you could have two more possibilities: X greater than equal to A, but less than B, or X less than equal to B, but greater than A. So what are these guys called? The first one is called right"
+  },
+  {
+    "start": 4400.49,
+    "end": 4430.67,
+    "text": "half open interval. Why? Because you can see it is less than B, not equal to. So on the right side, it is an open interval, left side is closed. So we don't call it left side closed interval, we say right half open interval. So that is why we represent this as the square bracket A, comma, B, and the regular bracket. It is open from this side. And on the number line, how will you represent it? Very simple. You will draw a solid dot here, because"
+  },
+  {
+    "start": 4430.67,
+    "end": 4439.88,
+    "text": "you are including A. You will draw your line, and then you will draw"
+  },
+  {
+    "start": 4439.88,
+    "end": 4470.07,
+    "text": ", you will draw a hollow circle, a hollow dot here, because it is less than B, not including B. So this is the right half open interval. Okay? And again, all of these are subsets. Can you see they're subsets of the real numbers? Because all are on the number line. And then let's look at the last one. Last one is the opposite, left half open interval. The left half is open. Basically, why? Because X is greater than A, but less than equal to B, and this we denote with the..."
+  },
+  {
+    "start": 4470.07,
+    "end": 4500.09,
+    "text": "And this we denote with the regular bracket A, comma, B, and then we will put the closed bracket here. Basically, left half is open. And how do you represent it? Remember, again, if you're not including the number, you will represent with a hollow circle. Then you draw your line to include all the numbers on the number line. And then because we are including B, less than equal to B, so we will make a solid circle here, right? Or a solid dot. So please be careful when you are representing this, because sometimes we casually put a hollow circle"
+  },
+  {
+    "start": 4500.09,
+    "end": 4530.39,
+    "text": "or a solid dot. No. Everything in mathematics has a meaning, like you can see here. The solid means you include it, hollow means you don't include it. Okay? Now, what is the length of each of these intervals? Length basically means the length of this line. So if you look at all these intervals, what is the length of the line? Very simple. B minus A. You just subtract it, right? Because, for example, if the number B was, uh, seven, A was three, what will be the length of the interval? Seven minus three, four."
+  },
+  {
+    "start": 4530.39,
+    "end": 4560.45,
+    "text": "That's it. So all you have to do, the length of all of these intervals, very simple, any of these you consider is B minus A. Because it doesn't matter whether you include that number or not, right? That doesn't matter. The length is B minus A. You just have to subtract the two extremes. So please keep this terminology and how we represent it in mind. Let's understand the interval concept with some simple examples. So in the first case, can you see? We have the two box bracket"
+  },
+  {
+    "start": 4560.45,
+    "end": 4592.69,
+    "text": "or square bracket, minus two, comma, five. That means this is the range of all the numbers between minus two and five, and including them, right? So greater than equal to minus two, less than equal to five. How will you represent this on the number line? Very simple. You will put a, a solid dot for minus two and a solid dot for five. Right? So let's say this is minus two, this is five, and all the numbers between it."
+  },
+  {
+    "start": 4592.69,
+    "end": 4622.99,
+    "text": "And let's say you, you can mark here, this is minus one, this is zero, this is one, two, three, four. Okay? So remember, for the closed interval, we will use solid dots. Now, what about the next one? Here you can see the normal brackets, that means this is the open interval. So greater than minus two, less than five. As you can see here, greater than minus two, less than five. How do we represent this on the number line? Basically,"
+  },
+  {
+    "start": 4622.99,
+    "end": 4653.37,
+    "text": "we will do hollow dots, right, or hollow circle, and then you stretch this. Minus two, five. I'm not marking all those, uh, numbers just to save time, but you guys get it, right? This is the open interval. Now, what about the next one? Here you can see minus two, five, but here this is the regular bracket, so it is right half open, right? Minus two greater than X, less than five. So how will we represent this?"
+  },
+  {
+    "start": 4653.37,
+    "end": 4683.43,
+    "text": "Since minus two is included, please put a solid dot there, then draw a line here. And five is not included, less than five, so we'll draw a hollow dot. So simple. And similarly, you can do the last one. Here you can see it is left half open, because minus two greater than X, less than equal to five. So on minus two, there'll be a hollow dot, and on five, there's"
+  },
+  {
+    "start": 4683.43,
+    "end": 4713.6,
+    "text": "going to be a solid dot. So that's it. All you have to keep in mind, if the number is included, I'll put a solid dot, otherwise, I'll put a hollow dot. This is how... These are, uh, how we represent intervals. And as you can see, these are all subsets, right? Subsets of the real numbers, because they are drawn on the real- on the number line. The number line represents all the real numbers. Clear? I hope the concept of sets and"
+  },
+  {
+    "start": 4713.6,
+    "end": 4744.32,
+    "text": "all its notations is crystal clear to you now and set in your mind. And if you found this video useful, do hit the like button, do share it out with your friends, and don't forget to subscribe to our YouTube channel. And do check out our website, manochacademy.com, where we have full courses on physics, chemistry, biology, maths, coding, and our new artificial intelligence course. So do check it out. Links are given below. We also have our Android app, so please do share it out with your friends."
+  },
+  {
+    "start": 4744.32,
+    "end": 4747.69,
+    "text": "Stay connected with Manocha Academy and keep on learning."
+  }
+]

@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liverworts (Hepaticopsida) Simulator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* General Body and Container Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7fcfb; /* Soft light green-blue */
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Headings */
+        h1 {
+            text-align: center;
+            color: #2e8b57; /* Sea Green */
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            letter-spacing: 0.5px;
+        }
+
+        h2 {
+            color: #3cb371; /* Medium Sea Green */
+            border-bottom: 2px solid #e0ffe0; /* Lighter green */
+            padding-bottom: 10px;
+            margin-top: 40px;
+            font-size: 1.8em;
+        }
+
+        h3 {
+            color: #66cdaa; /* Medium Aquamarine */
+            margin-top: 25px;
+            font-size: 1.4em;
+        }
+
+        /* Paragraphs and Lists */
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            background-color: #e6f9f0; /* Very light green */
+            margin-bottom: 8px;
+            padding: 10px 15px;
+            border-radius: 6px;
+            border-left: 4px solid #90ee90; /* Light Green */
+            color: #444;
+        }
+
+        /* Interactive Elements - Buttons & Toggles */
+        .btn {
+            background-color: #90ee90; /* Light Green */
+            color: #333;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 8px 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            background-color: #76c776; /* Darker green on hover */
+            transform: translateY(-2px);
+        }
+
+        .toggle-container {
+            display: flex;
+            margin: 20px 0;
+            background-color: #f0f8ff; /* Alice Blue */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .toggle-btn {
+            flex: 1;
+            padding: 12px 15px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            color: #555;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border-radius: 0; /* Remove individual button border-radius */
+        }
+
+        .toggle-btn.active {
+            background-color: #a7d9b9; /* Soft green */
+            color: #2e8b57; /* Sea Green */
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Specific Styling */
+        .concept-section {
+            background-color: #f9fdfc; /* Very light white-green */
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e0f2f1; /* Light cyan-green */
+        }
+
+        .explanation {
+            background-color: #eef7f4; /* Light teal-green */
+            padding: 15px;
+            border-left: 5px solid #64d8ad; /* Medium teal-green */
+            border-radius: 6px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .visual-area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;
+            background-color: #f0fdf9; /* Even lighter green */
+            border: 1px dashed #c0e0d0; /* Soft dashed border */
+            border-radius: 8px;
+            margin-top: 20px;
+            flex-wrap: wrap; /* Allow wrapping on small screens */
+            padding: 15px;
+        }
+
+        .visual-area.column {
+            flex-direction: column;
+        }
+
+        .ploidy {
+            font-weight: bold;
+            color: #d9534f; /* Red for diploid */
+            background-color: #ffe0e0;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-left: 5px;
+            display: inline-block;
+        }
+
+        .ploidy.haploid {
+            color: #5cb85c; /* Green for haploid */
+            background-color: #e0ffe0;
+        }
+
+        /* 3D Model Emulation Styles */
+
+        /* Marchantia Thallus */
+        .thallus-model {
+            width: 250px;
+            height: 120px;
+            background: linear-gradient(to bottom right, #5cb85c, #76c776); /* Green gradient */
+            border-radius: 60px / 30px; /* Oval shape */
+            position: relative;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            border: 2px solid #4a9d4a; /* Darker green border */
+        }
+        .thallus-model::before {
+            content: 'Thallose Form (Marchantia)';
+            position: absolute;
+            top: -25px;
+            font-size: 0.8em;
+            color: #444;
+            background-color: #f0fdf9;
+            padding: 3px 8px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .thallus-model .rhizoid-indicator, .thallus-model .scale-indicator {
+            position: absolute;
+            bottom: -15px;
+            background-color: #b0c4de; /* Light Steel Blue */
+            color: #333;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.7em;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .thallus-model:hover .rhizoid-indicator, .thallus-model:hover .scale-indicator {
+            opacity: 1;
+        }
+        .thallus-model .rhizoid-indicator { left: 10%; content: 'Rhizoids (n)'; }
+        .thallus-model .scale-indicator { right: 10%; content: 'Scales (n)'; }
+
+
+        /* Foliose Liverwort */
+        .foliose-model {
+            width: 180px;
+            height: 200px;
+            margin: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        .foliose-model::before {
+            content: 'Foliose Form (Porella)';
+            position: absolute;
+            top: -25px;
+            font-size: 0.8em;
+            color: #444;
+            background-color: #f0fdf9;
+            padding: 3px 8px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .foliose-stem {
+            width: 30px;
+            height: 150px;
+            background: linear-gradient(to top, #8fbc8f, #6b8e23); /* Olive green */
+            border-radius: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        .foliose-leaf {
+            width: 70px;
+            height: 30px;
+            background: linear-gradient(to right, #6b8e23, #8fbc8f);
+            border-radius: 0 15px 15px 0;
+            position: absolute;
+            top: var(--top);
+            left: var(--left);
+            transform: rotate(var(--rot));
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .foliose-leaf:nth-child(1) { --top: 20px; --left: 10px; --rot: -20deg; }
+        .foliose-leaf:nth-child(2) { --top: 50px; --left: 20px; --rot: -5deg; }
+        .foliose-leaf:nth-child(3) { --top: 80px; --left: 15px; --rot: 10deg; }
+        .foliose-leaf:nth-child(4) { --top: 110px; --left: 5px; --rot: 25deg; }
+        .foliose-leaf:nth-child(5) { --top: 140px; --left: 10px; --rot: -10deg; }
+        .foliose-leaf.right {
+            border-radius: 15px 0 0 15px;
+            left: auto;
+            right: var(--right);
+            transform: rotate(var(--rot));
+        }
+        .foliose-leaf.right:nth-child(1) { --top: 30px; --right: 10px; --rot: 20deg; }
+        .foliose-leaf.right:nth-child(2) { --top: 60px; --right: 20px; --rot: 5deg; }
+        .foliose-leaf.right:nth-child(3) { --top: 90px; --right: 15px; --rot: -10deg; }
+        .foliose-leaf.right:nth-child(4) { --top: 120px; --right: 5px; --rot: -25deg; }
+        .foliose-leaf.right:nth-child(5) { --top: 150px; --right: 10px; --rot: 10deg; }
+
+
+        /* Gemma Cup */
+        .gemma-cup-model {
+            width: 150px;
+            height: 80px;
+            background: #98fb98; /* Pale Green */
+            border-radius: 0 0 75px 75px / 0 0 40px 40px;
+            position: relative;
+            margin-top: 50px;
+            box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #66cdaa;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 5px;
+        }
+        .gemma-cup-model::before {
+            content: 'Gemma Cup (n)';
+            position: absolute;
+            top: -25px;
+            font-size: 0.8em;
+            color: #444;
+            background-color: #f0fdf9;
+            padding: 3px 8px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gemma {
+            width: 15px;
+            height: 10px;
+            background: #b0e0e6; /* Powder Blue */
+            border: 1px solid #87ceeb; /* Sky Blue */
+            border-radius: 50%;
+            margin: 2px;
+            position: absolute;
+            bottom: 5px;
+            left: var(--left);
+            opacity: 0;
+            transform: translateY(0);
+            transition: all 0.5s ease-out;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            font-size: 0.6em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+        .gemma.visible {
+            opacity: 1;
+        }
+        .gemma.released {
+            bottom: -50px; /* Fall out */
+            opacity: 0;
+        }
+        .gemma-text {
+            position: absolute;
+            bottom: -20px;
+            font-size: 0.7em;
+            color: #444;
+            opacity: 0;
+            transition: opacity 0.5s ease-out;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .gemma-text.visible { opacity: 1; }
+
+        /* Antheridium & Archegonium */
+        .sex-organ-wrapper {
+            display: flex;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .sex-organ {
+            width: 120px;
+            height: 180px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 15px;
+            position: relative;
+        }
+        .sex-organ-label {
+            position: absolute;
+            top: -25px;
+            font-size: 0.8em;
+            color: #444;
+            background-color: #f0fdf9;
+            padding: 3px 8px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .antheridium-shape {
+            width: 60px;
+            height: 100px;
+            background: linear-gradient(to bottom, #f0e68c, #daa520); /* Khaki to Goldenrod */
+            border-radius: 30px;
+            position: relative;
+            box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #cd853f;
+        }
+        .antheridium-shape::after {
+            content: 'Antheridium (n)';
+            position: absolute;
+            bottom: -25px;
+            font-size: 0.7em;
+            color: #444;
+        }
+
+        .archegonium-shape {
+            width: 60px;
+            height: 120px;
+            background: linear-gradient(to bottom, #ffb6c1, #ff69b4); /* Light Pink to Hot Pink */
+            border-radius: 30px 30px 20px 20px / 50px 50px 10px 10px;
+            position: relative;
+            box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #db7093;
+        }
+        .archegonium-shape::before {
+            content: '';
+            width: 20px;
+            height: 40px;
+            background-color: #ff69b4; /* Neck */
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 10px 10px 0 0;
+            border: 1px solid #db7093;
+            border-bottom: none;
+        }
+        .archegonium-shape::after {
+            content: 'Archegonium (n)';
+            position: absolute;
+            bottom: -25px;
+            font-size: 0.7em;
+            color: #444;
+        }
+
+        /* Marchantia Sex Organophores */
+        .antheridiophore-model, .archegoniophore-model {
+            width: 150px;
+            height: 250px;
+            margin: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            background-color: #fff;
+            padding-top: 10px;
+        }
+        .antheridiophore-model::before, .archegoniophore-model::before {
+            position: absolute;
+            top: -25px;
+            font-size: 0.8em;
+            color: #444;
+            background-color: #f0fdf9;
+            padding: 3px 8px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .antheridiophore-model::before { content: 'Antheridiophore (n)'; }
+        .archegoniophore-model::before { content: 'Archegoniophore (n)'; }
+
+
+        .stalk {
+            width: 20px;
+            height: 150px;
+            background: linear-gradient(to top, #b0e0e6, #87ceeb); /* Powder Blue to Sky Blue */
+            border-radius: 10px;
+            box-shadow: inset 0 3px 5px rgba(0,0,0,0.1);
+            margin-top: 10px;
+        }
+        .antheridiophore-disc {
+            width: 100px;
+            height: 40px;
+            background: linear-gradient(to top, #ffcccb, #ff6347); /* Light Coral to Tomato */
+            border-radius: 50px / 20px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 2;
+            top: -5px; /* Overlap with stalk */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 0.7em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            border: 1px solid #cd5c5c;
+        }
+        .archegoniophore-receptacle {
+            width: 100px;
+            height: 50px;
+            background: linear-gradient(to top, #d8bfd8, #da70d6); /* Thistle to Orchid */
+            border-radius: 50px / 25px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 2;
+            top: -5px; /* Overlap with stalk */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.7em;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            border: 1px solid #ba55d3;
+        }
+        .archegoniophore-ray {
+            width: 15px;
+            height: 40px;
+            background: #c8a2c8; /* Lilac */
+            position: absolute;
+            border-radius: 5px;
+            transform-origin: bottom center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .ray-1 { top: 20px; left: 0; transform: rotate(-45deg); }
+        .ray-2 { top: 10px; left: 15px; transform: rotate(-25deg); }
+        .ray-3 { top: 0; left: 35px; transform: rotate(-5deg); }
+        .ray-4 { top: 0; right: 35px; transform: rotate(5deg); }
+        .ray-5 { top: 10px; right: 15px; transform: rotate(25deg); }
+        .ray-6 { top: 20px; right: 0; transform: rotate(45deg); }
+        .ray-center { top: 25px; } /* for rays on the underside, adjusted */
+
+        .archegoniophore-receptacle span {
+            position: absolute;
+            font-size: 0.7em;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        /* Sporophyte */
+        .sporophyte-model {
+            width: 150px;
+            height: 250px;
+            position: relative;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sporophyte-model::before {
+            content: 'Sporophyte (2n)';
+            position: absolute;
+            top: -25px;
+            font-size: 0.8em;
+            color: #444;
+            background-color: #f0fdf9;
+            padding: 3px 8px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+
+        .sporophyte-capsule {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(to bottom, #f08080, #cd5c5c); /* Light Coral to Indian Red */
+            border-radius: 50%;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 0.7em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            border: 1px solid #dc143c;
+        }
+        .sporophyte-capsule span { margin-top: 10px; }
+        .sporophyte-seta {
+            width: 15px;
+            height: 80px;
+            background: linear-gradient(to top, #daa520, #b8860b); /* Goldenrod to Dark Goldenrod */
+            border-radius: 8px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+        }
+        .sporophyte-foot {
+            width: 60px;
+            height: 40px;
+            background: linear-gradient(to bottom, #a0522d, #8b4513); /* Sienna to Saddle Brown */
+            border-radius: 30px / 20px;
+            position: relative;
+            z-index: 0;
+            top: -10px;
+            box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+        }
+
+        .calyptra-cover {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 100px;
+            background: rgba(173, 216, 230, 0.7); /* Light Blue with transparency */
+            border-radius: 50%;
+            border: 2px solid #add8e6;
+            z-index: 3;
+            display: none; /* Hidden by default */
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #333;
+            font-size: 0.8em;
+            text-shadow: 0 0 5px rgba(255,255,255,0.7);
+            box-shadow: 0 0 15px rgba(173, 216, 230, 0.5);
+        }
+        .calyptra-cover span {
+            margin-top: 20px; /* Adjust text position inside cover */
+        }
+
+        .elater-container {
+            width: 70px;
+            height: 70px;
+            border: 2px dashed #9370db; /* Medium Purple */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            background-color: #f8f0ff;
+            position: relative;
+            overflow: hidden;
+        }
+        .elater {
+            width: 5px;
+            height: 30px;
+            background-color: #9370db;
+            position: absolute;
+            transform-origin: bottom center;
+            transition: transform 0.3s ease-out;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .elater-1 { transform: rotate(-30deg); left: 20px; }
+        .elater-2 { transform: rotate(0deg); left: 33px; }
+        .elater-3 { transform: rotate(30deg); right: 20px; }
+        .elater.spring {
+            transform: translateY(-20px) rotate(var(--rot-spring)) scaleY(0.8);
+        }
+        .elater-label {
+            position: absolute;
+            bottom: -25px;
+            font-size: 0.7em;
+            color: #444;
+            background-color: #f0fdf9;
+            padding: 3px 8px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 80px;
+            text-align: center;
+        }
+        .spore {
+            width: 5px;
+            height: 5px;
+            background-color: #8b4513; /* Saddle Brown */
+            border-radius: 50%;
+            position: absolute;
+            opacity: 0;
+            transition: all 0.5s ease-out;
+            box-shadow: 0 0 3px rgba(0,0,0,0.3);
+        }
+        .spore.dispersed {
+            opacity: 1;
+            transform: translate(var(--x), var(--y));
+        }
+
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.5em; }
+            h3 { font-size: 1.2em; }
+            .btn {
+                padding: 10px 15px;
+                font-size: 0.9em;
+                margin: 5px 2px;
+            }
+            .toggle-container {
+                flex-direction: column;
+            }
+            .visual-area {
+                flex-direction: column;
+                min-height: auto;
+                padding: 10px;
+            }
+            .thallus-model, .foliose-model, .gemma-cup-model,
+            .antheridiophore-model, .archegoniophore-model, .sporophyte-model {
+                width: 90%;
+                margin: 15px auto;
+            }
+            .sex-organ-wrapper {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            .sex-organ {
+                width: 80%;
+                height: auto;
+                padding-bottom: 30px;
+            }
+            .antheridium-shape, .archegonium-shape {
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌿 Liverworts (Hepaticopsida): An Interactive Simulator 🌿</h1>
+
+        <div class="concept-section">
+            <h2>1. Introduction to Liverworts</h2>
+            <p class="explanation">
+                Welcome to the Liverworts (Hepaticopsida) simulator! This tool will help you explore the fascinating world of these primitive plants, a major group within the Bryophytes (alongside Hornworts and Mosses). Liverworts are characterized by a dominant, independent <span class="ploidy haploid">haploid (n) gametophyte</span> plant body.
+            </p>
+            <div class="visual-area">
+                <p><strong>Bryophyte Classification:</strong></p>
+                <ul>
+                    <li>🌱 Hepaticopsida (Liverworts)</li>
+                    <li>🌿 Anthocerotopsida (Hornworts)</li>
+                    <li>🌲 Bryopsida (Mosses)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="concept-section">
+            <h2 id="morphology">2. Gametophyte Morphology</h2>
+            <p>Liverworts exhibit diverse forms. Let's explore the two main types: Thallose and Foliose.</p>
+
+            <h3>Real-life Analogy:</h3>
+            <p class="explanation">
+                Imagine Thallose liverworts like a flat, green pancake or a ribbon spreading on the ground. Foliose liverworts, on the other hand, are like tiny, flattened leafy branches clinging to surfaces.
+            </p>
+
+            <div class="toggle-container">
+                <button class="toggle-btn active" onclick="showMorphology('thallose')">Thallose Form</button>
+                <button class="toggle-btn" onclick="showMorphology('foliose')">Foliose Form</button>
+            </div>
+
+            <div class="visual-area" id="morphologyVisual">
+                <!-- Thallose Form (Marchantia example) -->
+                <div class="thallus-model" id="thalloseModel">
+                    Thallus <span class="ploidy haploid">(n)</span>
+                    <span class="rhizoid-indicator">Rhizoids (n)</span>
+                    <span class="scale-indicator">Scales (n)</span>
+                </div>
+
+                <!-- Foliose Form (Porella example) - Hidden by default -->
+                <div class="foliose-model" id="folioseModel" style="display: none;">
+                    <div class="foliose-stem"></div>
+                    <div class="foliose-leaf" style="--top: 20px; --left: 10px; --rot: -20deg;"></div>
+                    <div class="foliose-leaf right" style="--top: 30px; --right: 10px; --rot: 20deg;"></div>
+                    <div class="foliose-leaf" style="--top: 50px; --left: 20px; --rot: -5deg;"></div>
+                    <div class="foliose-leaf right" style="--top: 60px; --right: 20px; --rot: 5deg;"></div>
+                    <div class="foliose-leaf" style="--top: 80px; --left: 15px; --rot: 10deg;"></div>
+                    <div class="foliose-leaf right" style="--top: 90px; --right: 15px; --rot: -10deg;"></div>
+                    <p style="position: absolute; bottom: 10px; font-size: 0.9em; color: #444;">Phylloids (n)</p>
+                    <p style="position: absolute; top: 180px; font-size: 0.9em; color: #444;">Colloid (n)</p>
+                </div>
+            </div>
+            <p>On the ventral side, both forms have unicellular, unbranched <span class="ploidy haploid">rhizoids</span> for anchorage (like tiny roots, but not for nutrient absorption) and multicellular <span class="ploidy haploid">scales</span> (amphigastria) for water retention.</p>
+        </div>
+
+        <div class="concept-section">
+            <h2 id="asexual">3. Asexual Reproduction</h2>
+            <p>Liverworts can reproduce without gametes, primarily through fragmentation or specialized structures called gemmae.</p>
+
+            <h3>Real-life Analogy:</h3>
+            <p class="explanation">
+                Gemmae are like tiny escape pods from a spaceship (the parent plant). When they land on a suitable surface, each pod can grow into a completely new spaceship, identical to the original.
+            </p>
+
+            <div class="visual-area column">
+                <div class="gemma-cup-model">
+                    <div class="gemma" id="gemma1" style="--left: 20%;"><span class="ploidy haploid">(n)</span></div>
+                    <div class="gemma" id="gemma2" style="--left: 50%;"><span class="ploidy haploid">(n)</span></div>
+                    <div class="gemma" id="gemma3" style="--left: 80%;"><span class="ploidy haploid">(n)</span></div>
+                    <div class="gemma-text" id="gemmaText">Gemmae are multicellular, haploid buds.</div>
+                </div>
+                <div style="margin-top: 20px;">
+                    <button class="btn" onclick="generateGemmae()">Generate Gemmae</button>
+                    <button class="btn" onclick="releaseGemmae()">Release Gemmae</button>
+                    <button class="btn" onclick="resetGemmae()">Reset</button>
+                </div>
+                <p style="margin-top: 20px;">
+                    Gemmae are multicellular, green, stalked, bilobed, <span class="ploidy haploid">haploid (n)</span> asexual buds formed in cup-like <span class="ploidy haploid">gemma cups</span> (e.g., in <i>Marchantia</i>). Each gemma can form two new thalli.
+                </p>
+            </div>
+        </div>
+
+        <div class="concept-section">
+            <h2 id="sexual">4. Sexual Reproduction</h2>
+            <p>This process is <span style="font-weight: bold; color: #d9534f;">oogamous</span>, meaning it involves motile male gametes and a non-motile female gamete (egg).</p>
+
+            <h3>Real-life Analogy:</h3>
+            <p class="explanation">
+                Think of sexual reproduction like finding a partner. Monoecious plants are like a house where both partners live under one roof. Dioecious plants are like separate houses for each partner, needing them to meet!
+            </p>
+
+            <h3>General Sex Organs:</h3>
+            <div class="sex-organ-wrapper">
+                <div class="sex-organ">
+                    <span class="sex-organ-label">Male Organ</span>
+                    <div class="antheridium-shape"></div>
+                </div>
+                <div class="sex-organ">
+                    <span class="sex-organ-label">Female Organ</span>
+                    <div class="archegonium-shape"></div>
+                </div>
+            </div>
+            <p style="margin-top: 30px;">
+                The male organ is the club-shaped <span class="ploidy haploid">antheridium</span>, producing flagellated male gametes. The female organ is the flask-shaped <span class="ploidy haploid">archegonium</span>, with a swollen venter (enclosing a single egg) and a tubular neck.
+            </p>
+
+            <h3>Monoecious vs. Dioecious:</h3>
+            <div class="toggle-container">
+                <button class="toggle-btn active" onclick="showSexArrangement('monoecious')">Monoecious (e.g., Riccia)</button>
+                <button class="toggle-btn" onclick="showSexArrangement('dioecious')">Dioecious (e.g., Marchantia)</button>
+            </div>
+
+            <div class="visual-area" id="sexArrangementVisual">
+                <p id="monoeciousText">
+                    <span style="font-weight: bold;">Monoecious:</span> Both male <span class="ploidy haploid">antheridia</span> and female <span class="ploidy haploid">archegonia</span> are found on the <span style="font-weight: bold; color: #5cb85c;">same gametophyte plant</span>. (e.g., <i>Riccia</i>)
+                </p>
+                <p id="dioeciousText" style="display: none;">
+                    <span style="font-weight: bold;">Dioecious:</span> Male <span class="ploidy haploid">antheridia</span> and female <span class="ploidy haploid">archegonia</span> are found on <span style="font-weight: bold; color: #5cb85c;">separate gametophyte plants</span>. (e.g., <i>Marchantia</i>)
+                </p>
+            </div>
+        </div>
+
+        <div class="concept-section">
+            <h2 id="marchantia-sex-organs">5. <i>Marchantia</i> Specific Sexual Structures</h2>
+            <p>In dioecious <i>Marchantia</i>, specialized erect branches called gametophores bear the sex organs.</p>
+
+            <h3>Real-life Analogy:</h3>
+            <p class="explanation">
+                These are like special "mushroom" towers built by the liverwort to lift its reproductive organs higher, helping with spore dispersal (male) or receiving sperm (female). The female structure has distinct "rays" like an umbrella frame.
+            </p>
+
+            <div class="visual-area">
+                <div class="antheridiophore-model">
+                    <div class="antheridiophore-disc">Antheridia inside <span class="ploidy haploid">(n)</span></div>
+                    <div class="stalk"></div>
+                </div>
+
+                <div class="archegoniophore-model">
+                    <div class="archegoniophore-receptacle">
+                        <span class="ploidy haploid">(n)</span>
+                        <div class="archegoniophore-ray ray-1"></div>
+                        <div class="archegoniophore-ray ray-2"></div>
+                        <div class="archegoniophore-ray ray-3"></div>
+                        <div class="archegoniophore-ray ray-4"></div>
+                        <div class="archegoniophore-ray ray-5"></div>
+                        <div class="archegoniophore-ray ray-6"></div>
+                    </div>
+                    <div class="stalk"></div>
+                    <p style="position: absolute; bottom: 50px; font-size: 0.7em; color: #444;">Archegonia on lower side of rays.</p>
+                </div>
+            </div>
+            <p style="margin-top: 20px;">
+                Male plants have <span class="ploidy haploid">antheridiophores</span> (stalk with a disc-like receptacle housing antheridia). Female plants have <span class="ploidy haploid">archegoniophores</span> (also called carpophylum), which have a stalk and receptacle but are distinguished by nine elongated <b>rays</b>, with archegonia located on the <i>lower</i> side of the receptacle lobes.
+            </p>
+        </div>
+
+        <div class="concept-section">
+            <h2 id="sporophyte">6. Sporophyte Development & Spore Dispersal</h2>
+            <p>Fertilization (requiring water) leads to a <span class="ploidy diploid">diploid (2n) zygote</span>, which develops into the <span class="ploidy diploid">diploid (2n) sporophyte</span>. This sporophyte is entirely dependent on the gametophyte.</p>
+
+            <h3>Real-life Analogy:</h3>
+            <p class="explanation">
+                The sporophyte is like a small, non-photosynthetic baby growing directly on its parent (the gametophyte), getting all its nutrients. Elaters are like tiny, spring-loaded trampolines inside the capsule, helping to launch the spores! The calyptra is its protective hood.
+            </p>
+
+            <div class="visual-area column">
+                <div class="sporophyte-model">
+                    <div class="calyptra-cover" id="calyptraCover">
+                        <span>Calyptra <span class="ploidy haploid">(n)</span></span>
+                    </div>
+                    <div class="sporophyte-capsule">
+                        <span>Capsule <span class="ploidy diploid">(2n)</span></span>
+                        <div class="elater-container">
+                            <div class="elater elater-1" style="--rot-spring: -45deg;"></div>
+                            <div class="elater elater-2" style="--rot-spring: 0deg;"></div>
+                            <div class="elater elater-3" style="--rot-spring: 45deg;"></div>
+                            <span class="elater-label">Elaters <span class="ploidy diploid">(2n)</span></span>
+                        </div>
+                        <div class="spore" id="spore1" style="--x: -40px; --y: -50px;"></div>
+                        <div class="spore" id="spore2" style="--x: 40px; --y: -50px;"></div>
+                        <div class="spore" id="spore3" style="--x: -60px; --y: 0px;"></div>
+                        <div class="spore" id="spore4" style="--x: 60px; --y: 0px;"></div>
+                    </div>
+                    <div class="sporophyte-seta">Seta <span class="ploidy diploid">(2n)</span></div>
+                    <div class="sporophyte-foot">Foot <span class="ploidy diploid">(2n)</span></div>
+                    <p style="position: absolute; bottom: -20px; font-size: 0.8em; color: #444;">(Embedded in Gametophyte)</p>
+                </div>
+                <div style="margin-top: 20px;">
+                    <button class="btn" onclick="toggleCalyptra()">Toggle Calyptra</button>
+                    <button class="btn" onclick="disperseSpores()">Disperse Spores</button>
+                </div>
+                <p style="margin-top: 20px;">
+                    The <i>Marchantia</i> sporophyte comprises a <span class="ploidy diploid">foot</span>, <span class="ploidy diploid">seta</span>, and <span class="ploidy diploid">capsule</span>. Haploid <span class="ploidy haploid">spores</span> are formed inside the capsule via meiosis.
+                    The sporophyte is simple, <span style="font-weight: bold; color: #d9534f;">non-green</span>, and entirely dependent on the gametophyte ("total parasite").
+                    Inside the capsule, diploid <span class="ploidy diploid">(2n)</span>, hygroscopic <span style="font-weight: bold;">elaters</span> aid spore dispersal. The developing sporophyte is protected by a <span class="ploidy haploid">calyptra</span>, formed from the archegonium wall.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Morphology Section JS ---
+        function showMorphology(form) {
+            // Get all toggle buttons and morphology models
+            const toggleBtns = document.querySelectorAll('.toggle-btn');
+            const thalloseModel = document.getElementById('thalloseModel');
+            const folioseModel = document.getElementById('folioseModel');
+
+            // Remove 'active' class from all buttons
+            toggleBtns.forEach(btn => btn.classList.remove('active'));
+
+            // Add 'active' class to the clicked button
+            event.target.classList.add('active');
+
+            // Show/hide models based on selection
+            if (form === 'thallose') {
+                thalloseModel.style.display = 'flex';
+                folioseModel.style.display = 'none';
+            } else {
+                thalloseModel.style.display = 'none';
+                folioseModel.style.display = 'flex';
+            }
+        }
+
+        // --- Asexual Reproduction (Gemmae) Section JS ---
+        function generateGemmae() {
+            const gemmae = document.querySelectorAll('.gemma');
+            gemmae.forEach((gemma, index) => {
+                setTimeout(() => {
+                    gemma.classList.remove('released');
+                    gemma.classList.add('visible');
+                    gemma.style.opacity = 1;
+                    gemma.style.transform = 'translateY(0)';
+                }, index * 100); // Stagger appearance
+            });
+            document.getElementById('gemmaText').textContent = 'Gemmae ready for dispersal!';
+            document.getElementById('gemmaText').classList.add('visible');
+        }
+
+        function releaseGemmae() {
+            const gemmae = document.querySelectorAll('.gemma');
+            gemmae.forEach((gemma, index) => {
+                setTimeout(() => {
+                    gemma.classList.add('released');
+                }, index * 150); // Stagger release
+            });
+            document.getElementById('gemmaText').textContent = 'Gemmae released! Each can grow a new plant.';
+            document.getElementById('gemmaText').classList.add('visible');
+        }
+
+        function resetGemmae() {
+            const gemmae = document.querySelectorAll('.gemma');
+            gemmae.forEach(gemma => {
+                gemma.classList.remove('visible', 'released');
+                gemma.style.opacity = 0;
+                gemma.style.transform = 'translateY(0)'; // Reset transform
+            });
+            document.getElementById('gemmaText').textContent = 'Gemmae are multicellular, haploid buds.';
+            document.getElementById('gemmaText').classList.remove('visible');
+        }
+
+        // --- Sexual Reproduction (Monoecious/Dioecious) Section JS ---
+        function showSexArrangement(type) {
+            const toggleBtns = document.querySelectorAll('#sexual .toggle-btn');
+            const monoeciousText = document.getElementById('monoeciousText');
+            const dioeciousText = document.getElementById('dioeciousText');
+
+            toggleBtns.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            if (type === 'monoecious') {
+                monoeciousText.style.display = 'block';
+                dioeciousText.style.display = 'none';
+            } else {
+                monoeciousText.style.display = 'none';
+                dioeciousText.style.display = 'block';
+            }
+        }
+
+        // --- Sporophyte Section JS ---
+        function toggleCalyptra() {
+            const calyptra = document.getElementById('calyptraCover');
+            if (calyptra.style.display === 'none' || calyptra.style.display === '') {
+                calyptra.style.display = 'flex'; // Show calyptra
+            } else {
+                calyptra.style.display = 'none'; // Hide calyptra
+            }
+        }
+
+        function disperseSpores() {
+            const elaters = document.querySelectorAll('.elater');
+            const spores = document.querySelectorAll('.spore');
+
+            // Simulate elater spring action
+            elaters.forEach((elater, index) => {
+                setTimeout(() => {
+                    elater.classList.add('spring');
+                }, index * 100);
+            });
+
+            // Disperse spores after elater action
+            setTimeout(() => {
+                spores.forEach((spore, index) => {
+                    setTimeout(() => {
+                        spore.classList.add('dispersed');
+                        // Randomize final position slightly for better visual effect
+                        const randX = (Math.random() - 0.5) * 80; // -40 to 40
+                        const randY = (Math.random() - 0.5) * 80; // -40 to 40
+                        spore.style.transform = `translate(${spore.dataset.x || 0}px, ${spore.dataset.y || 0}px) translate(${randX}px, ${randY}px)`;
+                    }, index * 100);
+                });
+            }, 500); // Start spore dispersal after 0.5s
+
+            // Reset after a delay
+            setTimeout(() => {
+                elaters.forEach(elater => elater.classList.remove('spring'));
+                spores.forEach(spore => {
+                    spore.classList.remove('dispersed');
+                    spore.style.transform = 'translate(var(--x), var(--y))'; // Reset to original spore position
+                });
+            }, 2000); // Reset after 2 seconds
+        }
+
+        // Initial setup for morphology and sexual arrangement
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set initial active state for morphology
+            document.querySelector('#morphology .toggle-btn:first-child').click();
+            // Set initial active state for sexual arrangement
+            document.querySelector('#sexual .toggle-btn:first-child').click();
+        });
+
+    </script>
+</body>
+</html>

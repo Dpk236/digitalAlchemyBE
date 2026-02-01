@@ -1,0 +1,172 @@
+[
+  {
+    "question": "Define a set.",
+    "answer": "A set is a collection of well-defined objects.",
+    "timestamp": "00:00:30"
+  },
+  {
+    "question": "What does 'well-defined' mean in the context of sets?",
+    "answer": "'Well-defined' means that there are objective inclusion criteria for the objects in the collection.",
+    "timestamp": "00:00:45"
+  },
+  {
+    "question": "How are sets typically denoted and their elements listed?",
+    "answer": "Sets are typically denoted by capital letters, and their elements are listed within curly brackets `{}`.",
+    "timestamp": "00:02:10"
+  },
+  {
+    "question": "What is the notation used to indicate that an element belongs to a set?",
+    "answer": "The notation used is ε (element of).",
+    "timestamp": "00:02:55"
+  },
+  {
+    "question": "What is the notation used to indicate that an element does not belong to a set?",
+    "answer": "The notation used is ∉ (not an element of).",
+    "timestamp": "00:02:55"
+  },
+  {
+    "question": "State one key rule for writing elements in a set.",
+    "answer": "Elements in a set are not repeated.",
+    "timestamp": "00:04:05"
+  },
+  {
+    "question": "Does the order of elements matter when writing a set?",
+    "answer": "No, the order of elements does not matter in a set.",
+    "timestamp": "00:04:20"
+  },
+  {
+    "question": "When is an ellipsis (...) used in set representation?",
+    "answer": "An ellipsis (...) is used for large or infinite sets.",
+    "timestamp": "00:04:40"
+  },
+  {
+    "question": "What does n(A) denote for a set A?",
+    "answer": "n(A) denotes the total number of distinct elements in set A.",
+    "timestamp": "00:05:30"
+  },
+  {
+    "question": "Name the three methods of set representation.",
+    "answer": "The three methods are Description Method, Roster Method, and Rule Method (Set-builder Form).",
+    "timestamp": "00:06:25"
+  },
+  {
+    "question": "What is the Roster Method of set representation?",
+    "answer": "The Roster Method involves listing all the elements of the set.",
+    "timestamp": "00:06:45"
+  },
+  {
+    "question": "Describe the Rule Method (Set-builder Form) of set representation.",
+    "answer": "The Rule Method (Set-builder Form) describes elements using a property, typically as {x : P(x)}, where P(x) is the property.",
+    "timestamp": "00:07:15"
+  },
+  {
+    "question": "What is a Finite Set?",
+    "answer": "A Finite Set is a set with a countable number of distinct elements, denoted by n(A).",
+    "timestamp": "00:08:30"
+  },
+  {
+    "question": "What is an Infinite Set?",
+    "answer": "An Infinite Set is a set with an unlimited number of elements.",
+    "timestamp": "00:08:50"
+  },
+  {
+    "question": "Define a Singleton Set.",
+    "answer": "A Singleton Set is a set that contains exactly one element.",
+    "timestamp": "00:09:10"
+  },
+  {
+    "question": "What is an Empty Set, and what is its cardinality?",
+    "answer": "An Empty Set (denoted by ∅ or {}) is a set that contains no elements, and its cardinality n(∅) is 0.",
+    "timestamp": "00:09:35"
+  },
+  {
+    "question": "What is a Universal Set?",
+    "answer": "A Universal Set (denoted by U or ℰ) is a set that encompasses all relevant elements for a particular context.",
+    "timestamp": "00:11:00"
+  },
+  {
+    "question": "When are two sets A and B considered Equal Sets?",
+    "answer": "Two sets A and B are considered Equal Sets (A = B) if they contain identical elements.",
+    "timestamp": "00:11:30"
+  },
+  {
+    "question": "When are two sets A and B considered Equivalent Sets?",
+    "answer": "Two sets A and B are considered Equivalent Sets (A ↔ B) if they have the same cardinal number (n(A) = n(B)).",
+    "timestamp": "00:12:00"
+  },
+  {
+    "question": "Are all equal sets equivalent?",
+    "answer": "Yes, all equal sets are equivalent.",
+    "timestamp": "00:12:20"
+  },
+  {
+    "question": "Are all equivalent sets equal?",
+    "answer": "No, equivalent sets are not necessarily equal.",
+    "timestamp": "00:12:20"
+  },
+  {
+    "question": "When is set A considered a subset of set B?",
+    "answer": "Set A is a subset of set B (A ⊆ B) if all elements of A are also in B.",
+    "timestamp": "00:12:50"
+  },
+  {
+    "question": "What is a proper subset?",
+    "answer": "A set A is a proper subset of set B (A ⊂ B) if A is a subset of B (A ⊆ B) and A is not equal to B (A ≠ B).",
+    "timestamp": "00:13:20"
+  },
+  {
+    "question": "Define a superset.",
+    "answer": "Set B is a superset of set A (B ⊇ A) if A is a subset of B.",
+    "timestamp": "00:13:45"
+  },
+  {
+    "question": "State two universal properties of subsets related to the empty set and the set itself.",
+    "answer": "The empty set (∅) is a subset of every set, and every set is a subset of itself.",
+    "timestamp": "00:14:10"
+  },
+  {
+    "question": "When are two sets A and B considered equal in terms of subsets?",
+    "answer": "Sets A and B are equal (A=B) if and only if A is a subset of B (A⊆B) and B is a subset of A (B⊆A).",
+    "timestamp": "00:14:30"
+  },
+  {
+    "question": "What is the formula to calculate the number of subsets for a set with 'n' elements?",
+    "answer": "The number of subsets for a set with 'n' elements is 2^n.",
+    "timestamp": "00:15:20"
+  },
+  {
+    "question": "What is the formula to calculate the number of proper subsets for a set with 'n' elements?",
+    "answer": "The number of proper subsets for a set with 'n' elements is 2^n - 1.",
+    "timestamp": "00:15:40"
+  },
+  {
+    "question": "Define the Power Set P(A) of a set A.",
+    "answer": "The Power Set P(A) is the set of all subsets of A.",
+    "timestamp": "00:16:10"
+  },
+  {
+    "question": "What is the cardinality of the Power Set P(A) for a set A with 'n' elements?",
+    "answer": "The cardinality of the Power Set P(A) is 2^n.",
+    "timestamp": "00:16:10"
+  },
+  {
+    "question": "What do intervals represent in the context of real numbers?",
+    "answer": "Intervals represent continuous ranges of real numbers.",
+    "timestamp": "00:17:10"
+  },
+  {
+    "question": "How is a closed interval represented, and what does it include?",
+    "answer": "A closed interval is represented as [A, B] and includes all real numbers X such that A ≤ X ≤ B.",
+    "timestamp": "00:18:30"
+  },
+  {
+    "question": "How is an open interval represented, and what does it include?",
+    "answer": "An open interval is represented as (A, B) and includes all real numbers X such that A < X < B.",
+    "timestamp": "00:19:00"
+  },
+  {
+    "question": "How are half-open intervals represented?",
+    "answer": "Half-open intervals are represented as [A, B) or (A, B].",
+    "timestamp": "00:19:30"
+  }
+]

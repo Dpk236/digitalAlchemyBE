@@ -1,0 +1,1976 @@
+[
+    {
+        "id": 1,
+        "start": 0.0,
+        "end": 5.58,
+        "text": "Hello students, a very warm welcome. I am Bharat, your companion for the one and only School Plus",
+        "words": []
+    },
+    {
+        "id": 2,
+        "start": 5.58,
+        "end": 13.5,
+        "text": "program at Akash. In the previous lecture, we have discussed about the various types of cells",
+        "words": []
+    },
+    {
+        "id": 3,
+        "start": 13.5,
+        "end": 21.34,
+        "text": "which are present in blood, RBC, WBC, platelets. We discussed about their characteristics and we",
+        "words": []
+    },
+    {
+        "id": 4,
+        "start": 21.34,
+        "end": 29.08,
+        "text": "also discussed about their functions. We had a discussion regarding the type of blood groups",
+        "words": []
+    },
+    {
+        "id": 5,
+        "start": 29.08,
+        "end": 37.68,
+        "text": "and the RH factor. We also discussed about the blood clotting. In today's lecture, we will take",
+        "words": []
+    },
+    {
+        "id": 6,
+        "start": 37.68,
+        "end": 44.26,
+        "text": "the lesson forward and we will talk about circulatory pathways. We will have a broad",
+        "words": []
+    },
+    {
+        "id": 7,
+        "start": 44.26,
+        "end": 53.73,
+        "text": "discussion on the structure of human heart, the cardiac cycle and the ECG. To start with,",
+        "words": []
+    },
+    {
+        "id": 8,
+        "start": 53.73,
+        "end": 62.33,
+        "text": "first we will discuss about the circulatory pathways. As if you remember, we have discussed",
+        "words": []
+    },
+    {
+        "id": 9,
+        "start": 62.33,
+        "end": 70.15,
+        "text": "in the chapter of Kingdom Animalia that there are two different types of circulatory systems",
+        "words": []
+    },
+    {
+        "id": 10,
+        "start": 70.15,
+        "end": 79.33,
+        "text": "which are present in animals and they are open circulatory system and closed circulatory system.",
+        "words": []
+    },
+    {
+        "id": 11,
+        "start": 79.33,
+        "end": 88.21,
+        "text": "Open circulatory system is a kind of a system in which the blood flows through open spaces or",
+        "words": []
+    },
+    {
+        "id": 12,
+        "start": 88.21,
+        "end": 96.15,
+        "text": "the sinuses of the body. So, in case of open circulatory system, blood is pumped by heart,",
+        "words": []
+    },
+    {
+        "id": 13,
+        "start": 96.59,
+        "end": 104.29,
+        "text": "then it passes through large vessels and then it moves into open spaces or body cavities which",
+        "words": []
+    },
+    {
+        "id": 14,
+        "start": 104.29,
+        "end": 113.49,
+        "text": "are called a sinuses. And this kind of circulatory system is present in orthopods, molluscs,",
+        "words": []
+    },
+    {
+        "id": 15,
+        "start": 114.03,
+        "end": 122.39,
+        "text": "except cephalopods like octopus, hemicordates and tunicates. Whereas, the closed circulatory system",
+        "words": []
+    },
+    {
+        "id": 16,
+        "start": 122.39,
+        "end": 129.37,
+        "text": "like we have. In case of closed circulatory system like over here you can see in this picture,",
+        "words": []
+    },
+    {
+        "id": 17,
+        "start": 129.37,
+        "end": 141.69,
+        "text": "the blood is pumped by the heart which always flow in closed path means there are defined vessels,",
+        "words": []
+    },
+    {
+        "id": 18,
+        "start": 141.69,
+        "end": 149.95,
+        "text": "there are defined paths that is arteries, veins and capillaries in which the blood flows. It does not",
+        "words": []
+    },
+    {
+        "id": 19,
+        "start": 149.95,
+        "end": 159.39,
+        "text": "flow in open spaces of the body. And this kind of system is present in annelids and caudates.",
+        "words": []
+    },
+    {
+        "id": 20,
+        "start": 160.83,
+        "end": 168.75,
+        "text": "And this closed circulatory system is considered to be more advantageous. Why? Because the flow of blood",
+        "words": []
+    },
+    {
+        "id": 21,
+        "start": 168.75,
+        "end": 178.97,
+        "text": "can be precisely regulated in this kind of system. Now, talking about the structure of heart and we'll",
+        "words": []
+    },
+    {
+        "id": 22,
+        "start": 178.97,
+        "end": 188.49,
+        "text": "first have a discussion on the number of chambers which are present in hearts of different animals.",
+        "words": []
+    },
+    {
+        "id": 23,
+        "start": 189.45,
+        "end": 198.73,
+        "text": "So, to start with the fishes. In case of fishes, there is two chambered heart. There is one atrium",
+        "words": []
+    },
+    {
+        "id": 24,
+        "start": 198.73,
+        "end": 210.65,
+        "text": "and there is one ventricle. So, the heart pumps deoxygenated blood and which is then oxygenated",
+        "words": []
+    },
+    {
+        "id": 25,
+        "start": 210.65,
+        "end": 219.37,
+        "text": "by the gills. And once the blood is oxygenated by the gills, it is taken to the all parts of the body",
+        "words": []
+    },
+    {
+        "id": 26,
+        "start": 219.37,
+        "end": 227.93,
+        "text": "and from where the deoxygenated blood is again brought back to the heart. So, heart is actually",
+        "words": []
+    },
+    {
+        "id": 27,
+        "start": 227.93,
+        "end": 236.97,
+        "text": "pumping deoxygenated blood. From heart, it moves to gills. In gills, it is getting oxygenated and from gills,",
+        "words": []
+    },
+    {
+        "id": 28,
+        "start": 236.97,
+        "end": 243.85,
+        "text": "it is moving to body parts, transferring oxygen, getting deoxygenating also simultaneously",
+        "words": []
+    },
+    {
+        "id": 29,
+        "start": 243.85,
+        "end": 252.41,
+        "text": "and then the blood is returning to heart. The second is amphibians and reptiles. In case of amphibian",
+        "words": []
+    },
+    {
+        "id": 30,
+        "start": 252.41,
+        "end": 263.05,
+        "text": "and reptiles, there are three chambers in the heart. There are two atria and there is one ventricle.",
+        "words": []
+    },
+    {
+        "id": 31,
+        "start": 266.0,
+        "end": 276.94,
+        "text": "As you can see in this both of structures. So, in these organisms, the left atrium receives oxygenated",
+        "words": []
+    },
+    {
+        "id": 32,
+        "start": 276.94,
+        "end": 288.86,
+        "text": "blood from the lungs or the gills or the skin whereas the right atrium receives the deoxygenated",
+        "words": []
+    },
+    {
+        "id": 33,
+        "start": 288.86,
+        "end": 295.9,
+        "text": "blood from the body parts. As you can see in both these structures, amphibians has three chambered heart",
+        "words": []
+    },
+    {
+        "id": 34,
+        "start": 295.9,
+        "end": 301.74,
+        "text": "whereas in case of reptiles, they also have three chambered heart but there is a development of a septum",
+        "words": []
+    },
+    {
+        "id": 35,
+        "start": 301.74,
+        "end": 307.66,
+        "text": "which is still incomplete between the two ventricles. There is a development of a wall if you can see",
+        "words": []
+    },
+    {
+        "id": 36,
+        "start": 307.66,
+        "end": 315.58,
+        "text": "but it is still incomplete. So, there is a mixing of oxygenated and deoxygenated blood",
+        "words": []
+    },
+    {
+        "id": 37,
+        "start": 315.58,
+        "end": 323.74,
+        "text": "in amphibians and reptiles and this kind of circulation is called as incomplete double circulation.",
+        "words": []
+    },
+    {
+        "id": 38,
+        "start": 323.74,
+        "end": 329.74,
+        "text": "In fishes, we had single circulation but in these that is amphibians and reptiles,",
+        "words": []
+    },
+    {
+        "id": 39,
+        "start": 329.74,
+        "end": 336.86,
+        "text": "there is an incomplete double circulation. In contrast to amphibians and reptiles,",
+        "words": []
+    },
+    {
+        "id": 40,
+        "start": 337.74,
+        "end": 345.34,
+        "text": "the birds and mammals have double circulation means complete double circulation. There is no mixing",
+        "words": []
+    },
+    {
+        "id": 41,
+        "start": 345.34,
+        "end": 352.3,
+        "text": "of oxygenated and deoxygenated blood because they have four chambered heart. As you can see",
+        "words": []
+    },
+    {
+        "id": 42,
+        "start": 353.02,
+        "end": 358.78,
+        "text": "the four chambered and there is a septum which is present. The septum has become complete",
+        "words": []
+    },
+    {
+        "id": 43,
+        "start": 358.78,
+        "end": 367.9,
+        "text": "between the left side and the right side. So, they have two atria and two ventricles. Ventricles pump",
+        "words": []
+    },
+    {
+        "id": 44,
+        "start": 368.78,
+        "end": 376.86,
+        "text": "blood without any kind of mixing. Two separate circulatory pathways are present here. So, the animals",
+        "words": []
+    },
+    {
+        "id": 45,
+        "start": 376.86,
+        "end": 386.73,
+        "text": "are said to be having a double circulation. Now talking about the internal structure of human heart.",
+        "words": []
+    },
+    {
+        "id": 46,
+        "start": 386.73,
+        "end": 401.4,
+        "text": "So, let us take it. So, this is a representation of human heart where the heart is mesodermally or derived",
+        "words": []
+    },
+    {
+        "id": 47,
+        "start": 401.4,
+        "end": 407.32,
+        "text": "organ. We know that there are three different types of germinal layers which are present during the",
+        "words": []
+    },
+    {
+        "id": 48,
+        "start": 407.32,
+        "end": 416.68,
+        "text": "embryonic development that is ectoderm, mesoderm and the endoderm. So, heart is derived from mesodermal",
+        "words": []
+    },
+    {
+        "id": 49,
+        "start": 416.68,
+        "end": 428.43,
+        "text": "cells. It is situated in the thoracic cavity means in the rib cage and is present in between the two",
+        "words": []
+    },
+    {
+        "id": 50,
+        "start": 428.43,
+        "end": 436.27,
+        "text": "lungs and slightly tilted towards the left. As you can see the tilt in this diagram also.",
+        "words": []
+    },
+    {
+        "id": 51,
+        "start": 436.27,
+        "end": 451.82,
+        "text": "And the size of human heart is roughly around the size of clenched fist, mutthi. It is protected by",
+        "words": []
+    },
+    {
+        "id": 52,
+        "start": 452.62,
+        "end": 459.74,
+        "text": "a double-walled membranous bag which is called as pericardium. There are two layers which are covering",
+        "words": []
+    },
+    {
+        "id": 53,
+        "start": 459.74,
+        "end": 467.42,
+        "text": "this called as pericardium and between the two pericardium we have pericardial fluid which is acting",
+        "words": []
+    },
+    {
+        "id": 54,
+        "start": 467.42,
+        "end": 477.6,
+        "text": "as a shock absorber. Now discussing about the structure of human heart. There are two relatively",
+        "words": []
+    },
+    {
+        "id": 55,
+        "start": 477.6,
+        "end": 486.24,
+        "text": "small upper chambers which are called as atria and two larger lower chambers which are called as ventricles.",
+        "words": []
+    },
+    {
+        "id": 56,
+        "start": 486.24,
+        "end": 494.4,
+        "text": "As you can see there is a left and right atrium and left and right ventricles. The size of ventricles",
+        "words": []
+    },
+    {
+        "id": 57,
+        "start": 494.4,
+        "end": 502.64,
+        "text": "is larger in comparison to atrium as you can see in this picture also. Now talking further here is the",
+        "words": []
+    },
+    {
+        "id": 58,
+        "start": 502.64,
+        "end": 510.4,
+        "text": "pulmonary artery. The artery is something which is carrying blood to body parts and it is connected to",
+        "words": []
+    },
+    {
+        "id": 59,
+        "start": 510.4,
+        "end": 522.97,
+        "text": "right ventricle. And this pulmonary artery is carrying blood to which body part? Lungs. The details of how",
+        "words": []
+    },
+    {
+        "id": 60,
+        "start": 522.97,
+        "end": 529.21,
+        "text": "the oxygenated and deoxygenated blood is pumped by heart to various parts of the body we will have a",
+        "words": []
+    },
+    {
+        "id": 61,
+        "start": 529.21,
+        "end": 538.44,
+        "text": "discussion later on in double circulation. Then we have this pulmonary vein. The pulmonary vein is actually",
+        "words": []
+    },
+    {
+        "id": 62,
+        "start": 538.44,
+        "end": 550.51,
+        "text": "bringing blood from lungs and it is draining into left atrium. Then you have aorta. Aorta is the largest artery",
+        "words": []
+    },
+    {
+        "id": 63,
+        "start": 550.51,
+        "end": 560.51,
+        "text": "in human body and it is receiving blood from left ventricle or you can say the left ventricle is pumping blood",
+        "words": []
+    },
+    {
+        "id": 64,
+        "start": 560.51,
+        "end": 571.07,
+        "text": "into iota and the iota is carrying it to different body parts. Then you have vena cava. The vena cava is",
+        "words": []
+    },
+    {
+        "id": 65,
+        "start": 571.07,
+        "end": 584.59,
+        "text": "bringing blood from body to heart and it is draining into right atrium. Here is the apex of the heart which is",
+        "words": []
+    },
+    {
+        "id": 66,
+        "start": 584.59,
+        "end": 596.12,
+        "text": "slightly tilted as i told you. Here is the caudate tendon. Now here is the diagram where again you can see",
+        "words": []
+    },
+    {
+        "id": 67,
+        "start": 596.68,
+        "end": 602.84,
+        "text": "different type of chambers the right and left atrium, left ventricle, right ventricle. You have to remember",
+        "words": []
+    },
+    {
+        "id": 68,
+        "start": 603.72,
+        "end": 614.6,
+        "text": "your right is left here means it is mirrored. Now talking about the various septa or the septum which",
+        "words": []
+    },
+    {
+        "id": 69,
+        "start": 614.6,
+        "end": 621.32,
+        "text": "is present between the different chambers. The septum are nothing but the walls. The first is the",
+        "words": []
+    },
+    {
+        "id": 70,
+        "start": 621.32,
+        "end": 633.32,
+        "text": "inter atrial septum. Inter atrial septum means the septum between the two atria. So this is thin muscular",
+        "words": []
+    },
+    {
+        "id": 71,
+        "start": 633.32,
+        "end": 640.68,
+        "text": "wall which separates the right and the left atria as you can see this wall. As you can see this wall is",
+        "words": []
+    },
+    {
+        "id": 72,
+        "start": 640.68,
+        "end": 650.28,
+        "text": "present between right atrium and left atrium. So this is called as inter atrial septum. Then you have",
+        "words": []
+    },
+    {
+        "id": 73,
+        "start": 650.28,
+        "end": 660.0,
+        "text": "inter ventricular septum. It is thick walled and it separates the left and the right ventricle. As you",
+        "words": []
+    },
+    {
+        "id": 74,
+        "start": 660.0,
+        "end": 672.59,
+        "text": "can see here is the inter ventricular septum which is separating right and left ventricle and it is quite",
+        "words": []
+    },
+    {
+        "id": 75,
+        "start": 672.59,
+        "end": 682.75,
+        "text": "thick. The walls of the ventricle are thick because they have to pump blood to the body. Throughout the",
+        "words": []
+    },
+    {
+        "id": 76,
+        "start": 682.75,
+        "end": 690.03,
+        "text": "body they have to pump but this is not the necessity with atrium. Why? Because they are just receiving the",
+        "words": []
+    },
+    {
+        "id": 77,
+        "start": 690.03,
+        "end": 697.79,
+        "text": "blood and they have to just pump into the next chamber which is ventricle. But ventricle they have",
+        "words": []
+    },
+    {
+        "id": 78,
+        "start": 697.79,
+        "end": 703.31,
+        "text": "to pump throughout the body. So their walls have to be thick so as to sustain or to provide that much",
+        "words": []
+    },
+    {
+        "id": 79,
+        "start": 703.31,
+        "end": 712.19,
+        "text": "pressure. Now talking about atrio ventricular septum. Atrio ventricular septum is the wall between the",
+        "words": []
+    },
+    {
+        "id": 80,
+        "start": 712.19,
+        "end": 720.59,
+        "text": "atrium and the ventricle of the same side. These are separated by thick fibrous tissue. So here is",
+        "words": []
+    },
+    {
+        "id": 81,
+        "start": 720.59,
+        "end": 730.75,
+        "text": "atrio ventricular septum means the wall between atrium and ventricle and there is a gap between you can",
+        "words": []
+    },
+    {
+        "id": 82,
+        "start": 730.75,
+        "end": 739.39,
+        "text": "see and they are nothing but valves through which the blood will move from one chamber to another.",
+        "words": []
+    },
+    {
+        "id": 83,
+        "start": 740.91,
+        "end": 749.79,
+        "text": "So you can see valves. So actually atrio ventricular septum has valves. Now talking about these valves only.",
+        "words": []
+    },
+    {
+        "id": 84,
+        "start": 750.59,
+        "end": 757.79,
+        "text": "What is the purpose of these valves and how they are being named and where they are present in heart.",
+        "words": []
+    },
+    {
+        "id": 85,
+        "start": 759.23,
+        "end": 765.39,
+        "text": "So here is the structure of heart once again. First talking about atrio ventricular valves",
+        "words": []
+    },
+    {
+        "id": 86,
+        "start": 766.11,
+        "end": 774.67,
+        "text": "means AV valve means they are present between atrium and ventricle. So they are actually regulating",
+        "words": []
+    },
+    {
+        "id": 87,
+        "start": 774.67,
+        "end": 784.49,
+        "text": "the flow of blood from atrium to ventricle. Now each of atrio ventricular septa are provided with an",
+        "words": []
+    },
+    {
+        "id": 88,
+        "start": 784.49,
+        "end": 791.96,
+        "text": "opening through which the two chambers of the same side are connected. As I already told you",
+        "words": []
+    },
+    {
+        "id": 89,
+        "start": 791.96,
+        "end": 799.72,
+        "text": "on the same side atria and ventricle are connected through these gaps which are regulated by valves.",
+        "words": []
+    },
+    {
+        "id": 90,
+        "start": 800.36,
+        "end": 808.84,
+        "text": "The first type of AV valve is called tricuspid valve. It is the opening between the right atrium",
+        "words": []
+    },
+    {
+        "id": 91,
+        "start": 808.84,
+        "end": 817.24,
+        "text": "and the right ventricle and it is made up of three muscular flaps. Here is the tricuspid valve",
+        "words": []
+    },
+    {
+        "id": 92,
+        "start": 817.24,
+        "end": 829.0,
+        "text": "you can see. So where it is present between the right atrium and the right ventricle.",
+        "words": []
+    },
+    {
+        "id": 93,
+        "start": 829.0,
+        "end": 838.44,
+        "text": "Then we have another valve which is called as mitral valve or the bicuspid valve.",
+        "words": []
+    },
+    {
+        "id": 94,
+        "start": 839.08,
+        "end": 842.92,
+        "text": "So it guards the opening between the left atrium and the left ventricle.",
+        "words": []
+    },
+    {
+        "id": 95,
+        "start": 842.92,
+        "end": 854.36,
+        "text": "Here it is you can see the mitral valve. So it is connecting left side means the left atrium",
+        "words": []
+    },
+    {
+        "id": 96,
+        "start": 854.36,
+        "end": 859.88,
+        "text": "and the left ventricle. Taking it further now we will talk about the semilunar valves.",
+        "words": []
+    },
+    {
+        "id": 97,
+        "start": 860.68,
+        "end": 868.04,
+        "text": "So semilunar valves are actually present between the ventricles and arteries.",
+        "words": []
+    },
+    {
+        "id": 98,
+        "start": 868.04,
+        "end": 876.04,
+        "text": "So they are regulating the flow of blood from ventricles into the arteries.",
+        "words": []
+    },
+    {
+        "id": 99,
+        "start": 878.04,
+        "end": 881.72,
+        "text": "So it is opening of the right and left ventricles into the pulmonary artery",
+        "words": []
+    },
+    {
+        "id": 100,
+        "start": 881.72,
+        "end": 886.04,
+        "text": "and the aorta respectively. So the first one is the pulmonary valve.",
+        "words": []
+    },
+    {
+        "id": 101,
+        "start": 886.84,
+        "end": 892.04,
+        "text": "So pulmonary valve is a opening between the right ventricle and pulmonary artery.",
+        "words": []
+    },
+    {
+        "id": 102,
+        "start": 892.04,
+        "end": 900.52,
+        "text": "pulmonary as you can see here is the pulmonary valve. It is present between the right ventricle",
+        "words": []
+    },
+    {
+        "id": 103,
+        "start": 900.52,
+        "end": 910.48,
+        "text": "and this pulmonary artery. Then the another one is the aortic valve. Here it is. The aortic valve",
+        "words": []
+    },
+    {
+        "id": 104,
+        "start": 910.48,
+        "end": 919.52,
+        "text": "is regulating the flow of blood from left ventricle into the aorta, into the aorta.",
+        "words": []
+    },
+    {
+        "id": 105,
+        "start": 919.52,
+        "end": 929.93,
+        "text": "So these valves are actually being provided to regulate the flow of blood so that the blood",
+        "words": []
+    },
+    {
+        "id": 106,
+        "start": 929.93,
+        "end": 937.69,
+        "text": "flows only in one direction. It prevents any kind of back flow which can happen.",
+        "words": []
+    },
+    {
+        "id": 107,
+        "start": 938.89,
+        "end": 948.81,
+        "text": "Now taking it forward and now we will discuss about the distribution of special type of musculature",
+        "words": []
+    },
+    {
+        "id": 108,
+        "start": 948.81,
+        "end": 957.85,
+        "text": "which is present in human heart which is actually responsible for the conduction of",
+        "words": []
+    },
+    {
+        "id": 109,
+        "start": 959.13,
+        "end": 969.53,
+        "text": "nerve signals throughout the heart. Heart as we have discussed heart is myogenic in nature.",
+        "words": []
+    },
+    {
+        "id": 110,
+        "start": 970.09,
+        "end": 977.21,
+        "text": "Heart can produce those electrical signals for the contraction of its musculature on its own.",
+        "words": []
+    },
+    {
+        "id": 111,
+        "start": 977.77,
+        "end": 985.21,
+        "text": "It does not depend upon central nervous system for sending those signals. So let us discuss about that.",
+        "words": []
+    },
+    {
+        "id": 112,
+        "start": 986.25,
+        "end": 994.09,
+        "text": "You can see here at the top most corner of the right atrium there is a specialized tissue",
+        "words": []
+    },
+    {
+        "id": 113,
+        "start": 994.09,
+        "end": 1006.81,
+        "text": "and this is called as SA node. It is a specialized cardiac musculature and this nodal tissue is",
+        "words": []
+    },
+    {
+        "id": 114,
+        "start": 1006.81,
+        "end": 1013.61,
+        "text": "distributed in the heart. The patch of this tissue is present in the right upper corner as I already told",
+        "words": []
+    },
+    {
+        "id": 115,
+        "start": 1013.61,
+        "end": 1021.77,
+        "text": "you which is called as SA node. There is another mass of this tissue which is present on the lower left",
+        "words": []
+    },
+    {
+        "id": 116,
+        "start": 1021.77,
+        "end": 1032.89,
+        "text": "corner of the right atrium. Here lower left corner of the right atrium. Remember they are present within the",
+        "words": []
+    },
+    {
+        "id": 117,
+        "start": 1032.89,
+        "end": 1040.62,
+        "text": "walls. They are musculature. They are not present inside the heart. They are present in the walls.",
+        "words": []
+    },
+    {
+        "id": 118,
+        "start": 1040.62,
+        "end": 1050.4,
+        "text": "Obviously it is a limitation to show here. Here is the AV node. Now this specialized musculature",
+        "words": []
+    },
+    {
+        "id": 119,
+        "start": 1050.96,
+        "end": 1053.04,
+        "text": "is called as AV node or the AVN.",
+        "words": []
+    },
+    {
+        "id": 120,
+        "start": 1053.04,
+        "end": 1064.0,
+        "text": "So I am repeating this thing once again. The special musculature is distributed throughout the",
+        "words": []
+    },
+    {
+        "id": 121,
+        "start": 1064.0,
+        "end": 1069.6,
+        "text": "heart which is responsible for the conduction of nerve impulse within the heart.",
+        "words": []
+    },
+    {
+        "id": 122,
+        "start": 1069.6,
+        "end": 1081.2,
+        "text": "And the specialized nodal tissue is SA node which is present towards the top of the right atrium.",
+        "words": []
+    },
+    {
+        "id": 123,
+        "start": 1081.76,
+        "end": 1088.0,
+        "text": "Whereas the another one is AVN which is present on the lower left corner of the right atrium.",
+        "words": []
+    },
+    {
+        "id": 124,
+        "start": 1089.28,
+        "end": 1095.04,
+        "text": "Then there is a bundle of nodal fibers which are called as AV bundles.",
+        "words": []
+    },
+    {
+        "id": 125,
+        "start": 1095.76,
+        "end": 1103.52,
+        "text": "Actually they continue from AV node. From AV node there are nodal fibers which are emerging.",
+        "words": []
+    },
+    {
+        "id": 126,
+        "start": 1104.32,
+        "end": 1111.2,
+        "text": "And these fibers which are emerging from AV node are called as AV bundle together and thus",
+        "words": []
+    },
+    {
+        "id": 127,
+        "start": 1111.2,
+        "end": 1117.6,
+        "text": "they are also called as the bundle of IS. So here is the nodal fibers you can see.",
+        "words": []
+    },
+    {
+        "id": 128,
+        "start": 1117.6,
+        "end": 1126.32,
+        "text": "They are emerging from AV node then moving into the septa between the ventricles.",
+        "words": []
+    },
+    {
+        "id": 129,
+        "start": 1128.0,
+        "end": 1132.4,
+        "text": "And this is called as the left bundle because there are two bundles which are present.",
+        "words": []
+    },
+    {
+        "id": 130,
+        "start": 1132.4,
+        "end": 1141.82,
+        "text": "Left bundle and the right bundle. And then these immediately branches into minute fibers",
+        "words": []
+    },
+    {
+        "id": 131,
+        "start": 1141.82,
+        "end": 1147.34,
+        "text": "which move into the ventricles which move into the ventricular musculature. And this is called as",
+        "words": []
+    },
+    {
+        "id": 132,
+        "start": 1147.34,
+        "end": 1160.65,
+        "text": "Purkinsey fibers. So from AV node this specialized musculature is emerging called as the AV bundle.",
+        "words": []
+    },
+    {
+        "id": 133,
+        "start": 1160.65,
+        "end": 1170.01,
+        "text": "AV bundle divides into two. Left bundle and the right bundle. They immediately move into the walls",
+        "words": []
+    },
+    {
+        "id": 134,
+        "start": 1170.81,
+        "end": 1178.81,
+        "text": "of the ventricles where they divide into minute musculatures specialized ones and they are called",
+        "words": []
+    },
+    {
+        "id": 135,
+        "start": 1178.81,
+        "end": 1190.43,
+        "text": "Purkinsey fibers. These nodal musculature has the ability to generate action potentials without any external",
+        "words": []
+    },
+    {
+        "id": 136,
+        "start": 1190.43,
+        "end": 1200.51,
+        "text": "stimulus. That means they are auto excitable. As I told you earlier also the heart generates on its own",
+        "words": []
+    },
+    {
+        "id": 137,
+        "start": 1200.51,
+        "end": 1210.36,
+        "text": "the action potential. The central nervous system is not sending signal to heart. Although it is regulating",
+        "words": []
+    },
+    {
+        "id": 138,
+        "start": 1210.36,
+        "end": 1223.08,
+        "text": "the activities but as such it is not sending the signals for heart to pump. The number of action",
+        "words": []
+    },
+    {
+        "id": 139,
+        "start": 1223.08,
+        "end": 1229.32,
+        "text": "potentials that could be generated in a minute vary at different parts of the nodal system.",
+        "words": []
+    },
+    {
+        "id": 140,
+        "start": 1229.32,
+        "end": 1239.4,
+        "text": "The SAN the SA node this is most important. It produces maximum number of action potential",
+        "words": []
+    },
+    {
+        "id": 141,
+        "start": 1239.4,
+        "end": 1248.2,
+        "text": "around 70 to 75 per minute and is responsible for initiating and maintaining the rhythmic contraction",
+        "words": []
+    },
+    {
+        "id": 142,
+        "start": 1248.2,
+        "end": 1255.48,
+        "text": "of the heart. So therefore this is called as the pacemaker of the heart. So the rhythmic contractions",
+        "words": []
+    },
+    {
+        "id": 143,
+        "start": 1255.48,
+        "end": 1262.68,
+        "text": "and relaxations which are happening in the heart. The signal for that is generating within the heart.",
+        "words": []
+    },
+    {
+        "id": 144,
+        "start": 1262.68,
+        "end": 1272.04,
+        "text": "Where? In the SA node. And from SA node this signal will move further. It will reach AV node and then",
+        "words": []
+    },
+    {
+        "id": 145,
+        "start": 1272.04,
+        "end": 1280.52,
+        "text": "throughout the heart. Now we will understand the same thing with the help of this diagram. Here is the",
+        "words": []
+    },
+    {
+        "id": 146,
+        "start": 1280.52,
+        "end": 1291.4,
+        "text": "Sinoatrial node. From Sinoatrial node the signal reaches AV node. Here is the AV node. Then the AV node",
+        "words": []
+    },
+    {
+        "id": 147,
+        "start": 1291.4,
+        "end": 1302.84,
+        "text": "give rise to HIS bundle. See then HIS bundle is dividing into two. Left bundle and the right bundle as you can see.",
+        "words": []
+    },
+    {
+        "id": 148,
+        "start": 1302.84,
+        "end": 1315.88,
+        "text": "And these left bundle are further moving into the septa of ventricle and then moving into entire walls of ventricle.",
+        "words": []
+    },
+    {
+        "id": 149,
+        "start": 1316.76,
+        "end": 1323.0,
+        "text": "Where they are dividing into minute fibers and they are being called as Purkinsey fiber as you can see.",
+        "words": []
+    },
+    {
+        "id": 150,
+        "start": 1323.0,
+        "end": 1334.76,
+        "text": "Now discussing about cardiac cycle. The sequential events in the heart which is cyclically repeated",
+        "words": []
+    },
+    {
+        "id": 151,
+        "start": 1335.8,
+        "end": 1344.12,
+        "text": "is called as the cardiac cycle and it consists of contractions which is called as systole and",
+        "words": []
+    },
+    {
+        "id": 152,
+        "start": 1344.12,
+        "end": 1355.56,
+        "text": "the relaxations which is called as the diastole. So they happen in a very systematic cyclical manner.",
+        "words": []
+    },
+    {
+        "id": 153,
+        "start": 1357.0,
+        "end": 1366.68,
+        "text": "And this entire cycle of systole and diastole which happens in the different chambers of human art is called",
+        "words": []
+    },
+    {
+        "id": 154,
+        "start": 1366.68,
+        "end": 1378.84,
+        "text": "as the cardiac cycle. Now to start with the cardiac cycle. Both atrium and the ventricles are in the relaxed state.",
+        "words": []
+    },
+    {
+        "id": 155,
+        "start": 1379.8,
+        "end": 1387.88,
+        "text": "And this relaxed state will be called as joint diastole. Why we are calling it as a joint diastole?",
+        "words": []
+    },
+    {
+        "id": 156,
+        "start": 1387.88,
+        "end": 1398.04,
+        "text": "Because atrium as well as the ventricles they are relaxed. And the blood is freely entering into the atrium.",
+        "words": []
+    },
+    {
+        "id": 157,
+        "start": 1399.4,
+        "end": 1411.16,
+        "text": "And at this moment our tricuspid valve and the mitral valve which we also called as the AV valves together",
+        "words": []
+    },
+    {
+        "id": 158,
+        "start": 1411.8,
+        "end": 1422.44,
+        "text": "they are open. Here you can see in this picture. This tricuspid valve and here you can see the mitral valve.",
+        "words": []
+    },
+    {
+        "id": 159,
+        "start": 1422.44,
+        "end": 1437.53,
+        "text": "They are open and the blood is freely flowing in. But you have to remember that at this moment this",
+        "words": []
+    },
+    {
+        "id": 160,
+        "start": 1437.53,
+        "end": 1449.69,
+        "text": "pulmonary valve and the aortic valve they are closed. So the blood is getting filled into the ventricle",
+        "words": []
+    },
+    {
+        "id": 161,
+        "start": 1450.33,
+        "end": 1464.4,
+        "text": "via atrium. Now what will happen the SA node that specialized musculature or the nodal center",
+        "words": []
+    },
+    {
+        "id": 162,
+        "start": 1465.04,
+        "end": 1472.4,
+        "text": "now that will generate the action potential. SA node which we already discussed is called as the pacemaker.",
+        "words": []
+    },
+    {
+        "id": 163,
+        "start": 1472.4,
+        "end": 1481.04,
+        "text": "It is generating action potential. This action potential will move into the walls of the atria",
+        "words": []
+    },
+    {
+        "id": 164,
+        "start": 1481.04,
+        "end": 1488.88,
+        "text": "and it will cause the contraction of atria and it will cause the contraction of atrium. Once the contraction",
+        "words": []
+    },
+    {
+        "id": 165,
+        "start": 1488.88,
+        "end": 1501.52,
+        "text": "of atrium will happen the blood volume into the ventricle will increase by almost 30 percent.",
+        "words": []
+    },
+    {
+        "id": 166,
+        "start": 1501.52,
+        "end": 1513.82,
+        "text": "So what is contracting at this time? Atria are contracting but ventricles are relaxed. So this",
+        "words": []
+    },
+    {
+        "id": 167,
+        "start": 1513.82,
+        "end": 1520.35,
+        "text": "stage is called as the atrial systole and",
+        "words": []
+    },
+    {
+        "id": 168,
+        "start": 1520.35,
+        "end": 1532.67,
+        "text": "as the volume of ventricle increases by this time the action potential which was generated in SA node",
+        "words": []
+    },
+    {
+        "id": 169,
+        "start": 1533.55,
+        "end": 1543.47,
+        "text": "has reached AV node. From AV node it has moved into AV bundles and through that bundles of his and entire",
+        "words": []
+    },
+    {
+        "id": 170,
+        "start": 1544.03,
+        "end": 1557.63,
+        "text": "musculature of ventricle. So the signal has reached in the walls of ventricle. So ventricles will now undergo",
+        "words": []
+    },
+    {
+        "id": 171,
+        "start": 1558.27,
+        "end": 1567.79,
+        "text": "contraction and we will call it as ventricular systole. So here comes the ventricular systole",
+        "words": []
+    },
+    {
+        "id": 172,
+        "start": 1567.79,
+        "end": 1584.91,
+        "text": "and by this time atrium are relaxed. So the blood is now into the ventricles and ventricles have started pumping.",
+        "words": []
+    },
+    {
+        "id": 173,
+        "start": 1587.23,
+        "end": 1597.15,
+        "text": "And due to this pumping and increase of pressure what will happen? The tricuspid valve as you can see here",
+        "words": []
+    },
+    {
+        "id": 174,
+        "start": 1597.15,
+        "end": 1606.43,
+        "text": "and the bicuspid valve the mitral valve as you can see they have become closed because there is an attempted",
+        "words": []
+    },
+    {
+        "id": 175,
+        "start": 1607.07,
+        "end": 1617.15,
+        "text": "backflow in the atrium. So they have closed. So any backflow back into the atrium is now prevented.",
+        "words": []
+    },
+    {
+        "id": 176,
+        "start": 1617.15,
+        "end": 1628.28,
+        "text": "But simultaneously what will happen? This pressure will cause the opening of",
+        "words": []
+    },
+    {
+        "id": 177,
+        "start": 1629.32,
+        "end": 1638.44,
+        "text": "pulmonary valve as you can see here and the aortic valve. The aortic valve the pulmonary valve",
+        "words": []
+    },
+    {
+        "id": 178,
+        "start": 1639.08,
+        "end": 1647.0,
+        "text": "they have become open because of this pressure generated in ventricle. So these valves are called",
+        "words": []
+    },
+    {
+        "id": 179,
+        "start": 1647.0,
+        "end": 1654.36,
+        "text": "semirunar valves. So semirunar valves are open and blood is now moving into the arteries.",
+        "words": []
+    },
+    {
+        "id": 180,
+        "start": 1656.2,
+        "end": 1665.88,
+        "text": "From each respective side they are moving into aorta and the pulmonary artery. Now what will happen?",
+        "words": []
+    },
+    {
+        "id": 181,
+        "start": 1666.52,
+        "end": 1679.55,
+        "text": "As the blood flows into arteries the pressure will decrease. Where it decreases? In ventricles.",
+        "words": []
+    },
+    {
+        "id": 182,
+        "start": 1679.55,
+        "end": 1693.39,
+        "text": "Now as the pressure decreases in ventricles what will happen? Our bicuspid valve and tricuspid valve",
+        "words": []
+    },
+    {
+        "id": 183,
+        "start": 1694.03,
+        "end": 1703.23,
+        "text": "they will become open again and blood will start entering into them again.",
+        "words": []
+    },
+    {
+        "id": 184,
+        "start": 1703.23,
+        "end": 1716.59,
+        "text": "Now this completes the entire cycle of contractions and relaxation. So now again ventricles are relaxed.",
+        "words": []
+    },
+    {
+        "id": 185,
+        "start": 1718.35,
+        "end": 1725.23,
+        "text": "Atrium were already relaxed. So once again it comes the joint diastole.",
+        "words": []
+    },
+    {
+        "id": 186,
+        "start": 1725.23,
+        "end": 1735.98,
+        "text": "Now moving forward we will discuss about cardiac output. We know that the heart beats 72 times per minute",
+        "words": []
+    },
+    {
+        "id": 187,
+        "start": 1737.26,
+        "end": 1745.13,
+        "text": "and that many cardiac cycles are performed per minute. Now therefore the duration of cardiac cycle",
+        "words": []
+    },
+    {
+        "id": 188,
+        "start": 1745.13,
+        "end": 1755.29,
+        "text": "is roughly around 0.8 seconds. Now during a cardiac cycle each ventricle pumps out approximately 70 ml of blood",
+        "words": []
+    },
+    {
+        "id": 189,
+        "start": 1755.29,
+        "end": 1761.13,
+        "text": "which is called a stroke volume. So each ventricle is pumping 70 ml of blood and this is what it is called as",
+        "words": []
+    },
+    {
+        "id": 190,
+        "start": 1761.93,
+        "end": 1773.29,
+        "text": "the stroke volume. If I multiply this stroke volume by heart rate that is the number of beats per minute.",
+        "words": []
+    },
+    {
+        "id": 191,
+        "start": 1773.29,
+        "end": 1779.05,
+        "text": "So what I will get the cardiac output. So what I will get the cardiac output. So I am multiplying 70",
+        "words": []
+    },
+    {
+        "id": 192,
+        "start": 1780.49,
+        "end": 1789.21,
+        "text": "with the number of times the heart pumps in a minute which is roughly around 70 to 280.",
+        "words": []
+    },
+    {
+        "id": 193,
+        "start": 1790.33,
+        "end": 1799.61,
+        "text": "So whatever volume which I will get this is called as the volume of blood pumped by each ventricle",
+        "words": []
+    },
+    {
+        "id": 194,
+        "start": 1799.61,
+        "end": 1807.05,
+        "text": "or the cardiac output. As you can see which is around 5 liter or 5000 ml in case of a healthy individual.",
+        "words": []
+    },
+    {
+        "id": 195,
+        "start": 1808.65,
+        "end": 1818.06,
+        "text": "Now body has the ability to alter the stroke volume as well as the heart rate and the cardiac output.",
+        "words": []
+    },
+    {
+        "id": 196,
+        "start": 1818.06,
+        "end": 1823.34,
+        "text": "Now talking about the sounds which are associated with the cardiac cycle.",
+        "words": []
+    },
+    {
+        "id": 197,
+        "start": 1824.3,
+        "end": 1829.66,
+        "text": "The typical heart sounds. Now during each cardiac cycle there are two prominent sounds",
+        "words": []
+    },
+    {
+        "id": 198,
+        "start": 1829.66,
+        "end": 1839.9,
+        "text": "which can be easily heard with the help of stethoscope. The first sound is the love sound which is",
+        "words": []
+    },
+    {
+        "id": 199,
+        "start": 1839.9,
+        "end": 1849.26,
+        "text": "associated with the closure of tricuspid and bicuspid valves. When tricuspid and bicuspid valves close",
+        "words": []
+    },
+    {
+        "id": 200,
+        "start": 1849.26,
+        "end": 1859.66,
+        "text": "when they do close during ventricular systole in the early part of the ventricular systole in order to prevent any",
+        "words": []
+    },
+    {
+        "id": 201,
+        "start": 1859.66,
+        "end": 1866.86,
+        "text": "backflow into the atria and that closure produces this one first sound which is called as lub. Then the second",
+        "words": []
+    },
+    {
+        "id": 202,
+        "start": 1866.86,
+        "end": 1874.94,
+        "text": "heart sound is called as dub which is due to the closure of semilunar valves. When the ventricle",
+        "words": []
+    },
+    {
+        "id": 203,
+        "start": 1874.94,
+        "end": 1887.23,
+        "text": "undergoes diastole then what happens the pressure decreases and the semilunar valves closes. At this",
+        "words": []
+    },
+    {
+        "id": 204,
+        "start": 1887.23,
+        "end": 1896.83,
+        "text": "time that second sound is produced which is called as the dub sound. Now these sounds are of clinical",
+        "words": []
+    },
+    {
+        "id": 205,
+        "start": 1896.83,
+        "end": 1906.35,
+        "text": "diagnostic significance. Any deviations from these sounds can be an indication of some kind of disorder.",
+        "words": []
+    },
+    {
+        "id": 206,
+        "start": 1906.35,
+        "end": 1915.55,
+        "text": "Now talking about the electrocardiogram or the ECG you must have seen that bip sound",
+        "words": []
+    },
+    {
+        "id": 207,
+        "start": 1916.59,
+        "end": 1923.31,
+        "text": "or that graph which coming often associated with the patient on a bed there is a monitor in which this",
+        "words": []
+    },
+    {
+        "id": 208,
+        "start": 1923.31,
+        "end": 1930.59,
+        "text": "graph is coming that is called as ECG the electrocardiogram and that graph we will get that",
+        "words": []
+    },
+    {
+        "id": 209,
+        "start": 1930.59,
+        "end": 1938.99,
+        "text": "is called as electrocardiogram. So ECG is nothing but a graphical representation of the electrical activity",
+        "words": []
+    },
+    {
+        "id": 210,
+        "start": 1938.99,
+        "end": 1946.99,
+        "text": "of heart during a cardiac cycle and it is measured with the help of an instrument in which there are two",
+        "words": []
+    },
+    {
+        "id": 211,
+        "start": 1946.99,
+        "end": 1956.51,
+        "text": "leads which are applied on each of the wrists and one lead is applied on the left ankle and with this we",
+        "words": []
+    },
+    {
+        "id": 212,
+        "start": 1956.51,
+        "end": 1965.39,
+        "text": "get a standard ECG. For understanding more detailed activity of heart in terms of electrical activity",
+        "words": []
+    },
+    {
+        "id": 213,
+        "start": 1966.19,
+        "end": 1978.88,
+        "text": "we use more leads which are applied on the chest. Now each peak in the ECG is identified with a letter",
+        "words": []
+    },
+    {
+        "id": 214,
+        "start": 1978.88,
+        "end": 1988.56,
+        "text": "from P to T and that corresponds to a specific electrical activity of the heart. If we will see the graph we",
+        "words": []
+    },
+    {
+        "id": 215,
+        "start": 1988.56,
+        "end": 1999.13,
+        "text": "will see there are certain peaks and they each has been represented with particular symbol. Now here",
+        "words": []
+    },
+    {
+        "id": 216,
+        "start": 2000.33,
+        "end": 2006.41,
+        "text": "is the relationship between the cardiac cycle and the ECG. Now let us understand this.",
+        "words": []
+    },
+    {
+        "id": 217,
+        "start": 2006.41,
+        "end": 2022.0,
+        "text": "When the atrial systole begins how does the atrial systole begins? When the SA node produces that signal",
+        "words": []
+    },
+    {
+        "id": 218,
+        "start": 2022.64,
+        "end": 2030.8,
+        "text": "when the SA node produces that electrical impulse and due to production of this electrical impulse",
+        "words": []
+    },
+    {
+        "id": 219,
+        "start": 2030.8,
+        "end": 2041.52,
+        "text": "the atrium contract and this is called as atrial depolarization. As you can see here is the atrial",
+        "words": []
+    },
+    {
+        "id": 220,
+        "start": 2041.52,
+        "end": 2049.04,
+        "text": "depolarization at the bottom you can see and this P wave which we are getting this is associated with",
+        "words": []
+    },
+    {
+        "id": 221,
+        "start": 2051.12,
+        "end": 2060.96,
+        "text": "the contraction of atrium and it comes just before that just before the contraction of atrium",
+        "words": []
+    },
+    {
+        "id": 222,
+        "start": 2060.96,
+        "end": 2067.12,
+        "text": "because this wave is actually electrical activity. Once the electrical activity will set in",
+        "words": []
+    },
+    {
+        "id": 223,
+        "start": 2068.16,
+        "end": 2079.63,
+        "text": "then the contraction will happen. So it is just before the atria have started contracting. So you can see here",
+        "words": []
+    },
+    {
+        "id": 224,
+        "start": 2080.59,
+        "end": 2088.35,
+        "text": "so as the P wave ends the atria is already in the systole you can see the atria are in systole",
+        "words": []
+    },
+    {
+        "id": 225,
+        "start": 2088.35,
+        "end": 2095.79,
+        "text": "but the P wave was initiated when the atria were in diastole as you can see here.",
+        "words": []
+    },
+    {
+        "id": 226,
+        "start": 2099.63,
+        "end": 2107.95,
+        "text": "Now comes the second phase which is ventricular systole the first phase of that. Now the signal has reached",
+        "words": []
+    },
+    {
+        "id": 227,
+        "start": 2109.07,
+        "end": 2117.85,
+        "text": "AV node and from AV node the signal will move into bundle of his and the Purkinsey fiber throughout the",
+        "words": []
+    },
+    {
+        "id": 228,
+        "start": 2117.85,
+        "end": 2124.97,
+        "text": "ventricular musculature. So the ventricle will contract and the contraction of ventricle is",
+        "words": []
+    },
+    {
+        "id": 229,
+        "start": 2125.61,
+        "end": 2132.49,
+        "text": "a good amount of electrical activity and there you get a peak you can see QRS over here this peak",
+        "words": []
+    },
+    {
+        "id": 230,
+        "start": 2133.53,
+        "end": 2142.65,
+        "text": "and obviously this electrical activity precedes what it precedes the contraction of ventricles.",
+        "words": []
+    },
+    {
+        "id": 231,
+        "start": 2142.65,
+        "end": 2148.25,
+        "text": "slightly before only it will happen then only the contraction will happen right. So you can see",
+        "words": []
+    },
+    {
+        "id": 232,
+        "start": 2150.72,
+        "end": 2161.04,
+        "text": "it is here means it once this peak you can see then the ventricular systole will happen as you can see",
+        "words": []
+    },
+    {
+        "id": 233,
+        "start": 2162.72,
+        "end": 2170.16,
+        "text": "and as the ventricle goes into systole atrium has come into diastole you can see and this",
+        "words": []
+    },
+    {
+        "id": 234,
+        "start": 2170.16,
+        "end": 2178.16,
+        "text": "part of the ECG is called as QRS complex. Then comes the ventricular systole the second phase.",
+        "words": []
+    },
+    {
+        "id": 235,
+        "start": 2179.52,
+        "end": 2188.88,
+        "text": "At this moment the semilunar walls are open and the blood is ejected. So at this time the ventricles have",
+        "words": []
+    },
+    {
+        "id": 236,
+        "start": 2188.88,
+        "end": 2198.64,
+        "text": "started relaxing. So beginning of that relaxation. So this will be called as ventricular repolarization.",
+        "words": []
+    },
+    {
+        "id": 237,
+        "start": 2198.64,
+        "end": 2207.92,
+        "text": "So this T wave is associated with that and you can see this is T wave ventricular repolarization and after",
+        "words": []
+    },
+    {
+        "id": 238,
+        "start": 2207.92,
+        "end": 2215.84,
+        "text": "this you can see the ventriculars have moved into diastole and both are together into joint diastole now.",
+        "words": []
+    },
+    {
+        "id": 239,
+        "start": 2215.84,
+        "end": 2221.52,
+        "text": "So then comes the ventricle diastole early part and the ventricle diastole late part. So here",
+        "words": []
+    },
+    {
+        "id": 240,
+        "start": 2221.52,
+        "end": 2230.0,
+        "text": "the electromedal activity is not there once again the new cycle will start. So the P wave represents the",
+        "words": []
+    },
+    {
+        "id": 241,
+        "start": 2230.0,
+        "end": 2238.16,
+        "text": "electrical excitation of the atria which leads to the contraction of both the atria as you can see in",
+        "words": []
+    },
+    {
+        "id": 242,
+        "start": 2238.16,
+        "end": 2248.24,
+        "text": "this sentence which leads to contraction of both the atria. So the P wave is slightly preceding what atrial",
+        "words": []
+    },
+    {
+        "id": 243,
+        "start": 2249.84,
+        "end": 2257.84,
+        "text": "systole. The QRS complex represents the depolarization of ventricles means the ventricles",
+        "words": []
+    },
+    {
+        "id": 244,
+        "start": 2257.84,
+        "end": 2269.77,
+        "text": "will undergo now contraction and again it is slightly preceding ventricular systole. Then comes",
+        "words": []
+    },
+    {
+        "id": 245,
+        "start": 2270.97,
+        "end": 2276.57,
+        "text": "the T wave which is nothing but the return of the ventricles from excited to normal state",
+        "words": []
+    },
+    {
+        "id": 246,
+        "start": 2276.57,
+        "end": 2284.57,
+        "text": "which is called as repolarization and it marks the end of systole means now the ventricle will move",
+        "words": []
+    },
+    {
+        "id": 247,
+        "start": 2284.57,
+        "end": 2292.33,
+        "text": "into diastole. The ECGs which are obtained from different individuals have roughly the same shape",
+        "words": []
+    },
+    {
+        "id": 248,
+        "start": 2293.93,
+        "end": 2303.21,
+        "text": "for a given lead configuration. Any deviation in this shape means there is some kind of abnormality or",
+        "words": []
+    },
+    {
+        "id": 249,
+        "start": 2303.21,
+        "end": 2310.57,
+        "text": "disease. For example you can see the ECG of two different individuals here this is the normal one",
+        "words": []
+    },
+    {
+        "id": 250,
+        "start": 2310.57,
+        "end": 2321.95,
+        "text": "and here is the ECG which is associated with the person having a myocardial infarction. So this is",
+        "words": []
+    },
+    {
+        "id": 251,
+        "start": 2321.95,
+        "end": 2334.17,
+        "text": "nothing but a heart failure. Now further understanding the electrocardiogram or the ECG. So here is the heart,",
+        "words": []
+    },
+    {
+        "id": 252,
+        "start": 2336.22,
+        "end": 2343.58,
+        "text": "here is the sinoatrial node, here is the Purkinje fibers or the bundle of his which will be throughout",
+        "words": []
+    },
+    {
+        "id": 253,
+        "start": 2343.58,
+        "end": 2355.07,
+        "text": "the ventricular musculature and electrical impulse travels from the sinoatrial node to the walls of",
+        "words": []
+    },
+    {
+        "id": 254,
+        "start": 2355.07,
+        "end": 2362.43,
+        "text": "the atria. So in the SA node electrical signal has been generated and where it is moving first it will",
+        "words": []
+    },
+    {
+        "id": 255,
+        "start": 2362.43,
+        "end": 2370.43,
+        "text": "move to the atrial walls itself because the atria has to undergo contraction. So this colored part,",
+        "words": []
+    },
+    {
+        "id": 256,
+        "start": 2370.43,
+        "end": 2384.59,
+        "text": "which we are seeing in the heart is the area where the electrical activity has reached. So the electrical",
+        "words": []
+    },
+    {
+        "id": 257,
+        "start": 2384.59,
+        "end": 2393.23,
+        "text": "activity you can see it is present in the atrial walls and at this moment you are getting this part",
+        "words": []
+    },
+    {
+        "id": 258,
+        "start": 2393.23,
+        "end": 2407.15,
+        "text": "of the ECG in the form of this P peak. You can see this is being highlighted over here. So when the electrical",
+        "words": []
+    },
+    {
+        "id": 259,
+        "start": 2407.15,
+        "end": 2421.47,
+        "text": "signal is in this part we are getting P. Now moving forward now the electrical signal has reached AV node.",
+        "words": []
+    },
+    {
+        "id": 260,
+        "start": 2421.47,
+        "end": 2430.27,
+        "text": "This represents the AV node. Here is the AV node. So the electrical activity is present in this part.",
+        "words": []
+    },
+    {
+        "id": 261,
+        "start": 2432.73,
+        "end": 2441.13,
+        "text": "So the impulse reaches the atrioventricular node by a delay of around 0.1 second and at this moment",
+        "words": []
+    },
+    {
+        "id": 262,
+        "start": 2441.13,
+        "end": 2451.52,
+        "text": "this part is corresponding to ECG in terms of electrical activity as you can see being highlighted.",
+        "words": []
+    },
+    {
+        "id": 263,
+        "start": 2451.52,
+        "end": 2466.64,
+        "text": "Now the signal from AV node is moving through the bundles into the ventricular musculature as you can see.",
+        "words": []
+    },
+    {
+        "id": 264,
+        "start": 2468.32,
+        "end": 2477.92,
+        "text": "So you can see the bundles branches are carrying the signal from AV node to the heart apex.",
+        "words": []
+    },
+    {
+        "id": 265,
+        "start": 2477.92,
+        "end": 2489.76,
+        "text": "So at this moment you are getting this part in the ECG. The electrical activity is corresponding to this part.",
+        "words": []
+    },
+    {
+        "id": 266,
+        "start": 2492.36,
+        "end": 2500.04,
+        "text": "And as the signal spreads into entire ventricular musculature",
+        "words": []
+    },
+    {
+        "id": 267,
+        "start": 2500.04,
+        "end": 2511.24,
+        "text": "through all those tiny projecting Purkinsey fibers and the contraction will initiate you will get this major peak.",
+        "words": []
+    },
+    {
+        "id": 268,
+        "start": 2512.92,
+        "end": 2524.36,
+        "text": "The QRS. Here comes the QRS peak which is signaling ventricular systole to proceed.",
+        "words": []
+    },
+    {
+        "id": 269,
+        "start": 2524.36,
+        "end": 2538.75,
+        "text": "And then here at the end this part is T wave which will signal the repolarization of ventricles.",
+        "words": []
+    },
+    {
+        "id": 270,
+        "start": 2541.88,
+        "end": 2549.24,
+        "text": "Now here is a concept checker for you. ECG depicts the depolarization and repolarization processes",
+        "words": []
+    },
+    {
+        "id": 271,
+        "start": 2549.24,
+        "end": 2556.68,
+        "text": "during the cardiac cycle. In the ECG of a normal healthy individual one of the following waves is not",
+        "words": []
+    },
+    {
+        "id": 272,
+        "start": 2556.68,
+        "end": 2563.72,
+        "text": "represented. Which one is that? The first option is depolarization of atria. Yes, it is there.",
+        "words": []
+    },
+    {
+        "id": 273,
+        "start": 2563.72,
+        "end": 2572.28,
+        "text": "That is the P wave. Repolarization of atria. Let us see. The next is the depolarization of ventricle.",
+        "words": []
+    },
+    {
+        "id": 274,
+        "start": 2572.28,
+        "end": 2578.84,
+        "text": "It is represented which is the QRS complex. Repolarization of ventricle is also represented",
+        "words": []
+    },
+    {
+        "id": 275,
+        "start": 2579.4,
+        "end": 2586.52,
+        "text": "which is the T wave. So it is the repolarization of atria which is not represented instantly.",
+        "words": []
+    },
+    {
+        "id": 276,
+        "start": 2586.68,
+        "end": 2589.96,
+        "text": "So the correct answer is the standard ECG. So the correct answer is the B option.",
+        "words": []
+    },
+    {
+        "id": 277,
+        "start": 2591.56,
+        "end": 2598.84,
+        "text": "Now the next question. The second heart sound which is dub is associated with the closure of",
+        "words": []
+    },
+    {
+        "id": 278,
+        "start": 2598.84,
+        "end": 2605.8,
+        "text": "tricuspid, semilunar valve, bicuspid valve or the tricuspid and bicuspid valves both.",
+        "words": []
+    },
+    {
+        "id": 279,
+        "start": 2605.8,
+        "end": 2614.52,
+        "text": "So the second sound which is dub is actually associated with the closure of semilunar valves",
+        "words": []
+    },
+    {
+        "id": 280,
+        "start": 2614.52,
+        "end": 2620.2,
+        "text": "which is the pulmonary valve and the aortic valve. So the correct answer is semilunar valves.",
+        "words": []
+    },
+    {
+        "id": 281,
+        "start": 2620.2,
+        "end": 2624.44,
+        "text": "So this is what we have for today in this class. We will meet again in the next class.",
+        "words": []
+    },
+    {
+        "id": 282,
+        "start": 2624.44,
+        "end": 2634.44,
+        "text": "Bye then. Thank you and take care.",
+        "words": []
+    }
+]

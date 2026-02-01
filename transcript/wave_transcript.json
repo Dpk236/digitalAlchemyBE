@@ -1,0 +1,278 @@
+{
+  "language": "en",
+  "language_probability": 0.9998883008956909,
+  "duration": 333.225375,
+  "title": "Waves",
+  "video_id": "waves",
+  "subject": "Physics",
+  "chapter": "Waves",
+  "segments": [
+  {
+    "id": 0,
+    "start": 0.51,
+    "end": 7.99,
+    "text": "Hello students, welcome to the school plus program. This is Sumit Kumar physics faculty and in this video we are going to discuss topic 1",
+    "duration": 7.48,
+    "source_segment_ids": [
+      1,
+      2
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap"
+  },
+  {
+    "id": 1,
+    "start": 7.99,
+    "end": 13.71,
+    "text": "of waves chapter. We will be discussing waves motion, what are transverse waves, what are longitudinal",
+    "duration": 5.720000000000001,
+    "source_segment_ids": [
+      3,
+      4
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap"
+  },
+  {
+    "id": 2,
+    "start": 13.71,
+    "end": 32.27,
+    "text": "waves, displacement relation of progressive wave and speed of transverse wave. So let us begin the discussion. Before waves chapter as you remember we discussed oscillations. In oscillations we discussed how a particle oscillates simple harmonically isolated particle,",
+    "duration": 18.560000000000002,
+    "source_segment_ids": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "was_merged": true,
+    "merge_reason": "continuation_so; tiny_gap; tiny_gap"
+  },
+  {
+    "id": 3,
+    "start": 32.27,
+    "end": 38.89,
+    "text": "but let us consider a case where there is a set of particles or a system of particles",
+    "duration": 6.619999999999997,
+    "source_segment_ids": [
+      9
+    ],
+    "was_merged": false,
+    "merge_reason": null
+  },
+  {
+    "id": 4,
+    "start": 38.89,
+    "end": 49.99,
+    "text": "they are all together doing oscillations. What is that? Take an example, you have a string and you one end of the string is tied and the other end",
+    "duration": 11.100000000000001,
+    "source_segment_ids": [
+      10,
+      11,
+      12
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap; tiny_gap"
+  },
+  {
+    "id": 5,
+    "start": 49.99,
+    "end": 60.41,
+    "text": "is the free and you move the other end up and down like this. So what will happen? A wave will be generated in that and if you see the individual particles in a string they",
+    "duration": 10.419999999999995,
+    "source_segment_ids": [
+      13,
+      14,
+      15
+    ],
+    "was_merged": true,
+    "merge_reason": "continuation_so; tiny_gap"
+  },
+  {
+    "id": 6,
+    "start": 60.41,
+    "end": 110.07,
+    "text": "are oscillating like this. They are oscillating, they are not moving with the wave, they are oscillating at their positions. So here you see it is not one particle oscillating, it is a particle, a set of particles that are there on the string, they are oscillating together. So a wave is generated. So we can say a wave is a set of particles which are oscillating like this ok. Now ah first of all let us discuss about what are different ah what are the type? Dabarashyavoldetan last statement. First of all let us discuss what are the types of waves. So here we are discussing mechanical waves. So a wave, mechanical wave is a wave which needs a medium to propagate ok. So we were taking an example of string ok, we are moving the string so wave wave is propagating",
+    "duration": 49.66,
+    "source_segment_ids": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap; continuation_so; incomplete_dangling_auxiliary: are; continuation_so; continuation_so; tiny_gap; tiny_gap; tiny_gap; continuation_so; continuation_so; continuation_so"
+  },
+  {
+    "id": 7,
+    "start": 110.07,
+    "end": 134.27,
+    "text": "in the string. It means that wave need the medium that is there the string is there ok. So the wave is propagating in that string. You can take another example sound wave ok. It needs a medium in air ok, it propagates through that. Let us take when I am speaking here. So, the sound wave is propagating like this or some other types of waves, let us take waves",
+    "duration": 24.200000000000017,
+    "source_segment_ids": [
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap; continuation_so; tiny_gap; tiny_gap; tiny_gap; tiny_gap"
+  },
+  {
+    "id": 8,
+    "start": 134.27,
+    "end": 140.89,
+    "text": "in water ok. So, there is a medium, they need some medium to propagate and these type of waves we call",
+    "duration": 6.619999999999976,
+    "source_segment_ids": [
+      35,
+      36
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap"
+  },
+  {
+    "id": 9,
+    "start": 140.89,
+    "end": 157.25,
+    "text": "them as mechanical waves. There may be other type of waves which do not require a medium example, electromagnetic waves. They do not need a medium ok. Their electric field and magnetic field are oscillating and they can travel even through vacuum like",
+    "duration": 16.360000000000014,
+    "source_segment_ids": [
+      37,
+      38,
+      39,
+      40
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap; tiny_gap; tiny_gap"
+  },
+  {
+    "id": 10,
+    "start": 157.25,
+    "end": 216.7,
+    "text": "the light that is coming through the vacuum from sun to earth. So, the electromagnetic waves are there, electric field and magnetic field are oscillating and they do not need a medium to oscillate ok. So, they we can we can call that they are non-mechanical waves. Here the example that we discussed are of mechanical waves ok, they need some medium to travel. An example here is disturbance in spring ok. So, you pull one end of the spring and then leave what will happen? A wave is generating compressions and rarefactions will be there in the spring. So, wave is generated in the spring or we can say here this the second example here this is a wave in a string ok. This is wave in a string ok. So, they are common example of mechanical waves. Here it is mentioned, here this is a string it is attached to the wall here and the other",
+    "duration": 59.44999999999999,
+    "source_segment_ids": [
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap; incomplete_dangling_conjunction: and; tiny_gap; tiny_gap; tiny_gap; tiny_gap; tiny_gap; tiny_gap; incomplete_dangling_auxiliary: is; tiny_gap; tiny_gap; tiny_gap"
+  },
+  {
+    "id": 11,
+    "start": 216.7,
+    "end": 237.96,
+    "text": "end we are moving like this. So, the pulses are generated like this and they are moving like this ok. Here this is a multiple springs are connected to each other and we move we pull out one of the end then we leave. So, what will happen? The compressions and rarefactions they they they are they travel through the springs actually",
+    "duration": 21.26000000000002,
+    "source_segment_ids": [
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap; tiny_gap; incomplete_dangling_preposition: of; tiny_gap; tiny_gap"
+  },
+  {
+    "id": 12,
+    "start": 237.96,
+    "end": 256.68,
+    "text": "ok. So, sometime the spring will be compressed sometimes it will be elongated like that. So, these compressions and rarefactions are travelling through the spring. So, this is how the waves are generated. Now, mechanical waves are of two types as we discussed here if you see in this case if you",
+    "duration": 18.72,
+    "source_segment_ids": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap; tiny_gap; tiny_gap; tiny_gap"
+  },
+  {
+    "id": 13,
+    "start": 256.68,
+    "end": 277.78,
+    "text": "take a wave is travelling in a string in this case if you see the motion of a particle if I take one particle on the string it is moving up and down like this. The wave is travelling towards the right, but it is moving up and down. The motion of the particle is perpendicular to the direction of propagation of the wave",
+    "duration": 21.099999999999966,
+    "source_segment_ids": [
+      65,
+      66,
+      67,
+      68
+    ],
+    "was_merged": true,
+    "merge_reason": "incomplete_dangling_conjunction: if; tiny_gap; tiny_gap"
+  },
+  {
+    "id": 14,
+    "start": 277.78,
+    "end": 286.94,
+    "text": "that we call as transverse wave ok. So, in transverse wave the motion of the particle of the medium is perpendicular to the direction",
+    "duration": 9.160000000000025,
+    "source_segment_ids": [
+      69,
+      70
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap"
+  },
+  {
+    "id": 15,
+    "start": 286.94,
+    "end": 324.88,
+    "text": "of propagation of the wave. So, those waves we call as transverse wave. Second is the longitudinal wave and here we take the example of longitudinal wave here. So, here if you see the compressions and rarefactions will be there if you take any point on the spring. So, how it is moving? It is moving in this direction to and fro like this you can say ok. So, the you can say the motion of the particle is in direction of the wave ok. So, the difference you understood understood in transverse wave the motion of the particle",
+    "duration": 37.94,
+    "source_segment_ids": [
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78
+    ],
+    "was_merged": true,
+    "merge_reason": "tiny_gap; tiny_gap; tiny_gap; tiny_gap; tiny_gap; tiny_gap; tiny_gap"
+  },
+  {
+    "id": 16,
+    "start": 324.88,
+    "end": 332.56,
+    "text": "is perpendicular to the direction of propagation of wave in longitudinal wave the motion of the particle is in the direction of propagation of wave.",
+    "duration": 7.680000000000007,
+    "source_segment_ids": [
+      79,
+      80
+    ],
+    "was_merged": true,
+    "merge_reason": "incomplete_no_terminal_punctuation"
+  }
+]
+}
