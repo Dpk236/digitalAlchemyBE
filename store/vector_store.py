@@ -1,17 +1,12 @@
-import store.env_loader
-from Services.Embedding.sentence_transform_embeddings import SentenceTransformerEmbeddings
+from Services.Embedding.hf_embeddings import HuggingFaceInferenceEmbeddings
 from langchain_openai import OpenAIEmbeddings
 from utility.reranker import rerank_documents
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
 import os
 
-# Embeddings
-# embeddings = OpenAIEmbeddings(
-#     model="text-embedding-3-small",
-#     api_key="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"
-# )
-embeddings = SentenceTransformerEmbeddings()
+# Embeddings (API-based to save RAM on Render Free Tier)
+embeddings = HuggingFaceInferenceEmbeddings()
 
 # Qdrant client
 qdrant_url = os.getenv("QDRANT_URL", "http://localhost:6333")
