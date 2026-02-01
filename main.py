@@ -21,6 +21,8 @@ from flask import jsonify
 import os
 import json
 from Services.SummarizeChunks.summarize_chunks import SummarizeChunks
+from Services.OCR.ocr_service import OCRService
+import base64
 
 # Use eventlet as default for Render compatibility
 sio = socketio.Server(
@@ -29,6 +31,15 @@ sio = socketio.Server(
 )
 app = Flask(__name__)
 CORS(app)
+
+@app.route("/")
+def health_check():
+    return jsonify({
+        "status": "live",
+        "service": "AskDoubt Backend",
+        "message": "API is running successfully on Render!"
+    })
+
 # app.wsgi_app = socketio.WSGIApp(sio, app.wsgi_app) # Not needed for threading mode usually or used differently
 app.wsgi_app = socketio.WSGIApp(sio, app.wsgi_app)
 video_id = ""
@@ -154,7 +165,7 @@ def get_summmary_of_video():
 
 
 @app.route("/visual-view", methods=["GET"])
-def health_check():
+def visual_view():
     try:
         video_id = request.args.get("video_id")
         if not video_id:
@@ -287,6 +298,76 @@ def get_all_chats():
     except ValueError as e:
         return {"status": "401", "data": [], "error": e}
 
+
+# -----------------------
+# Image Upload Route
+# -----------------------
+
+ocr_service = OCRService()
+
+@app.route("/ask-with-image", methods=["POST"])
+def ask_with_image():
+    try:
+        if 'image' not in request.files:
+            return jsonify({"status": "400", "error": "No image part"}), 400
+        
+        file = request.files['image']
+        if file.filename == '':
+            return jsonify({"status": "400", "error": "No selected file"}), 400
+
+        user_id = request.form.get("user_id")
+        video_id = request.form.get("video_id")
+        session_id = request.form.get("session_id")
+
+        if not all([user_id, video_id, session_id]):
+            return jsonify({"status": "400", "error": "Missing user_id, video_id, or session_id"}), 400
+
+        # Read and encode image
+        image_bytes = file.read()
+        base64_image = base64.b64encode(image_bytes).decode('utf-8')
+
+        # 1. Extract text from image
+        print(f"📷 Extracting text from image for user {user_id}...")
+        extracted_text = ocr_service.extract_text_from_image(base64_image)
+        print(f"📝 Extracted text: {extracted_text}")
+
+        if not extracted_text:
+            return jsonify({"status": "400", "error": "Could not extract text from image"}), 400
+
+        # 2. Save user message (extracted text)
+        add_chat_message(user_id, video_id, session_id, "user", f"[Image Upload] {extracted_text}")
+
+        # 3. Fetch chat history and summary
+        summary, _ = get_chat_messages(user_id, video_id, session_id)
+        chat_history = build_llm_messages(user_id, video_id, session_id)
+
+        # 4. Route query through RAG
+        result = route_query(
+            extracted_text, 
+            chat_history=chat_history, 
+            summary=summary, 
+            video_id=video_id, 
+            user_id=user_id, 
+            session_id=session_id
+        )
+
+        ai_response = result.get("response", "")
+        result_type = result.get("type", "context_retrieval")
+
+        # 5. Save assistant response
+        add_chat_message(user_id, video_id, session_id, "assistant", ai_response)
+
+        return jsonify({
+            "status": "ok",
+            "extracted_text": extracted_text,
+            "ai_response": ai_response,
+            "type": result_type,
+            "data": result.get("data", {})
+        })
+
+    except Exception as e:
+        print(f"❌ Error in /ask-with-image: {str(e)}")
+        return jsonify({"status": "500", "error": str(e)}), 500
 
 # -----------------------
 # Start server
