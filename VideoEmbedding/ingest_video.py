@@ -11,9 +11,10 @@ from langchain_qdrant import QdrantVectorStore
 from VideoEmbedding.utils import LightEmbeddings
 
 class VideoIngestor:
-    def __init__(self, collection_name: str = "video_docs", qdrant_url: str = "http://localhost:6333"):
+    def __init__(self, collection_name: str = "video_docs", qdrant_url: str = None, qdrant_api_key: str = None):
         self.collection_name = collection_name
-        self.qdrant_url = qdrant_url
+        self.qdrant_url = qdrant_url or os.getenv("QDRANT_URL", "http://localhost:6333")
+        self.qdrant_api_key = qdrant_api_key or os.getenv("QDRANT_API_KEY", None)
         self.embeddings_model = LightEmbeddings()
 
     def ingest_directory(self, directory_path: str, subject: str = "Biology"):
@@ -50,6 +51,7 @@ class VideoIngestor:
                 documents=documents,
                 embedding=self.embeddings_model,
                 url=self.qdrant_url,
+                api_key=self.qdrant_api_key,
                 collection_name=self.collection_name,
                 force_recreate=True
             )

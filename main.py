@@ -8,7 +8,7 @@ from LLMQueries.get_visual_view import get_visual_view_query
 from PyDantic.ResponseModel.response_model import ChatResponse
 import socketio
 import eventlet
-from flask import Flask
+from flask import Flask, request
 from Helpers.ChatHistory.fetch_last_messages import get_recent_messages
 from Helpers.ChatHistory.build_llm_messages_input import build_llm_messages
 from route_query import route_query
@@ -19,7 +19,7 @@ from flask import jsonify
 import os
 sio = socketio.Server(
     cors_allowed_origins="*",
-    async_mode=os.getenv("ASYNC_MODE", "threading")
+    async_mode=os.getenv("ASYNC_MODE", "gevent")
 )
 app = Flask(__name__)
 CORS(app)
@@ -39,17 +39,17 @@ def connect(sid, environ):
     video_id = params.get('video_id', [None])[0]
     user_id = params.get('user_id', [None])[0]
     session_id = params.get('session_id', [None])[0]
-    socket_context.set_video("video_id", video_id)
-    socket_context.set_video("user_id", user_id)
-    socket_context.set_video("session_id", session_id)
+    socket_context.set_context(sid, "video_id", video_id)
+    socket_context.set_context(sid, "user_id", user_id)
+    socket_context.set_context(sid, "session_id", session_id)
     print("video_id:", video_id, user_id, session_id)
-    print(f"✅ Client connected: {sid}")
+    print("Client connected: {}".format(sid))
 
 
 @sio.event
 def disconnect(sid):
     socket_context.remove(sid)
-    print(f"❌ Client disconnected: {sid}")
+    print("Client disconnected: {}".format(sid))
 
 # -----------------------
 # Chat Event
@@ -68,14 +68,14 @@ def chat_message(sid, data):
     """
     try:
         user_id = data["user_id"]
-        lecture_id = socket_context.get_video("video_id")
+        lecture_id = socket_context.get_context(sid, "video_id")
         session_id = data["session_id"]
         user_query = data["message"]
-        print(f"💬 Received message from {sid}: {user_query}")
-        # 1️⃣ Save user message
+        print("Received message from {}: {}".format(sid, user_query))
+        # 1 Save user message
         add_chat_message(user_id, lecture_id, session_id, "user", user_query)
 
-        # 2️⃣ Fetch chat history
+        # 2 Fetch chat history
         new_summary, recent_messages2 = get_chat_messages(
             user_id, lecture_id, session_id)
         print("chathistory ====", len(recent_messages2), recent_messages2)
@@ -83,7 +83,8 @@ def chat_message(sid, data):
         recent_messages = build_llm_messages(user_id, lecture_id, session_id)
         # return
         result = route_query(
-            user_query, chat_history=recent_messages, summary=new_summary)
+            user_query, chat_history=recent_messages, summary=new_summary, 
+            video_id=lecture_id, user_id=user_id, session_id=session_id)
         print("result_type ===", result)
         result_type = result.get("type")
         ai_response = result["response"] if "response" in result else ""
@@ -108,7 +109,7 @@ def chat_message(sid, data):
                 to=sid
             )
             return
-        # 5️⃣ Save assistant response
+        # 5 Save assistant response
         add_chat_message(user_id, lecture_id, session_id,
                          "assistant", ai_response)
 
@@ -119,7 +120,7 @@ def chat_message(sid, data):
         )
 
     except Exception as e:
-        print("🔥 Socket error:", e)
+        print("Socket error:", e)
         sio.emit(
             "chat_response",
             {
@@ -133,8 +134,10 @@ def chat_message(sid, data):
 
 @app.route("/get_summmary", methods=["GET"])
 def get_summmary_of_video():
-    video_id = socket_context.get_video("video_id")
-    file_name = f"{video_id}_hierarchical_summary.json"
+    video_id = request.args.get("video_id")
+    if not video_id:
+        return {"status": "400", "data": "Missing video_id"}
+    file_name = "{}_hierarchical_summary.json".format(video_id)
     print("file_name", file_name)
     if not Path(file_name).exists():
          return {"status": "401", "data": []}   
@@ -147,8 +150,10 @@ def get_summmary_of_video():
 @app.route("/visual-view", methods=["GET"])
 def health_check():
     try:
-        video_id = socket_context.get_video("video_id")
-        with open(f"{video_id}_hierarchical_summary.json", "r") as f:
+        video_id = request.args.get("video_id")
+        if not video_id:
+            return "Missing video_id"
+        with open("{}_hierarchical_summary.json".format(video_id), "r") as f:
             import json
             res = json.load(f)
             final_summary = res["final_summary"]
@@ -165,15 +170,17 @@ def health_check():
 @app.route("/ai-flashcards", methods=["GET"])
 def ai_flashcards():
     try:
-        video_id = socket_context.get_video("video_id")
-        summary_file = f"video_{video_id}_summaries.json"
+        video_id = request.args.get("video_id")
+        if not video_id:
+            return {"status": "400", "error": "Missing video_id"}
+        summary_file = "video_{}_summaries.json".format(video_id)
         with open(summary_file, "r") as f:
             import json
             res = json.load(f)
             # The summaries file might be a list or the hierarchical dict
             final_summary = res["final_summary"] if isinstance(res, dict) and "final_summary" in res else str(res)
             
-            flashcard_path = f"video_{video_id}_flashcards.json"
+            flashcard_path = "video_{}_flashcards.json".format(video_id)
             if Path(flashcard_path).exists():
                 with open(flashcard_path, "r") as f:
                     data = f.read().strip()
@@ -190,13 +197,15 @@ def ai_flashcards():
 @app.route("/get-quiz", methods=["GET"])
 def ai_quiz():
     try:
-        video_id = socket_context.get_video("video_id")
-        summary_file = f"video_{video_id}_summaries.json"
+        video_id = request.args.get("video_id")
+        if not video_id:
+            return {"status": "400", "error": "Missing video_id"}
+        summary_file = "video_{}_summaries.json".format(video_id)
         with open(summary_file, "r") as f:
             import json
             res = json.load(f)
             final_summary = res["final_summary"] if isinstance(res, dict) and "final_summary" in res else str(res)
-            quiz_path = f"video_{video_id}_quiz.json"
+            quiz_path = "video_{}_quiz.json".format(video_id)
             if Path(quiz_path).exists():
                 with open(quiz_path, "r") as f:
                     content = f.read().strip()
@@ -231,9 +240,9 @@ def ai_quiz():
 @app.route("/get-all-chat", methods=["GET"])
 def get_all_chats():
     try:
-        user_id = socket_context.get_video("user_id")
-        lecture_id = socket_context.get_video("video_id")
-        session_id = socket_context.get_video("session_id")
+        user_id = request.args.get("user_id")
+        lecture_id = request.args.get("video_id")
+        session_id = request.args.get("session_id")
         recent_messages = get_recent_messages(
             user_id, lecture_id, session_id, limit=6
         )
@@ -246,6 +255,9 @@ def get_all_chats():
 # Start server
 # -----------------------
 if __name__ == "__main__":
-    print("🚀 Socket.IO server running on http://localhost:5000")
-    # Using standard flask for threading mode
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    print("Socket.IO server running on http://localhost:5000")
+    from gevent.pywsgi import WSGIServer
+    from geventwebsocket.handler import WebSocketHandler
+
+    http_server = WSGIServer(('', 5000), app, handler_class=WebSocketHandler)
+    http_server.serve_forever()

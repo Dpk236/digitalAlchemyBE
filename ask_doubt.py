@@ -1,5 +1,7 @@
 
 import json
+import os
+import store.env_loader
 from Services.Embedding.sentence_transform_embeddings import SentenceTransformerEmbeddings
 from convert_vtt_json import vtt_to_segments
 from langchain_qdrant import QdrantVectorStore
@@ -117,7 +119,8 @@ def ingest_transcript(file_path: str, video_id: str = None, subject: str = None,
     QdrantVectorStore.from_documents(
         documents=documents,
         embedding=embeddings,
-        url="http://localhost:6333",
+        url=os.getenv("QDRANT_URL", "http://localhost:6333"),
+        api_key=os.getenv("QDRANT_API_KEY", None),
         collection_name="ask_doubt_rag2"
     )
     print(f"✅ Ingestion complete for {file_path}.")

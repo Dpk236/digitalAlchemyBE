@@ -2,10 +2,9 @@ from enum import Enum
 import os
 from Enums.explanation_mode_enum import ExplanationMode
 from ContextRetrievel.sorted_context_based_query import SortedContextBasedQuery
-from Context.socket_context import socket_context
 from LLMQueries.get_fallback_response import get_fallback_response_query
 from LLMQueries.get_notes import get_notes_query
-from utility.raranker import rerank_documents
+from utility.reranker import rerank_documents
 from Helpers.Summary.summary_cache import cache_video_notes, cache_video_summaries, get_cached_video_notes, get_cached_video_summaries
 from Retrieval.SummarizeQuery.SummarizeAllChunks import summarize_video_chunks
 from utility.build_context import build_context
@@ -22,8 +21,6 @@ from qdrant_client.models import Filter, FieldCondition, MatchValue
 from openai import OpenAI
 from qdrant_client import QdrantClient
 RETRIEVAL_STAGES = [2, 4, 8, 16]   # max cap based on cost
-video_id = socket_context.get_video("video_id")
-#  strictly gives this "not mentioned in the context" response
 
 def is_context_insufficient(answer: str) -> bool:
     triggers = [
@@ -45,7 +42,7 @@ def embed_text(text):
     return embedding_model.embed_query(text)
 
 
-def handle_context_retrieval(query: str, chat_history=[]):
+def handle_context_retrieval(query: str, chat_history=[], video_id=None):
     video_filter = Filter(
         must=[
             FieldCondition(
@@ -76,8 +73,8 @@ def handle_context_retrieval(query: str, chat_history=[]):
     }
 
 
-def handle_quiz_generation(query: str):
-    video_id = socket_context.get_video("video_id")
+def handle_quiz_generation(query: str, video_id=None):
+    # video_id passed from arguments
     result = quiz_generation(query=query, video_id=video_id)
     return result
 
@@ -90,9 +87,9 @@ def handle_example_request(query: str):
     }
 
 
-def handle_timestamp_query(query: str, chat_history=[], summary:str = ""):
+def handle_timestamp_query(query: str, chat_history=[], summary:str = "", video_id=None):
     print("Handling timestamp query...", vector_store_ready())
-    video_id = socket_context.get_video("video_id")
+    # video_id passed
     docs = retrieve_by_timestamp(
         vector_store=vector_store_ready(),
         video_id=video_id,
@@ -121,7 +118,11 @@ def handle_fallback(query: str):
 
 
 def handle_summarize_video(query: str, chat_history=[], key: str = ""):
-    video_id = socket_context.get_video("video_id")
+    parts = key.split(":")
+    if len(parts) >= 3:
+        video_id = parts[2]
+    else:
+        video_id = "unknown"
     if get_cached_video_summaries(video_id):
         summarize_video = get_cached_video_summaries(video_id)
         print(f"Using cached summaries for video {video_id}")
@@ -166,7 +167,13 @@ def handle_summarize_video(query: str, chat_history=[], key: str = ""):
 
 
 def handle_notes_creation(query: str, chat_history=[], key: str = ""):
-    video_id = socket_context.get_video("video_id")
+    # Same issue as summarize. I need to parse key or pass video_id. 
+    # Key format: f"notes:{user_id}:{lecture_id}:{session_id}" (lecture_id IS video_id)
+    parts = key.split(":")
+    if len(parts) >= 3:
+        video_id = parts[2]
+    else:
+        video_id = "unknown"
     if get_cached_video_notes(video_id):
         notes_video = get_cached_video_notes(video_id)
         print(f"Using cached notes_video for video {video_id}")
@@ -280,9 +287,10 @@ def adaptive_rag_answer(
     query: str,
     chat_history,
     explanation_mode: str = ExplanationMode.STANDARD,
-    summary: str =""
+    summary: str ="",
+    video_id=None
 ):
-    video_id = socket_context.get_video("video_id")
+    # video_id passed
     for k in RETRIEVAL_STAGES:
         print("Trying adaptive RAG with k =", k, video_id)
         # 1️⃣ Retrieve small K
@@ -335,9 +343,10 @@ def fallback_rag_answer(
     query: str,
     chat_history,
     explanation_mode: str = ExplanationMode.STANDARD,
-    summary: str =""
+    summary: str ="",
+    video_id=None
 ):
-    video_id = socket_context.get_video("video_id")
+    # video_id passed
     # 1️⃣ Retrieve max K
     video_filter = Filter(
         must=[

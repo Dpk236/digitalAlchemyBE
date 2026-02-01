@@ -1,7 +1,6 @@
 import re
 import os
 from Enums.explanation_mode_enum import ExplanationMode
-from Context.socket_context import socket_context
 from PyDantic.ResponseModel.intent_detect_model import IntentDetectModel
 from constants.intent_confidence import CLARIFICATION_THRESHOLD
 from store.openai_client import get_openai_client
@@ -12,9 +11,6 @@ from query_enum import Intent
 client = get_openai_client()
 model = os.getenv("model")
 
-user_id = socket_context.get_video("user_id")
-lecture_id = socket_context.get_video("video_id")
-session_id = socket_context.get_video("session_id")
 
 TIME_REGEX = re.compile(
     r"""
@@ -27,7 +23,7 @@ TIME_REGEX = re.compile(
     re.VERBOSE
 )
 
-def rule_based_detect_intent(user_query: str, chat_history=None) -> IntentDetectModel:
+def rule_based_detect_intent(user_query: str, chat_history=None, user_id=None, lecture_id=None, session_id=None) -> IntentDetectModel:
     query = user_query.lower()
     question_id = extract_question_id(query)
     isPresent = False
@@ -182,9 +178,9 @@ def llm_classify_intent(user_query: str, chat_history=None) -> IntentDetectModel
         )
 
 
-def detect_intent(user_query: str, chat_history=None) -> IntentDetectModel:
+def detect_intent(user_query: str, chat_history=None, user_id=None, lecture_id=None, session_id=None) -> IntentDetectModel:
     # 1️⃣ Rule-based detection (FAST)
-    result = rule_based_detect_intent(user_query, chat_history)
+    result = rule_based_detect_intent(user_query, chat_history, user_id, lecture_id, session_id)
 
     print("Rule-based intent:", result.intent)
 

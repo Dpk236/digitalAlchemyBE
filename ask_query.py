@@ -60,7 +60,7 @@ def get_user_query(user_query: str, context: Any, chat_history: Any, explanation
     4. End with a short summary sentence + (if natural) a gentle question to check understanding
 
     Rules — never break these:
-    - Answer ONLY using the provided CONTEXT. If something is not mentioned → reply only: "context does not contain" stick this phrase
+    - Answer ONLY using the provided CONTEXT. If the answer is not in the context, reply "context does not contain".
     - Do NOT hallucinate, do NOT add outside knowledge, even if it is common NCERT knowledge not present in this specific lecture
     - Keep explanations connected and flowing — avoid mechanical lists
     - Use chat history to remember what was already explained to the same student

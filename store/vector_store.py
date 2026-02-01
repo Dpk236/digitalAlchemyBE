@@ -1,6 +1,7 @@
 import store.env_loader
 from Services.Embedding.sentence_transform_embeddings import SentenceTransformerEmbeddings
 from langchain_openai import OpenAIEmbeddings
+from utility.reranker import rerank_documents
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
 import os
@@ -29,6 +30,12 @@ try:
         qdrant_client.create_collection(
             collection_name="ask_doubt_rag2",
             vectors_config=models.VectorParams(size=384, distance=models.Distance.COSINE),
+        )
+        # Create Payload Index for video_id
+        qdrant_client.create_payload_index(
+            collection_name="ask_doubt_rag2",
+            field_name="metadata.video_id",
+            field_schema=models.PayloadSchemaType.KEYWORD
         )
         print("✅ Created new collection: ask_doubt_rag2")
 except Exception as e:

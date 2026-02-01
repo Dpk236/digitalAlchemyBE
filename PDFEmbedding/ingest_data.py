@@ -50,7 +50,8 @@ def ingest_pdfs():
     QdrantVectorStore.from_documents(
         documents=documents,
         embedding=embeddings_model,
-        url="http://localhost:6333",
+        url=os.getenv("QDRANT_URL", "http://localhost:6333"),
+        api_key=os.getenv("QDRANT_API_KEY", None),
         collection_name=COLLECTION_NAME,
         force_recreate=False # Keep existing transcript data
     )

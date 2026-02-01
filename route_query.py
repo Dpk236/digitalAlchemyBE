@@ -17,13 +17,10 @@ from handlers import (
     handle_notes_creation,
 )
 
-user_id = socket_context.get_video("user_id")
-lecture_id = socket_context.get_video("video_id")
-session_id = socket_context.get_video("session_id")
 
 
-def route_query(user_query: str, chat_history=[], summary: str = "",):
-    intent_data = detect_intent(user_query)
+def route_query(user_query: str, chat_history=[], summary: str = "", video_id=None, user_id=None, session_id=None):
+    intent_data = detect_intent(user_query, user_id=user_id, lecture_id=video_id, session_id=session_id)
     print("Detected intent:", intent_data.intent, type(intent_data))
     intent = intent_data.intent
     confidence = intent_data.confidence
@@ -31,7 +28,7 @@ def route_query(user_query: str, chat_history=[], summary: str = "",):
 
     # 🔹 LOW CONFIDENCE → ASK CLARIFICATION
     if confidence < 0.65:
-         return fallback_rag_answer(query =user_query, chat_history=chat_history, explanation_mode=explanation_mode, summary=summary)
+         return fallback_rag_answer(query =user_query, chat_history=chat_history, explanation_mode=explanation_mode, summary=summary, video_id=video_id)
         # return {
         #     "type": "clarification",
         #     "response": ("I want to help you correctly 😊<br/>"
@@ -46,26 +43,26 @@ def route_query(user_query: str, chat_history=[], summary: str = "",):
         # }
     print("Detected Intent:", intent)
     if intent == Intent.CONTEXT_RETRIEVAL:
-        return adaptive_rag_answer(user_query, chat_history=chat_history, explanation_mode=explanation_mode, summary=summary)
+        return adaptive_rag_answer(user_query, chat_history=chat_history, explanation_mode=explanation_mode, summary=summary, video_id=video_id)
 
     if intent == Intent.QUIZ_GENERATION:
-        return handle_quiz_generation(user_query)
+        return handle_quiz_generation(user_query, video_id=video_id)
 
     if intent == Intent.EXAMPLE_REQUEST:
         return handle_example_request(user_query)
 
     if intent == Intent.TIMESTAMP_QUERY:
-        return handle_timestamp_query(user_query, chat_history=chat_history, summary=summary)
+        return handle_timestamp_query(user_query, chat_history=chat_history, summary=summary, video_id=video_id)
 
     if intent == Intent.SUMMARIZE_VIDEO:
-        key = summrize_key(user_id, lecture_id, session_id)
+        key = summrize_key(user_id, video_id, session_id)
         return handle_summarize_video(user_query, chat_history=chat_history, key=key)
     if intent == Intent.NOTES:
-        key = notes_key(user_id, lecture_id, session_id)
+        key = notes_key(user_id, video_id, session_id)
         return handle_notes_creation(user_query, chat_history=chat_history, key=key)
     if intent == Intent.EXPLAIN_QUIZ_QUESTION:
         return handle_quiz_explanation(
-            user_query, user_id, lecture_id, session_id, chat_history=chat_history,
+            user_query, user_id, video_id, session_id, chat_history=chat_history,
             summary=summary
         )
     return handle_fallback(user_query)
