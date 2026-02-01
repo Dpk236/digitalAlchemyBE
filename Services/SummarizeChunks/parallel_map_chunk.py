@@ -283,9 +283,13 @@ def ParallelMapChunk(
             print("level2_summaries:",len(result["level2_summaries"]))
             print("final_summary:", len(result["final_summary"]))
             print("total_original_chunks:", result["total_original_chunks"])
-
             print("Final summary length:", len(result["final_summary"]) if result["final_summary"] else 0)    
         
+        # Legacy compatibility: also save as video_{video_id}_summaries.json
+        legacy_path = f"video_{video_id}_summaries.json"
+        with open(legacy_path, "w") as f_legacy:
+            json.dump(result, f_legacy, indent=4)
+            print(f"✅ Legacy summary saved to {legacy_path}")
 
     # chunk = chunks[0]
     # start_time = chunk["start"]

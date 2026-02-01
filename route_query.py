@@ -1,4 +1,5 @@
 from Context.socket_context import socket_context
+from Helpers.guardrail_manager import GuardrailManager
 from Helpers.RedisKey import notes_key, summrize_key
 from Helpers.ChatHistory.build_llm_messages_input import build_llm_messages
 from Helpers.ChatHistory.add_chat_message import add_chat_message
@@ -17,9 +18,40 @@ from handlers import (
     handle_notes_creation,
 )
 
+guardrail_manager = GuardrailManager() # Default instance
 
+def get_subject_from_id(video_id: str) -> str:
+    """Guess subject from video_id or metadata."""
+    if not video_id:
+        return "physics"
+    
+    vid_lower = str(video_id).lower()
+    if "bio" in vid_lower or "480989616" in vid_lower: # From file list observations
+        return "biology"
+    if "chem" in vid_lower:
+        return "chemistry"
+    if "physics" in vid_lower or "projectile" in vid_lower:
+        return "physics"
+        
+    return "physics" # Default
 
 def route_query(user_query: str, chat_history=[], summary: str = "", video_id=None, user_id=None, session_id=None):
+    # Determine subject for guardrails
+    subject = get_subject_from_id(video_id)
+    
+    # 🏁 GUARDRAIL CHECK 🏁
+    # Initialize manager with specific subject
+    manager = GuardrailManager(subject=subject)
+    is_blocked, redirect_msg = manager.check_query(user_query)
+    
+    if is_blocked:
+        print(f"🚫 Query blocked by guardrails ({subject}): {user_query}")
+        return {
+            "type": "guardrail_blocked",
+            "response": redirect_msg,
+            "query": user_query
+        }
+
     intent_data = detect_intent(user_query, user_id=user_id, lecture_id=video_id, session_id=session_id)
     print("Detected intent:", intent_data.intent, type(intent_data))
     intent = intent_data.intent
@@ -46,7 +78,7 @@ def route_query(user_query: str, chat_history=[], summary: str = "", video_id=No
         return adaptive_rag_answer(user_query, chat_history=chat_history, explanation_mode=explanation_mode, summary=summary, video_id=video_id)
 
     if intent == Intent.QUIZ_GENERATION:
-        return handle_quiz_generation(user_query, video_id=video_id)
+        return handle_quiz_generation(user_query, video_id=video_id, user_id=user_id, session_id=session_id)
 
     if intent == Intent.EXAMPLE_REQUEST:
         return handle_example_request(user_query)

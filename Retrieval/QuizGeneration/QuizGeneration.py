@@ -13,9 +13,9 @@ from pathlib import Path
 
 from Context.socket_context import socket_context
 
-def quiz_generation(query: str, video_id: str):
-    user_id = socket_context.get_video("user_id")
-    session_id = socket_context.get_video("session_id")
+def quiz_generation(query: str, video_id: str, user_id: str = "test_user", session_id: str = "test_session"):
+    # user_id = socket_context.get_video("user_id")
+    # session_id = socket_context.get_video("session_id")
 
     try:
         new_docs = retrieve_all_chunks_by_video_id(

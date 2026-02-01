@@ -73,9 +73,9 @@ def handle_context_retrieval(query: str, chat_history=[], video_id=None):
     }
 
 
-def handle_quiz_generation(query: str, video_id=None):
+def handle_quiz_generation(query: str, video_id=None, user_id=None, session_id=None):
     # video_id passed from arguments
-    result = quiz_generation(query=query, video_id=video_id)
+    result = quiz_generation(query=query, video_id=video_id, user_id=user_id, session_id=session_id)
     return result
 
 
@@ -141,10 +141,18 @@ def handle_summarize_video(query: str, chat_history=[], key: str = ""):
         video_id=video_id,
     )
     summary_file = f"video_{video_id}_summaries.json"
+    hierarchical_file = f"{video_id}_hierarchical_summary.json"
     video_summaries = None
-    if os.path.exists(summary_file):
+
+    if os.path.exists(hierarchical_file):
+        with open(hierarchical_file, "r") as f:
+            res = json.load(f)
+            video_summaries = res.get("final_summary")
+            print(f"Loaded hierarchical summary from {hierarchical_file}")
+    elif os.path.exists(summary_file):
         with open(summary_file, "r") as f:
-            video_summaries = json.load(f)
+            res = json.load(f)
+            video_summaries = res["final_summary"] if isinstance(res, dict) and "final_summary" in res else str(res)
             print(f"Loaded existing summaries from {summary_file}")
     
     summarize_video = video_summaries if video_summaries else summarize_video_chunks(
@@ -192,10 +200,18 @@ def handle_notes_creation(query: str, chat_history=[], key: str = ""):
         video_id=video_id,
     )
     summary_file = f"video_{video_id}_summaries.json"
+    hierarchical_file = f"{video_id}_hierarchical_summary.json"
     video_notes = None
-    if os.path.exists(summary_file):
+
+    if os.path.exists(hierarchical_file):
+        with open(hierarchical_file, "r") as f:
+            res = json.load(f)
+            video_notes = res.get("final_summary")
+            print(f"Loaded hierarchical notes/summary from {hierarchical_file}")
+    elif os.path.exists(summary_file):
         with open(summary_file, "r") as f:
-            video_notes = json.load(f)
+            res = json.load(f)
+            video_notes = res["final_summary"] if isinstance(res, dict) and "final_summary" in res else str(res)
             print(f"Loaded existing summaries from {summary_file} for notes")
             
     notes = video_notes if video_notes else summarize_video_chunks(
