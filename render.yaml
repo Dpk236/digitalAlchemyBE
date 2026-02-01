@@ -10,6 +10,11 @@ services:
         value: eventlet
       - key: PYTHON_VERSION
         value: 3.10.12
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: askdoubt-redis
+          property: connectionString
       - key: AZURE_OPENAI_API_KEY
         sync: false
       - key: AZURE_OPENAI_ENDPOINT
@@ -24,4 +29,15 @@ services:
         sync: false
       - key: QDRANT_API_KEY
         sync: false
-Line 1: 651
+      - key: GEMINI_API_KEY
+        sync: false
+    # Optional: Attach disk for persistence (requires paid plan)
+    # disks:
+    #   - name: askdoubt-storage
+    #     mountPath: /data
+    #     sizeGB: 1
+
+  - type: redis
+    name: askdoubt-redis
+    plan: free
+    ipAllowList: [] # Only allow internal connections
