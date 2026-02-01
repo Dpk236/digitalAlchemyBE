@@ -1,3 +1,6 @@
+import eventlet
+eventlet.monkey_patch()
+
 import store.env_loader
 from Context.socket_context import socket_context
 from utility.extract_json_from_llm import save_quiz_locally
@@ -7,7 +10,6 @@ from LLMQueries.get_flashcard import get_flashcard_query
 from LLMQueries.get_visual_view import get_visual_view_query
 from PyDantic.ResponseModel.response_model import ChatResponse
 import socketio
-import eventlet
 from flask import Flask, request
 from Helpers.ChatHistory.fetch_last_messages import get_recent_messages
 from Helpers.ChatHistory.build_llm_messages_input import build_llm_messages
@@ -19,9 +21,11 @@ from flask import jsonify
 import os
 import json
 from Services.SummarizeChunks.summarize_chunks import SummarizeChunks
+
+# Use eventlet as default for Render compatibility
 sio = socketio.Server(
     cors_allowed_origins="*",
-    async_mode=os.getenv("ASYNC_MODE", "gevent")
+    async_mode=os.getenv("ASYNC_MODE", "eventlet")
 )
 app = Flask(__name__)
 CORS(app)
