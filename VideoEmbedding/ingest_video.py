@@ -8,14 +8,14 @@ sys.path.append(str(Path(__file__).parent.parent))
 
 from langchain_core.documents import Document
 from langchain_qdrant import QdrantVectorStore
-from VideoEmbedding.utils import LightEmbeddings
+from store.vector_store import embeddings
 
 class VideoIngestor:
     def __init__(self, collection_name: str = "video_docs", qdrant_url: str = None, qdrant_api_key: str = None):
         self.collection_name = collection_name
         self.qdrant_url = qdrant_url or os.getenv("QDRANT_URL", "http://localhost:6333")
         self.qdrant_api_key = qdrant_api_key or os.getenv("QDRANT_API_KEY", None)
-        self.embeddings_model = LightEmbeddings()
+        self.embeddings_model = embeddings
 
     def ingest_directory(self, directory_path: str, subject: str = "Biology"):
         documents = []

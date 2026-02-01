@@ -34,12 +34,13 @@ def is_context_insufficient(answer: str) -> bool:
     return any(t in answer.lower() for t in triggers)
 
 
-from Services.Embedding.sentence_transform_embeddings import SentenceTransformerEmbeddings
 
-embedding_model = SentenceTransformerEmbeddings("all-MiniLM-L6-v2")
+# Legacy local embedding model removed to save RAM on Render Free Tier
+# from Services.Embedding.sentence_transform_embeddings import SentenceTransformerEmbeddings
+# embedding_model = SentenceTransformerEmbeddings("all-MiniLM-L6-v2")
 
-def embed_text(text):
-    return embedding_model.embed_query(text)
+# def embed_text(text):
+#     return embedding_model.embed_query(text)
 
 
 def handle_context_retrieval(query: str, chat_history=[], video_id=None):

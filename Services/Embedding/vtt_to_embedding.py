@@ -1,10 +1,6 @@
-from Services.Embedding.sentence_transform_embeddings import SentenceTransformerEmbeddings
-from qdrant_client import QdrantClient
-from langchain_qdrant import QdrantVectorStore
-from langchain_core.documents import Document
-
-# Initialize embedding model
-embeddings = SentenceTransformerEmbeddings()
+from store.vector_store import embeddings
+# from Services.Embedding.sentence_transform_embeddings import SentenceTransformerEmbeddings
+# embeddings = SentenceTransformerEmbeddings()
 
 # Qdrant (local, in-memory or disk)
 client = QdrantClient(path="./qdrant_data")

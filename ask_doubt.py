@@ -2,12 +2,12 @@
 import json
 import os
 import store.env_loader
-from Services.Embedding.sentence_transform_embeddings import SentenceTransformerEmbeddings
+from store.vector_store import embeddings
 from convert_vtt_json import vtt_to_segments
 from langchain_qdrant import QdrantVectorStore
 from langchain_core.documents import Document
 
-embeddings = SentenceTransformerEmbeddings("all-MiniLM-L6-v2")
+# embeddings = SentenceTransformerEmbeddings("all-MiniLM-L6-v2") # Replaced by API-based embeddings
 
 def semantic_chunk_segments(
     segments: list[dict],

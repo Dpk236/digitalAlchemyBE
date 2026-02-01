@@ -29,14 +29,14 @@ def get_user_images():
     return [f for f in os.listdir(USER_IMAGE_FOLDER) if f.lower().endswith(('.png', '.jpg', '.jpeg', '.webp'))]
 
 import sys
-from Services.Embedding.sentence_transform_embeddings import SentenceTransformerEmbeddings
+from store.vector_store import embeddings
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 def chat_with_docs():
     COLLECTION_NAME = "hackathon_docs"
     
     # Load the model and connect to existing DB
-    embeddings_model = SentenceTransformerEmbeddings("all-MiniLM-L6-v2")
+    embeddings_model = embeddings
     vectorstore = QdrantVectorStore.from_existing_collection(
         embedding=embeddings_model,
         collection_name=COLLECTION_NAME,

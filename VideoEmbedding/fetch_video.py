@@ -6,13 +6,13 @@ sys.path.append(str(Path(__file__).parent.parent))
 
 from qdrant_client import QdrantClient
 from langchain_qdrant import QdrantVectorStore
-from VideoEmbedding.utils import LightEmbeddings
+from store.vector_store import embeddings
 
 class VideoRetriever:
     def __init__(self, collection_name: str = "video_docs", qdrant_url: str = "http://localhost:6333"):
         self.collection_name = collection_name
         self.qdrant_url = qdrant_url
-        self.embeddings_model = LightEmbeddings()
+        self.embeddings_model = embeddings
         self.client = QdrantClient(url=qdrant_url)
         self.vector_store = QdrantVectorStore(
             client=self.client,

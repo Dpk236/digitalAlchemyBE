@@ -9,7 +9,7 @@ import store.env_loader
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from langchain_core.documents import Document
 from langchain_qdrant import QdrantVectorStore
-from Services.Embedding.sentence_transform_embeddings import SentenceTransformerEmbeddings
+from store.vector_store import embeddings
 
 def ingest_pdfs():
     # Configuration
@@ -18,7 +18,7 @@ def ingest_pdfs():
     COLLECTION_NAME = "ask_doubt_rag2"
     
     os.makedirs(IMAGE_CACHE, exist_ok=True)
-    embeddings_model = SentenceTransformerEmbeddings("all-MiniLM-L6-v2")
+    embeddings_model = embeddings
     documents = []
 
     # Loop through PDFs
