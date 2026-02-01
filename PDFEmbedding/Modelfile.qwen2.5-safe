@@ -1,0 +1,7 @@
+FROM qwen2.5:7b
+
+PARAMETER num_ctx 4096
+PARAMETER num_batch 256
+PARAMETER temperature 0.5
+PARAMETER top_p 0.9
+PARAMETER repeat_penalty 1.1

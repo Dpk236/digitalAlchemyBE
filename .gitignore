@@ -166,4 +166,7 @@ simulator*.html
 
 # Large data directories
 /Services/ExtractAudio/
-/PDFEmbedding/
+/PDFEmbedding/pdf/
+/PDFEmbedding/pdf_pages_cache/
+/PDFEmbedding/image_question/
+/PDFEmbedding/__pycache__/
